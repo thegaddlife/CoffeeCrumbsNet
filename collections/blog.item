@@ -7,7 +7,7 @@
     <div class="post{.passthrough?} link-list-item{.end}">
 
       <!--POST IMAGE -->
-      {.if assetUrl}
+      {.main-image?}
       <div class="sqs-block image-block sqs-block-image" data-block-type="5">
         <div class="sqs-block-content">
           <div class="image-block-outer-wrapper">
