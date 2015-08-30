@@ -29,7 +29,7 @@
       summary-block-setting-hide-excerpt
 
       sqs-gallery-design-carousel
-      sqs-gallery-design-carousel-slides-in-view-5
+      sqs-gallery-design-carousel-slides-in-view-2
 
     ">
 
@@ -55,46 +55,50 @@
         <div class="summary-item-list sqs-gallery sqs-gallery-design-carousel" style="width: 628px; transform: translateX(0px);">
 
         <!-- START QUERY HERE -->
+        <squarespace:query collection="home" limit="2" category="perspective">
+            {.repeated section items}
 
+            <div class="summary-item
+              summary-item-record-type-text
+              sqs-gallery-design-carousel-slide
+              summary-item-has-thumbnail
 
-          <div class="summary-item
-            summary-item-record-type-text
-            sqs-gallery-design-carousel-slide
-            summary-item-has-thumbnail
+              summary-item-has-cats
+              summary-item-has-tags
+              summary-item-has-author
+              summary-item-has-comments-enabled
+              positioned sqs-active-slide" data-type="image" style="width: 211px; padding-right: 6px; padding-left: 6px;">
 
-            summary-item-has-cats
-            summary-item-has-tags
-            summary-item-has-author
-            summary-item-has-comments-enabled
-            positioned sqs-active-slide" data-type="image" style="width: 211px; padding-right: 6px; padding-left: 6px;">
+              <!-- Thumbnail -->
+              <a href="/blog/2015/8/28/preschool-and-perspective" class="summary-thumbnail-container sqs-gallery-image-container" data-title="preschool and perspective. " data-description="">
+                <div class="summary-thumbnail img-wrapper" style="overflow: hidden; padding-bottom: 66.6666666666667%;">
 
-            <!-- Thumbnail -->
-            <a href="/blog/2015/8/28/preschool-and-perspective" class="summary-thumbnail-container sqs-gallery-image-container" data-title="preschool and perspective. " data-description="">
-              <div class="summary-thumbnail img-wrapper" style="overflow: hidden; padding-bottom: 66.6666666666667%;">
+                  <!-- Main Image -->
+                  <img data-src="http://static1.squarespace.com/static/5313b7c3e4b08cb68817cf91/5313bd5ee4b06c7ef09c8d67/55df8901e4b05ce5f41dbd3e/1440968298567/" data-image="http://static1.squarespace.com/static/5313b7c3e4b08cb68817cf91/5313bd5ee4b06c7ef09c8d67/55df8901e4b05ce5f41dbd3e/1440968298567/" data-image-dimensions="800x533" data-image-focal-point="0.5,0.5" data-load="false" class="summary-thumbnail-image loaded" alt="preschool and perspective. " src="http://static1.squarespace.com/static/5313b7c3e4b08cb68817cf91/5313bd5ee4b06c7ef09c8d67/55df8901e4b05ce5f41dbd3e/1440968298567/?format=500w" style="top: 0px; left: 0px; width: 200px; height: 133px; position: absolute;" data-image-resolution="500w">
 
-                <!-- Main Image -->
-                <img data-src="http://static1.squarespace.com/static/5313b7c3e4b08cb68817cf91/5313bd5ee4b06c7ef09c8d67/55df8901e4b05ce5f41dbd3e/1440968298567/" data-image="http://static1.squarespace.com/static/5313b7c3e4b08cb68817cf91/5313bd5ee4b06c7ef09c8d67/55df8901e4b05ce5f41dbd3e/1440968298567/" data-image-dimensions="800x533" data-image-focal-point="0.5,0.5" data-load="false" class="summary-thumbnail-image loaded" alt="preschool and perspective. " src="http://static1.squarespace.com/static/5313b7c3e4b08cb68817cf91/5313bd5ee4b06c7ef09c8d67/55df8901e4b05ce5f41dbd3e/1440968298567/?format=500w" style="top: 0px; left: 0px; width: 200px; height: 133px; position: absolute;" data-image-resolution="500w">
+                </div>
+              </a>
 
-              </div>
-            </a>
+              <div class="summary-content sqs-gallery-meta-container">
 
-            <div class="summary-content sqs-gallery-meta-container">
+                <!-- Metadata (Below Content) -->
+                <div class="summary-metadata-container summary-metadata-container--below-content">
 
-              <!-- Metadata (Below Content) -->
-              <div class="summary-metadata-container summary-metadata-container--below-content">
+                  <div class="summary-metadata summary-metadata--primary">
 
-                <div class="summary-metadata summary-metadata--primary">
+                  	<!-- Author -->
+                  	<span class="summary-metadata-item summary-metadata-item--author"><a href="/?author=551c610ce4b0f86de559f9f5#show-archive">Lesley Miller</a></span>
 
-                	<!-- Author -->
-                	<span class="summary-metadata-item summary-metadata-item--author"><a href="/?author=551c610ce4b0f86de559f9f5#show-archive">Lesley Miller</a></span>
+                  </div>
 
                 </div>
 
-              </div>
+              </div> <!-- End .summary-content -->
 
-            </div> <!-- End .summary-content -->
+            </div> <!-- End .summary-item -->
 
-          </div> <!-- End .summary-item -->
+            {.end}
+            </squarespace:query>
 
         </div> <!-- End .summary-item-list -->
 
