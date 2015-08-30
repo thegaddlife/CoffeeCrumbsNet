@@ -1,0 +1,100 @@
+<div class="sqs-block summary-v2-block sqs-block-summary-v2" data-block-json="{&quot;collectionId&quot;:&quot;5313bd5ee4b06c7ef09c8d67&quot;,&quot;design&quot;:&quot;carousel&quot;,&quot;headerText&quot;:&quot;More Perspective&quot;,&quot;textSize&quot;:&quot;small&quot;,&quot;pageSize&quot;:10,&quot;imageAspectRatio&quot;:&quot;1.5&quot;,&quot;columnWidth&quot;:270,&quot;gutter&quot;:60,&quot;listImageSize&quot;:30,&quot;listImageAlignment&quot;:&quot;left&quot;,&quot;slidesPerRow&quot;:5,&quot;textAlignment&quot;:&quot;left&quot;,&quot;showTitle&quot;:true,&quot;showThumbnail&quot;:true,&quot;showExcerpt&quot;:false,&quot;showReadMoreLink&quot;:false,&quot;showPrice&quot;:true,&quot;productQuickViewEnabled&quot;:false,&quot;showPastOrUpcomingEvents&quot;:&quot;Upcoming&quot;,&quot;metadataPosition&quot;:&quot;below-content&quot;,&quot;primaryMetadata&quot;:&quot;author&quot;,&quot;secondaryMetadata&quot;:&quot;none&quot;,&quot;filter&quot;:{&quot;category&quot;:&quot;Perspective&quot;},&quot;autoCrop&quot;:true,&quot;lightbox&quot;:false,&quot;mixedContent&quot;:true,&quot;blockId&quot;:&quot;4c6b3a3869163b787a79&quot;,&quot;hSize&quot;:null,&quot;floatDir&quot;:null}" data-block-type="55">
+
+  <div class="sqs-block-content">
+
+    <div class="
+
+      summary-block-wrapper
+
+      summary-block-collection-type-blog
+
+      summary-block-setting-text-size-small
+      summary-block-setting-text-align-left
+
+      summary-block-setting-design-carousel
+      summary-block-setting-design-list-thumbnail-left
+
+      summary-block-setting-metadata-position-below-content
+      summary-block-setting-primary-metadata-author
+      summary-block-setting-secondary-metadata-none
+
+      summary-block-setting-show-thumbnail
+      summary-block-setting-show-title
+      summary-block-setting-show-price
+      summary-block-setting-hide-excerpt
+
+
+      sqs-gallery-design-carousel
+      sqs-gallery-design-carousel-slides-in-view-5
+
+    ">
+
+      <div class="summary-item-list-container sqs-gallery-container">
+
+        <header class="summary-block-header">
+
+          <!-- Collection Title -->
+          <div class="summary-heading">
+
+              <span class="summary-header-text">More Perspective</span>
+
+          </div>
+
+          <!-- Carousel Nav -->
+          <div class="summary-carousel-pager sqs-gallery-controls">
+            <span class="summary-carousel-pager-next next"></span>
+            <span class="summary-carousel-pager-prev previous sqs-disabled"></span>
+          </div>
+
+        </header>
+
+        <div class="summary-item-list sqs-gallery sqs-gallery-design-carousel" style="width: 628px; transform: translateX(0px);">
+
+          <div class="summary-item
+            summary-item-record-type-text
+            sqs-gallery-design-carousel-slide
+            summary-item-has-thumbnail
+
+            summary-item-has-cats
+            summary-item-has-tags
+            summary-item-has-author
+            summary-item-has-comments-enabled
+            positioned sqs-active-slide" data-type="image" style="width: 211px; padding-right: 6px; padding-left: 6px;">
+
+            <!-- Thumbnail -->
+            <a href="/blog/2015/8/28/preschool-and-perspective" class="summary-thumbnail-container sqs-gallery-image-container" data-title="preschool and perspective. " data-description="">
+              <div class="summary-thumbnail img-wrapper" style="overflow: hidden; padding-bottom: 66.6666666666667%;">
+
+                <!-- Main Image -->
+                <img data-src="http://static1.squarespace.com/static/5313b7c3e4b08cb68817cf91/5313bd5ee4b06c7ef09c8d67/55df8901e4b05ce5f41dbd3e/1440968298567/" data-image="http://static1.squarespace.com/static/5313b7c3e4b08cb68817cf91/5313bd5ee4b06c7ef09c8d67/55df8901e4b05ce5f41dbd3e/1440968298567/" data-image-dimensions="800x533" data-image-focal-point="0.5,0.5" data-load="false" class="summary-thumbnail-image loaded" alt="preschool and perspective. " src="http://static1.squarespace.com/static/5313b7c3e4b08cb68817cf91/5313bd5ee4b06c7ef09c8d67/55df8901e4b05ce5f41dbd3e/1440968298567/?format=500w" style="top: 0px; left: 0px; width: 200px; height: 133px; position: absolute;" data-image-resolution="500w">
+
+              </div>
+            </a>
+
+            <div class="summary-content sqs-gallery-meta-container">
+
+              <!-- Metadata (Below Content) -->
+              <div class="summary-metadata-container summary-metadata-container--below-content">
+
+                <div class="summary-metadata summary-metadata--primary">
+
+                	<!-- Author -->
+                	<span class="summary-metadata-item summary-metadata-item--author"><a href="/?author=551c610ce4b0f86de559f9f5#show-archive">Lesley Miller</a></span>
+
+                </div>
+
+              </div>
+
+            </div> <!-- End .summary-content -->
+
+          </div> <!-- End .summary-item -->
+
+        </div> <!-- End .summary-item-list -->
+
+      </div> <!-- End .summary-item-list-container -->
+
+    </div>
+
+  </div>
+
+</div>
