@@ -40,7 +40,7 @@
           <!-- Collection Title -->
           <div class="summary-heading">
 
-              <span class="summary-header-text">More from Category</span>
+              <span class="summary-header-text">More from {@}</span>
 
           </div>
 
