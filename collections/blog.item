@@ -48,6 +48,9 @@
 
     <!--POST FOOTER-->
 
+    <!--OTHER POSTS BY CATEGORY -->
+    {@|apply other-posts.block}
+
       <footer class="article-meta">
           <div>
 
