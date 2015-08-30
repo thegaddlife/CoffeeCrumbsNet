@@ -133,7 +133,7 @@
                       <div class="summary-metadata summary-metadata--primary">
 
                       	<!-- Author -->
-                      	<span class="summary-metadata-item summary-metadata-item--author"><a href="/?author=551c610ce4b0f86de559f9f5#show-archive">Lesley Miller</a></span>
+                      	<span class="summary-metadata-item summary-metadata-item--author"><a href="/?author={authorId}#show-archive">{author.displayName}</a></span>
 
                       </div>
 
