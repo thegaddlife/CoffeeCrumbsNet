@@ -1,10 +1,26 @@
 {.repeated section items}
 
   <article class="{@|item-classes}" id="article-{id}" data-item-id="{id}">
-    
+
     <div class="content-wrapper">
-  	  
+
       <div class="post{.passthrough?} link-list-item{.end}">
+
+        <!--POST IMAGE -->
+        {.main-image?}
+        <div class="sqs-block image-block sqs-block-image" data-block-type="5">
+          <div class="sqs-block-content">
+            <div class="image-block-outer-wrapper">
+              <div class="intrinsic" style="max-width:800.0px;">
+                <div style="padding-bottom:66.625%;" class="image-block-wrapper has-aspect-ratio" data-description="">
+                  <noscript>&lt;img src="{assetUrl}"  /&gt;</noscript>
+                  <img class="thumb-image loaded" data-src="{assetUrl}" data-image="{assetUrl}" data-image-dimensions="800x533" data-image-focal-point="0.5,0.5" data-load="false" data-image-id="55dfb90ee4b0eeba877176e9" data-type="image" src="{assetUrl}?format=2500w" data-image-resolution="2500w" style="top: -0.0318418560606091%; left: 0%; width: 100%; height: 100.063683712121%; position: absolute;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {.end}
         
         <!--POST HEADER-->
   			<header>
@@ -24,11 +40,11 @@
           </span>
 
   			</header>
-          
+
         <!--POST BODY-->
-        
+
         {.excerpt?}
-        
+
         {.main-image?}
         <div class="excerpt-thumb">
           <div class="intrinsic">
@@ -40,16 +56,16 @@
         {.end}
 
         <div class="body entry-content excerpt-content">{excerpt}<span class="inline-action"><a class="inline-read-more" href="{fullUrl}">Read More</a></span></div>
-        
+
         {.or}
-        
+
         {.section body}<div class="body entry-content">{@}</div>{.end}
-        
+
         {.end}
-        
-        
+
+
         <!--POST FOOTER-->
-        
+
         <footer class="article-meta">
           <div>
 
@@ -68,12 +84,12 @@
               <span class="comments"><a href="{fullUrl}#commenting"><i class="icon-comment"></i>{.section publicCommentCount}{@} Comment{@|pluralize}{.or}Comment{.end}</a></span>
               {.end}
             {.end}
-            
+
             {.section sourceUrl}<span class="source"><span class="delimiter">/</span><a href="{sourceUrl}" target="_blank"><i class="icon-share"></i>Source</a></span>{.end}
-            
+
             {.section categories}<div class="categories"><i class="icon-bookmark"></i>{.repeated section @}<a href="{collection.fullUrl}?category={@|url-encode}" rel="tag">{@}</a>{.alternates with}, {.end}</div>{.end}
             {.section tags}<div class="tags"><i class="icon-tag"></i>{.repeated section @}<a href="{collection.fullUrl}?tag={@|url-encode}" rel="tag">{@}</a>{.alternates with}, {.end}</div>{.end}
-      	
+
             <div class="shareLoveButtons">
               {@|like-button}
               {@|social-button-inline}
@@ -82,21 +98,21 @@
             {.if excerpt}{.or}
               {@|apply author-block.block}
             {.end}
-        
+
             <div class="post-entry-injection">{postItemInjectCode}</div>
-                
+
           </div>
         </footer>
-        
-  	</div> <!-- / post --> 
-  	
+
+  	</div> <!-- / post -->
+
     </div><!-- / content-wrapper -->
   </article>
-  
+
 {.end}
 
 <!--PAGINATION-->
-  
+
 {.section pagination}
 <nav class="page pagination">
   <div class="content-wrapper">
@@ -109,4 +125,3 @@
   </div>
 </nav>
 {.end}
-
