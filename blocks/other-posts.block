@@ -1,6 +1,7 @@
 <!-- in section item scope -->
 
 {.if categories}
+{.section categories.0}
 
 <div class="sqs-block summary-v2-block sqs-block-summary-v2" data-block-json="{&quot;collectionId&quot;:&quot;5313bd5ee4b06c7ef09c8d67&quot;,&quot;design&quot;:&quot;carousel&quot;,&quot;headerText&quot;:&quot;More Perspective&quot;,&quot;textSize&quot;:&quot;small&quot;,&quot;pageSize&quot;:10,&quot;imageAspectRatio&quot;:&quot;1.5&quot;,&quot;columnWidth&quot;:270,&quot;gutter&quot;:60,&quot;listImageSize&quot;:30,&quot;listImageAlignment&quot;:&quot;left&quot;,&quot;slidesPerRow&quot;:5,&quot;textAlignment&quot;:&quot;left&quot;,&quot;showTitle&quot;:true,&quot;showThumbnail&quot;:true,&quot;showExcerpt&quot;:false,&quot;showReadMoreLink&quot;:false,&quot;showPrice&quot;:true,&quot;productQuickViewEnabled&quot;:false,&quot;showPastOrUpcomingEvents&quot;:&quot;Upcoming&quot;,&quot;metadataPosition&quot;:&quot;below-content&quot;,&quot;primaryMetadata&quot;:&quot;author&quot;,&quot;secondaryMetadata&quot;:&quot;none&quot;,&quot;filter&quot;:{&quot;category&quot;:&quot;Perspective&quot;},&quot;autoCrop&quot;:true,&quot;lightbox&quot;:false,&quot;mixedContent&quot;:true,&quot;blockId&quot;:&quot;4c6b3a3869163b787a79&quot;,&quot;hSize&quot;:null,&quot;floatDir&quot;:null}" data-block-type="55">
 
@@ -105,4 +106,5 @@
 
 </div>
 
+{.end}
 {.end}
