@@ -97,7 +97,7 @@
             <div class="summary-item-list sqs-gallery sqs-gallery-design-carousel" style="width: 628px; transform: translateX(0px);">
 
             <!-- START QUERY HERE -->
-            <squarespace:query collection="blog" limit="5" category="perspective">
+            <squarespace:query collection="blog" limit="5">
                 {.repeated section items}
 
                 <div class="summary-item
