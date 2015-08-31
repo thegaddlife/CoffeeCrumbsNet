@@ -37,7 +37,7 @@
           </span>
           <span class="article-byline">
             {.section location}<span class="location">{.if addressTitle}<a href="//maps.google.com/maps?q={mapLat},{mapLng}" target="_blank" title="View map in new window">{addressTitle}</a><span class="delimiter">/</span>{.end}</span>{.end}
-            {.section author}<span class="author"><a id="essay-author-link" data-author-id="{id}" data-author-first="{firstName}" data-author-last="{lastName}" href="{collection.fullUrl}?author={id}" rel="author">{displayName}</a></span>{.end}
+            {.section author}<span class="author"><a id="essay-author-link" data-author-id="{id}" data-author-first="{firstName}" data-author-last="{lastName}" href="{websiteUrl}" rel="author">{displayName}</a></span>{.end}
           </span>
 
         </header>
