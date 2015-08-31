@@ -53,7 +53,7 @@
     {.if categories}
         {.section categories.0}
 
-                <squarespace:query collection="{collection.urlId}" limit="3" category="{@}">
+                <squarespace:query collection="{collection.urlId}" limit="5" category="{@}">
                     {.if items}
                     <!-- query has items -->
 
@@ -95,7 +95,7 @@
                               <!-- Collection Title -->
                               <div class="summary-heading">
 
-                                  <span class="summary-header-text">More from {@}</span>
+                                  <span class="summary-header-text">More from {title}</span>
 
                               </div>
 
