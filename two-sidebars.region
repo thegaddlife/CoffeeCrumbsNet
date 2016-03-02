@@ -36,6 +36,12 @@
 						</div>
 					</div> <!-- content-wrapper -->
 
+          <div id="sidebar-two-wrapper" class="vertical-navigation-bar-wrapper">
+						<div id="sidebar-two" class="vertical-navigation-bar">
+							<squarespace:block-field id="sidebar-two-blocks" description="The block field for sidebar 2" label="Sidebar Two Content" />
+						</div>
+					</div><!-- sidebar-two-wrapper -->
+
 					<div id="sidebar-one-wrapper" class="vertical-navigation-bar-wrapper">
 						<div id="sidebar-one" class="vertical-navigation-bar">
 							<squarespace:navigation navigationId="mainNav" template="main-navigation" />
@@ -48,12 +54,6 @@
 							<squarespace:block-field id="sidebar-one-blocks" description="The block field for sidebar 1" label="Sidebar One Content" />
 						</div>
 					</div><!-- sidebar-one-wrapper -->
-
-					<div id="sidebar-two-wrapper" class="vertical-navigation-bar-wrapper">
-						<div id="sidebar-two" class="vertical-navigation-bar">
-							<squarespace:block-field id="sidebar-two-blocks" description="The block field for sidebar 2" label="Sidebar Two Content" />
-						</div>
-					</div><!-- sidebar-two-wrapper -->
 
 				<div class="clearer" id="body-clearer"></div>
 
