@@ -4,6 +4,7 @@
     
     .rp-related-posts.enabled {
         display: block;
+        margin-top: 45px;
     }
     
     .collection-type-blog article .post .article-meta .rp-related-posts a {
