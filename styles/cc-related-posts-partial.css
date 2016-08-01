@@ -11,8 +11,8 @@
     }
     
     .collection-type-blog article .post .article-meta .rp-related-posts .summary-metadata-item--author a {
-        color: #b3996f;
-        text-decoration: underline;
+        color: #b3996f !important;
+        text-decoration: underline !important;
     }
     
     .collection-type-blog article .post footer .rp-related-posts .summary-heading {
