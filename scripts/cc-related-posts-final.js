@@ -132,8 +132,8 @@ rpPlugin = {
                 pageCategories.push(cat);
             });
             // add authors
-            $(this).find("header .article-byline .author a").first().data("author-id").map(function() {
-                pageAuthors.push(this.value);
+            $(this).find("header .article-byline .author a").map(function() {
+                pageAuthors.push(this.data("author-id"));
             });
         });
 
