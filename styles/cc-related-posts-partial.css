@@ -10,7 +10,7 @@
         display: block;
     }
     
-    .collection-type-blog article .post .article-meta .rp-related-posts a.summary-metadata-item--author {
+    .collection-type-blog article .post .article-meta .rp-related-posts .summary-metadata-item--author a {
         color: #b3996f;
         text-decoration: underline;
     }
