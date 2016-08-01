@@ -133,7 +133,7 @@ rpPlugin = {
             });
             // add authors
             $(this).find("header .article-byline .author a").map(function() {
-                pageAuthors.push(this.data("author-id"));
+                pageAuthors.push($(this).data("author-id"));
             });
         });
 
