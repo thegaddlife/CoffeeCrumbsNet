@@ -229,7 +229,6 @@ rpPlugin = {
             var $currentArticle = $(this);
             var currentPostId = $currentArticle.data("item-id");
             var currentAuthorId = $("header .article-byline .author a", $currentArticle).first().data("author-id");
-            debugger;
 
             var currentPost = $.map(that.Posts, function(item) {
                 return item.id === currentPostId ? item : null;
@@ -265,10 +264,10 @@ rpPlugin = {
                     post.relativeScore =
                         0 +
                         (post.starred ? that.Settings.Scores.Sticky : 0) +
-                        (post.authorId === currentAuthorId ? that.Settings.Scores.Author : 0) +
+                        (post.authorId !== that.Settings.GuestPosterId && post.authorId === currentAuthorId ? that.Settings.Scores.Author : 0) +
                         (post.categories.includes(that.BestOfCat) ? that.Settings.Scores.BestOf : 0) +
                         (matchingCats * that.Settings.Scores.Category) +
-                        (post.authorId !== that.GuestPosterId ? that.Settings.Scores.TeamWriter : 0);
+                        (post.authorId !== that.Settings.GuestPosterId ? that.Settings.Scores.TeamWriter : 0);
 
                     // add a property to randomize the sorting between posts with same score
                     post.randomSeed = Math.random();
