@@ -32,10 +32,10 @@
 
         <div class="summary-item-list sqs-gallery sqs-gallery-design-autogrid" style="margin-bottom: -4.16141%;">
         
-            {@|apply related-post-partial.block}
-            {@|apply related-post-partial.block}
-            {@|apply related-post-partial.block}
-            {@|apply related-post-partial.block}         
+            {@|apply cc-related-post-partial.block}
+            {@|apply cc-related-post-partial.block}
+            {@|apply cc-related-post-partial.block}
+            {@|apply cc-related-post-partial.block}         
 
         </div>
         <!-- End .summary-item-list -->
