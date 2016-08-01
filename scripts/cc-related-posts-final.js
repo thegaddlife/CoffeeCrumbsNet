@@ -30,6 +30,7 @@ rpPluginSettings = {
     GuestPosterId: "53f58994e4b0a4359f9f0e7b",
     BestOfCat: "Best of C+C",
     MaxAuthorPosts: 2,
+    ExemptAuthorId: "563ee68ee4b07f78f2d7fd5b",
     MaxPostDisplaysPerPage: 2,
 
     EnableCookie: function(name) {
@@ -131,7 +132,7 @@ rpPlugin = {
                 pageCategories.push(cat);
             });
             // add authors
-            $(this).find("footer .author-block .author-id-hidden").map(function() {
+            $(this).find("header .article-byline .author a").first().data("author-id").map(function() {
                 pageAuthors.push(this.value);
             });
         });
@@ -227,7 +228,9 @@ rpPlugin = {
 
             var $currentArticle = $(this);
             var currentPostId = $currentArticle.data("item-id");
-            var currentAuthorId = $(".author-id-hidden", $currentArticle).first().val();
+            var currentAuthorId = $("header .article-byline .author a", $currentArticle).first().data("author-id");
+            debugger;
+
             var currentPost = $.map(that.Posts, function(item) {
                 return item.id === currentPostId ? item : null;
             })[0];
@@ -305,14 +308,16 @@ rpPlugin = {
                 }
 
                 // author check
-                var matchingAuthorPosts =
-                    _.filter(internalPosted, function(internalPostedEssay) {
-                        return internalPostedEssay.authorId === post.authorId;
-                    });
+                if (post.authorId !== that.Settings.ExemptAuthorId) {
+                    var matchingAuthorPosts =
+                        _.filter(internalPosted, function(internalPostedEssay) {
+                            return internalPostedEssay.authorId === post.authorId;
+                        });
 
-                if (matchingAuthorPosts && matchingAuthorPosts.length >= that.Settings.MaxAuthorPosts) {
-                    console.log("Author " + post.author.displayName + " already used max times per block");
-                    continue;
+                    if (matchingAuthorPosts && matchingAuthorPosts.length >= that.Settings.MaxAuthorPosts) {
+                        console.log("Author " + post.author.displayName + " already used max times per block");
+                        continue;
+                    }
                 }
 
                 internalPosted.push(post); // mark it now so we dont end up helplessly looping on errors
