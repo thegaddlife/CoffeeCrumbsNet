@@ -83,6 +83,8 @@
               {@|apply author-block.block}
             {.end}
 
+            {@|apply cc-related-posts-partial.block}
+
             <div class="post-entry-injection">{postItemInjectCode}</div>
 
           </div>
