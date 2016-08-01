@@ -10,6 +10,11 @@
         display: block;
     }
     
+    .collection-type-blog article .post .article-meta .rp-related-posts a.summary-metadata-item--author {
+        color: #b3996f;
+        text-decoration: underline;
+    }
+    
     .collection-type-blog article .post footer .rp-related-posts .summary-heading {
         display: block;
     }
