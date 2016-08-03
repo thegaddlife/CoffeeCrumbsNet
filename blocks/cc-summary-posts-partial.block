@@ -1,5 +1,4 @@
 
-  <script>var posts = [];</script>
   <div 
     class="sqs-block summary-v2-block sqs-block-summary-v2 cc-summary-block" 
     data-block-json="{&quot;hSize&quot;:null,&quot;floatDir&quot;:null,&quot;collectionId&quot;:&quot;5313bd5ee4b06c7ef09c8d67&quot;,&quot;design&quot;:&quot;autogrid&quot;,&quot;headerText&quot;:&quot;Featured&quot;,&quot;textSize&quot;:&quot;medium&quot;,&quot;pageSize&quot;:99,&quot;imageAspectRatio&quot;:&quot;1.3333333333333333&quot;,&quot;columnWidth&quot;:250,&quot;gutter&quot;:60,&quot;listImageSize&quot;:99,&quot;listImageAlignment&quot;:&quot;left&quot;,&quot;slidesPerRow&quot;:3,&quot;textAlignment&quot;:&quot;left&quot;,&quot;showTitle&quot;:true,&quot;showThumbnail&quot;:true,&quot;showExcerpt&quot;:false,&quot;showReadMoreLink&quot;:false,&quot;showPrice&quot;:true,&quot;productQuickViewEnabled&quot;:false,&quot;showPastOrUpcomingEvents&quot;:&quot;Upcoming&quot;,&quot;metadataPosition&quot;:&quot;below-content&quot;,&quot;primaryMetadata&quot;:&quot;date&quot;,&quot;secondaryMetadata&quot;:&quot;cats&quot;,&quot;filter&quot;:{&quot;tag&quot;:&quot;{customContent.queryTag}&quot;},&quot;autoCrop&quot;:true,&quot;lightbox&quot;:false,&quot;mixedContent&quot;:true,&quot;blockId&quot;:&quot;153949b11af6f47a6646&quot;}" data-block-type="55">
@@ -32,80 +31,8 @@
           </header>
 
           <div class="summary-item-list sqs-gallery sqs-gallery-design-autogrid" style="margin-bottom: -7.5662%;">
-
-            <!--
-            <div class="
-                summary-item
-                summary-item-record-type-text
-                sqs-gallery-design-autogrid-slide
-                summary-item-has-thumbnail
-                summary-item-has-cats
-                summary-item-has-tags
-                summary-item-has-author
-                summary-item-has-comments-enabled
-                positioned sqs-active-slide" data-type="image" 
-                style="width: 28.2892%; margin-bottom: 7.5662%; margin-right: 7.5662%; clear: left;">
-
-                <a href="{fullUrl}" class="summary-thumbnail-container sqs-gallery-image-container" data-title="{title}" data-description="">
-                    <div class="summary-thumbnail img-wrapper" style="overflow: hidden; padding-bottom: 75%;">
-
-                        <img 
-                            data-load="false" 
-                            class="summary-thumbnail-image loaded" style="top: 0px; left: -14px; width: 252px; height: 168px; position: absolute;" 
-                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" 
-                            data-image-resolution="750w">
-
-                    </div>
-                </a>
-
-                <div class="summary-content sqs-gallery-meta-container">
-
-                    <!-- Title -->
-                    <div class="summary-title">
-                        <a href="{fullUrl}" class="summary-title-link">{title}</a></div>
-
-                    <!-- Metadata (Below Content) -->
-                    <div class="summary-metadata-container summary-metadata-container--below-content">
-                        <div class="summary-metadata summary-metadata--primary">
-
-                            <!-- Timestamp -->
-                            <time class="summary-metadata-item summary-metadata-item--date" datetime="{addedOn|date %F}">{addedOn|date %B %d, %Y}</time>
-
-                        </div>
-                        <div class="summary-metadata summary-metadata--secondary">
-
-                            <!-- Author -->
-                            <span class="summary-metadata-item summary-metadata-item--author"><a href="{author.websiteUrl}">{author.displayName}</a></span>
-
-                        </div>
-                    </div>
-                    
-                </div>
-                <!-- End .summary-content -->
-
-            </div>
-            -->
-            <!-- End .summary-item -->
             
-            {.repeated section items}
-
-                <script>
-                    posts.push({ 
-                        'id' : '{id}',
-                        'title' : '{title}',
-                        'author' : { 
-                            'id' : '{author.id}',
-                            'name' : '{author.displayName}',
-                            'url' : '{author.url}'
-                        }
-                    });
-                </script>
-                {.section body}<input type="text" value="{@|truncate 36}" />{.end}
-
-            {.end}
             
-            <script>alert(posts.length);</script>
-
           </div>
           <!-- End .summary-item-list -->
 
@@ -123,3 +50,20 @@
     </div>
 
   </div>
+
+
+<script>var posts = [];</script>
+{.repeated section items}
+{.section body}<input type="text" value="{@|truncate 2}" />{.end}
+<script>
+    posts.push({ 
+        'id' : '{id}',
+        'title' : '{title}',
+        'author' : { 
+        'id' : '{author.id}',
+        'name' : '{author.displayName}',
+        'url' : '{author.url}'
+        }
+    });
+</script>
+{.end}
