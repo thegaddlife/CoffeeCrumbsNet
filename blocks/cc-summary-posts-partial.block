@@ -48,8 +48,11 @@
             <a href="{fullUrl}" class="summary-thumbnail-container sqs-gallery-image-container" data-title="{title}" data-description="">
                 <div class="summary-thumbnail img-wrapper" style="overflow: hidden; padding-bottom: 75%;">
 
-                    <!-- First Image in Post -->
-                    <img data-src="http://static1.squarespace.com/static/5313b7c3e4b08cb68817cf91/t/5783e736414fb5a60b0557c1/1468262623781/" data-image-dimensions="800x535" data-load="false" class="summary-thumbnail-image loaded" style="top: 0px; left: -14px; width: 252px; height: 168px; position: absolute;" src="http://static1.squarespace.com/static/5313b7c3e4b08cb68817cf91/t/5783e736414fb5a60b0557c1/1468262623781/?format=750w" data-image-resolution="750w">
+                    <img 
+                        data-load="false" 
+                        class="summary-thumbnail-image loaded" style="top: 0px; left: -14px; width: 252px; height: 168px; position: absolute;" 
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" 
+                        data-image-resolution="750w">
 
                 </div>
             </a>
