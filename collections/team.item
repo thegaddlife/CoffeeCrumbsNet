@@ -46,6 +46,16 @@
             <div class="sqs-block-content sqs-intrinsic" style="padding-bottom: 2.77427%;">&nbsp;</div>
           </div>
 
+          <squarespace:query collection="blog" tag="{title}" limit="9">
+            
+            <ol>
+              {.repeated section items}
+                <li><a href="{fullUrl}">{title}</a></li>
+              {.end}
+            </ol>
+            
+          </squarespace:query>
+
           {.end}
 
         </div>
@@ -53,15 +63,7 @@
     </div>
   </div>
 
-  <squarespace:query collection="blog" limit="9">
-    
-    <ol>
-      {.repeated section items}
-        <li><a href="{fullUrl}">{title}</a></li>
-      {.end}
-    </ol>
-    
-  </squarespace:query>
+  
 
   <div id="page-body-footer" class="extra-wrapper">
     <div class="sqs-layout sqs-grid-12 columns-12 empty" data-layout-label="The Team Footer Content" data-type="block-field">
