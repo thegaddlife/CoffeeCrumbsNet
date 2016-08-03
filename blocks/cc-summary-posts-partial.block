@@ -58,7 +58,7 @@
 <script>
     posts.push({ 
         'id' : '{id}',
-        'title' : '{title}',
+        'title' : '/{title}',
         'author' : { 
         'id' : '{author.id}',
         'name' : '{author.displayName}',
