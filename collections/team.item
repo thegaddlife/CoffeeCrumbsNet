@@ -46,7 +46,7 @@
             <div class="sqs-block-content sqs-intrinsic" style="padding-bottom: 2.77427%;">&nbsp;</div>
           </div>
 
-          <squarespace:query collection="blog" tag="{title}" limit="9">
+          <squarespace:query collection="blog" tag="ashlee+gadd" limit="9">
             
             <ol>
               {.repeated section items}
