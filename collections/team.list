@@ -1,0 +1,65 @@
+
+  <div class="main-content" data-content-field="main-content">
+    <div class="sqs-layout sqs-grid-12 columns-12">
+
+      <div class="row sqs-row">
+        <div class="col sqs-col-12 span-12">
+
+          {.repeated section items}
+
+          <div class="row sqs-row">
+            <div class="col sqs-col-5 span-5">
+              <div class="sqs-block image-block sqs-block-image" data-block-type="5">
+                <div class="sqs-block-content">
+                  <div class="image-block-outer-wrapper layout-caption-hidden ">
+
+                    <div class="intrinsic" style="max-width:250.0px;">
+
+                      <a href="/the-team/ashlee-gadd">
+
+                        <div style="padding-bottom:100.0%;" class="image-block-wrapper has-aspect-ratio" data-description="">
+                          <noscript>&lt;img src="http://static1.squarespace.com/static/5313b7c3e4b08cb68817cf91/t/563ee017e4b0b53551a3b4e5/1468994398395/"  /&gt;</noscript>
+                          <img class="thumb-image loaded" data-src="http://static1.squarespace.com/static/5313b7c3e4b08cb68817cf91/t/563ee017e4b0b53551a3b4e5/1468994398395/" data-image="http://static1.squarespace.com/static/5313b7c3e4b08cb68817cf91/t/563ee017e4b0b53551a3b4e5/1468994398395/"
+                            data-image-dimensions="250x250" data-image-focal-point="0.5,0.5" data-load="false" data-type="image" src="http://static1.squarespace.com/static/5313b7c3e4b08cb68817cf91/t/563ee017e4b0b53551a3b4e5/1468994398395/?format=500w" style="top: 0%; left: 0%; width: 100%; height: 100%; position: absolute;"
+                            data-image-resolution="500w" />
+                        </div>
+
+                      </a>
+
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="col sqs-col-7 span-7">
+              <div class="sqs-block html-block sqs-block-html" data-block-type="2">
+                <div class="sqs-block-content">
+                  <h3 style="margin-left:0px; margin-right:0px"><br><strong>Ashlee Gadd |&nbsp;Founder + Writer</strong></h3>
+                  <p style="margin-left:0px; margin-right:0px">Ashlee Gadd is a wife, mother, writer and photographer from Sacramento, California. She blogs at <a href="http://wheremyheartresides.com/">Where My Heart Resides</a>, where she writes about everything from marriage and motherhood to
+                    faith and friendship, with a focus on embracing life as a twenty-something. Ashlee loves sunshine, Jesus, and movie theater popcorn.</p>
+                  <p style="margin-left:0px; margin-right:0px"><strong><a href="/the-team/ashlee-gadd">C+C Essays</a></strong>&nbsp;// <a href="/podcast">Podcast</a> //&nbsp;<a target="_blank" href="http://wheremyheartresides.com/">Blog</a>&nbsp;//&nbsp;<a target="_blank" href="https://twitter.com/ashleegadd">Twitter</a>&nbsp;//&nbsp;
+                    <a target="_blank" href="http://instagram.com/ashleegadd">Instagram</a>&nbsp;//&nbsp;<a target="_blank" href="https://www.facebook.com/ashleegaddcreative">Facebook</a>&nbsp;//&nbsp;<a target="_blank" href="http://www.pinterest.com/ashlee_gadd/">Pinterest</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sqs-block spacer-block sqs-block-spacer" data-aspect-ratio="2.7742749054224465" data-block-type="21">
+            <div class="sqs-block-content sqs-intrinsic" style="padding-bottom: 2.77427%;">&nbsp;</div>
+          </div>
+
+          {.end}
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="page-body-footer" class="extra-wrapper">
+    <div class="sqs-layout sqs-grid-12 columns-12 empty" data-layout-label="The Team Footer Content" data-type="block-field">
+      <div class="row sqs-row">
+        <div class="col sqs-col-12 span-12"></div>
+      </div>
+    </div>
+  </div>
