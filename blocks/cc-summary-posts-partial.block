@@ -57,7 +57,7 @@
 
                 </div>
             </a>
-            {.section body}<input class="hidden-post-body" type="hidden" value="{@}" />{.end}
+            <input class="hidden-post-body" type="hidden" value="test" />
 
             <div class="summary-content sqs-gallery-meta-container">
 
