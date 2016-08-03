@@ -89,7 +89,7 @@
 
             <script>
                 debugger;
-                posts.push({ id = {{id}} });
+                posts.push({ id = '{id}' });
             </script>
 
             {.end}
