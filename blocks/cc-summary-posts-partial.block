@@ -58,12 +58,6 @@
     posts.push({ 
         'id' : '{id}',
         'title' : {title|json},
-        'title1' : '{title|json}',
-        'title2' : '{title|safe}',
-        'title3' : '{title|smartypants}',
-        'title4' : '{title|html}',
-        'title5' : '{title|htmltag}',
-
         'author' : { 
         'id' : '{author.id}',
         'name' : '{author.displayName|json}',
