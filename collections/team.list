@@ -15,29 +15,16 @@
 
                     <div class="intrinsic" style="max-width:250.0px;">
 
-                      {.main-image?}
-                      <div class="excerpt-thumb">
-                        <div class="intrinsic">
-                          <div class="content">
-                            <a href="{fullUrl}" class="excerpt-image content-fill"><img {@|image-meta} /></a>
-                          </div>
-                        </div>
-                      </div>
-                      {.end}
-
-
-                      <!--
-                      <a href="/the-team/ashlee-gadd">
+                      <a href="{fullUrl}">
 
                         <div style="padding-bottom:100.0%;" class="image-block-wrapper has-aspect-ratio" data-description="">
-                          <noscript>&lt;img src="http://static1.squarespace.com/static/5313b7c3e4b08cb68817cf91/t/563ee017e4b0b53551a3b4e5/1468994398395/"  /&gt;</noscript>
-                          <img class="thumb-image loaded" data-src="http://static1.squarespace.com/static/5313b7c3e4b08cb68817cf91/t/563ee017e4b0b53551a3b4e5/1468994398395/" data-image="http://static1.squarespace.com/static/5313b7c3e4b08cb68817cf91/t/563ee017e4b0b53551a3b4e5/1468994398395/"
-                            data-image-dimensions="250x250" data-image-focal-point="0.5,0.5" data-load="false" data-type="image" src="http://static1.squarespace.com/static/5313b7c3e4b08cb68817cf91/t/563ee017e4b0b53551a3b4e5/1468994398395/?format=500w" style="top: 0%; left: 0%; width: 100%; height: 100%; position: absolute;"
+                          <noscript>&lt;img src="{assetUrl}"  /&gt;</noscript>
+                          <img class="thumb-image loaded" data-src="{assetUrl}" data-image="{assetUrl}"
+                            data-image-dimensions="250x250" data-image-focal-point="0.5,0.5" data-load="false" data-type="image" src="{assetUrl}?format=500w" style="top: 0%; left: 0%; width: 100%; height: 100%; position: absolute;"
                             data-image-resolution="500w" />
                         </div>
 
                       </a>
-                      -->
 
                     </div>
 
