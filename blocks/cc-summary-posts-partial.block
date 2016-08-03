@@ -62,7 +62,7 @@
         'id' : '{author.id}',
         'name' : '{author.displayName|json}',
         'url' : '{author.url}',
-        'body' : {body|json}'
+        'body' : '{body|json|truncate 50}'
         }
     });
 </script>
