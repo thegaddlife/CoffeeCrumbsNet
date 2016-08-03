@@ -123,6 +123,12 @@
                                   <time class="summary-metadata-item summary-metadata-item--date" datetime="{addedOn|date %F}">{addedOn|date %B %d, %Y}</time>
 
                               </div>
+                              <div class="summary-metadata summary-metadata--secondary">
+
+                                  <!-- Author -->
+                                  <span class="summary-metadata-item summary-metadata-item--author"><a href="{author.websiteUrl}">{author.displayName}</a></span>
+
+                              </div>
                           </div>
                           
                       </div>
