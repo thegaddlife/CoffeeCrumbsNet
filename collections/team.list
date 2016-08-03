@@ -36,11 +36,8 @@
             <div class="col sqs-col-7 span-7">
               <div class="sqs-block html-block sqs-block-html" data-block-type="2">
                 <div class="sqs-block-content">
-                  <h3 style="margin-left:0px; margin-right:0px"><br><strong>Ashlee Gadd |&nbsp;Founder + Writer</strong></h3>
-                  <p style="margin-left:0px; margin-right:0px">Ashlee Gadd is a wife, mother, writer and photographer from Sacramento, California. She blogs at <a href="http://wheremyheartresides.com/">Where My Heart Resides</a>, where she writes about everything from marriage and motherhood to
-                    faith and friendship, with a focus on embracing life as a twenty-something. Ashlee loves sunshine, Jesus, and movie theater popcorn.</p>
-                  <p style="margin-left:0px; margin-right:0px"><strong><a href="/the-team/ashlee-gadd">C+C Essays</a></strong>&nbsp;// <a href="/podcast">Podcast</a> //&nbsp;<a target="_blank" href="http://wheremyheartresides.com/">Blog</a>&nbsp;//&nbsp;<a target="_blank" href="https://twitter.com/ashleegadd">Twitter</a>&nbsp;//&nbsp;
-                    <a target="_blank" href="http://instagram.com/ashleegadd">Instagram</a>&nbsp;//&nbsp;<a target="_blank" href="https://www.facebook.com/ashleegaddcreative">Facebook</a>&nbsp;//&nbsp;<a target="_blank" href="http://www.pinterest.com/ashlee_gadd/">Pinterest</a></p>
+                  <h3 style="margin-left:0px; margin-right:0px"><br><strong>{title}&nbsp;|&nbsp;{customContent.teamTitle}</strong></h3>
+                  {.section body}{@}{.end}  
                 </div>
               </div>
             </div>
