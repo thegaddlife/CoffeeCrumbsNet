@@ -32,7 +32,7 @@
 
         <div class="summary-item-list sqs-gallery sqs-gallery-design-autogrid" style="margin-bottom: -4.16141%;">
             {.repeated section items}
-                {@|apply cc-summary-post-partial.block}
+                {title}
             {.end}    
         </div>
         <!-- End .summary-item-list -->
