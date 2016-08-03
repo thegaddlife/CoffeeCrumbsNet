@@ -52,9 +52,9 @@
   </div>
 
 
-<script>var posts = [];</script>
+<script type="text/javscript">
+var posts = [];
 {.repeated section items}
-<script>
     posts.push({ 
         'id' : '{id}',
         'title' : {title|json},
@@ -62,8 +62,8 @@
         'id' : '{author.id}',
         'name' : '{author.displayName|json}',
         'url' : '{author.url}',
-        'body' : '{body|json|truncate 50}'
+        'body' : '{body|json|truncate 150}'
         }
     });
-</script>
 {.end}
+</script>
