@@ -1,8 +1,7 @@
 
   <div 
     class="sqs-block summary-v2-block sqs-block-summary-v2 cc-summary-block" 
-    data-block-json="{&quot;hSize&quot;:null,&quot;floatDir&quot;:null,&quot;collectionId&quot;:&quot;5313bd5ee4b06c7ef09c8d67&quot;,&quot;design&quot;:&quot;autogrid&quot;,&quot;headerText&quot;:&quot;Featured&quot;,&quot;textSize&quot;:&quot;small&quot;,&quot;pageSize&quot;:4,&quot;imageAspectRatio&quot;:&quot;1.3333333333333333&quot;,&quot;columnWidth&quot;:180,&quot;gutter&quot;:33,&quot;listImageSize&quot;:30,&quot;listImageAlignment&quot;:&quot;left&quot;,&quot;slidesPerRow&quot;:3,&quot;textAlignment&quot;:&quot;left&quot;,&quot;showTitle&quot;:true,&quot;showThumbnail&quot;:true,&quot;showExcerpt&quot;:false,&quot;showReadMoreLink&quot;:false,&quot;showPrice&quot;:true,&quot;productQuickViewEnabled&quot;:false,&quot;showPastOrUpcomingEvents&quot;:&quot;Upcoming&quot;,&quot;metadataPosition&quot;:&quot;below-content&quot;,&quot;primaryMetadata&quot;:&quot;date&quot;,&quot;secondaryMetadata&quot;:&quot;author&quot;,&quot;filter&quot;:{&quot;category&quot;:&quot;&quot;},&quot;autoCrop&quot;:true,&quot;lightbox&quot;:false,&quot;mixedContent&quot;:true,&quot;blockId&quot;:&quot;ea933ea7df27eb63006e&quot;}"
-    data-block-type="55">
+    data-block-json="{&quot;hSize&quot;:null,&quot;floatDir&quot;:null,&quot;collectionId&quot;:&quot;5313bd5ee4b06c7ef09c8d67&quot;,&quot;design&quot;:&quot;autogrid&quot;,&quot;headerText&quot;:&quot;Featured&quot;,&quot;textSize&quot;:&quot;medium&quot;,&quot;pageSize&quot;:99,&quot;imageAspectRatio&quot;:&quot;1.3333333333333333&quot;,&quot;columnWidth&quot;:250,&quot;gutter&quot;:60,&quot;listImageSize&quot;:99,&quot;listImageAlignment&quot;:&quot;left&quot;,&quot;slidesPerRow&quot;:3,&quot;textAlignment&quot;:&quot;left&quot;,&quot;showTitle&quot;:true,&quot;showThumbnail&quot;:true,&quot;showExcerpt&quot;:false,&quot;showReadMoreLink&quot;:false,&quot;showPrice&quot;:true,&quot;productQuickViewEnabled&quot;:false,&quot;showPastOrUpcomingEvents&quot;:&quot;Upcoming&quot;,&quot;metadataPosition&quot;:&quot;below-content&quot;,&quot;primaryMetadata&quot;:&quot;date&quot;,&quot;secondaryMetadata&quot;:&quot;cats&quot;,&quot;filter&quot;:{&quot;tag&quot;:&quot;{customContent.queryTag}&quot;},&quot;autoCrop&quot;:true,&quot;lightbox&quot;:false,&quot;mixedContent&quot;:true,&quot;blockId&quot;:&quot;153949b11af6f47a6646&quot;}" data-block-type="55">
 
     <div class="sqs-block-content">
         
@@ -31,7 +30,7 @@
               </div>
           </header>
 
-          <div class="summary-item-list sqs-gallery sqs-gallery-design-autogrid" style="margin-bottom: -4.16141%;">
+          <div class="summary-item-list sqs-gallery sqs-gallery-design-autogrid" style="margin-bottom: -7.5662%;">
             
             {.repeated section items}
 
@@ -44,19 +43,14 @@
                 summary-item-has-tags
                 summary-item-has-author
                 summary-item-has-comments-enabled
-                positioned sqs-active-slide" data-type="image" style="width: 21.8789%; margin-bottom: 4.16141%; margin-right: 4.16141%; clear: left;">
+                positioned sqs-active-slide" data-type="image" style="width: 28.2892%; margin-bottom: 7.5662%; margin-right: 7.5662%; clear: left;">
 
-            <!-- Thumbnail -->
-            <a href="#" class="summary-thumbnail-container sqs-gallery-image-container" data-description="">
+            <a href="{fullUrl}" class="summary-thumbnail-container sqs-gallery-image-container" data-title="{title}" data-description="">
                 <div class="summary-thumbnail img-wrapper" style="overflow: hidden; padding-bottom: 75%;">
 
                     <!-- First Image in Post -->
-                    <img 
-                        data-load="false" 
-                        class="summary-thumbnail-image loaded" 
-                        style="top: 0px; left: -6px; width: 187px; height: 130px; position: absolute;"
-                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" 
-                        data-image-resolution="500w" />
+                    <img data-src="http://static1.squarespace.com/static/5313b7c3e4b08cb68817cf91/t/5783e736414fb5a60b0557c1/1468262623781/" data-image-dimensions="800x535" data-load="false" class="summary-thumbnail-image loaded" style="top: 0px; left: -14px; width: 252px; height: 168px; position: absolute;" src="http://static1.squarespace.com/static/5313b7c3e4b08cb68817cf91/t/5783e736414fb5a60b0557c1/1468262623781/?format=750w" data-image-resolution="750w">
+
                 </div>
             </a>
 
