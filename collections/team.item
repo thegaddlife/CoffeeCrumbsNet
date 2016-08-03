@@ -49,7 +49,7 @@
           <squarespace:query collection="blog" tag="{customContent.queryTag}" limit="99">
 
             <div 
-              class="sqs-block summary-v2-block sqs-block-summary-v2 rp-related-posts" 
+              class="sqs-block summary-v2-block sqs-block-summary-v2 cc-summary-block" 
               data-block-json="{&quot;hSize&quot;:null,&quot;floatDir&quot;:null,&quot;collectionId&quot;:&quot;5313bd5ee4b06c7ef09c8d67&quot;,&quot;design&quot;:&quot;autogrid&quot;,&quot;headerText&quot;:&quot;Featured&quot;,&quot;textSize&quot;:&quot;small&quot;,&quot;pageSize&quot;:4,&quot;imageAspectRatio&quot;:&quot;1.3333333333333333&quot;,&quot;columnWidth&quot;:180,&quot;gutter&quot;:33,&quot;listImageSize&quot;:30,&quot;listImageAlignment&quot;:&quot;left&quot;,&quot;slidesPerRow&quot;:3,&quot;textAlignment&quot;:&quot;left&quot;,&quot;showTitle&quot;:true,&quot;showThumbnail&quot;:true,&quot;showExcerpt&quot;:false,&quot;showReadMoreLink&quot;:false,&quot;showPrice&quot;:true,&quot;productQuickViewEnabled&quot;:false,&quot;showPastOrUpcomingEvents&quot;:&quot;Upcoming&quot;,&quot;metadataPosition&quot;:&quot;below-content&quot;,&quot;primaryMetadata&quot;:&quot;date&quot;,&quot;secondaryMetadata&quot;:&quot;author&quot;,&quot;filter&quot;:{&quot;category&quot;:&quot;&quot;},&quot;autoCrop&quot;:true,&quot;lightbox&quot;:false,&quot;mixedContent&quot;:true,&quot;blockId&quot;:&quot;ea933ea7df27eb63006e&quot;}"
               data-block-type="55">
 
