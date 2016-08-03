@@ -82,9 +82,11 @@
 
                     <div class="summary-item-list sqs-gallery sqs-gallery-design-autogrid" style="margin-bottom: -4.16141%;">
                           
-                        {.repeated section items}
-                          {title}
-                        {.end}
+                        <ol>
+                          {.repeated section items}
+                            <li><a href="{fullUrl}">{title}</a></li>
+                          {.end}
+                        </ol>
 
                     </div>
                     <!-- End .summary-item-list -->
