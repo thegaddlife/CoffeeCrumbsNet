@@ -31,9 +31,7 @@
         </header>
 
         <div class="summary-item-list sqs-gallery sqs-gallery-design-autogrid" style="margin-bottom: -4.16141%;">
-            {.repeated section items}
-                {title}
-            {.end}    
+               
         </div>
         <!-- End .summary-item-list -->
 
