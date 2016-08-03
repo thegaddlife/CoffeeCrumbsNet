@@ -76,7 +76,7 @@
                     <header class="summary-block-header">
                         <!-- Collection Title -->
                         <div class="summary-heading">
-                            <span class="summary-header-text">Some other essays you may enjoy ...</span>
+                            <span class="summary-header-text">Essays from {title}</span>
                         </div>
                     </header>
 
@@ -113,31 +113,24 @@
 
                           <!-- Title -->
                           <div class="summary-title">
-                              <a href="#" class="summary-title-link">{title}</a></div>
+                              <a href="{fullUrl}" class="summary-title-link">{title}</a></div>
 
                           <!-- Metadata (Below Content) -->
                           <div class="summary-metadata-container summary-metadata-container--below-content">
                               <div class="summary-metadata summary-metadata--primary">
 
                                   <!-- Timestamp -->
-                                  <time class="summary-metadata-item summary-metadata-item--date">&nbsp;</time>
+                                  <time class="summary-metadata-item summary-metadata-item--date" datetime="{addedOn|date %F}">{addedOn|date %B %d, %Y}</time>
 
                               </div>
                               <div class="summary-metadata summary-metadata--secondary">
 
                                   <!-- Author -->
-                                  <span class="summary-metadata-item summary-metadata-item--author"><a href="#">&nbsp;</a></span>
+                                  <span class="summary-metadata-item summary-metadata-item--author"><a href="{author.websiteUrl}">{author.displayName}</a></span>
 
                               </div>
                           </div>
-                          <div class="summary-metadata-container summary-metadata-container--debug-content">
-                              <div class="summary-metadata summary-metadata--primary">
-
-                                  <span class="summary-metadata-item summary-metadata-item--score">&nbsp;</span>            
-
-                              </div>
-                          </div>
-
+                          
                       </div>
                       <!-- End .summary-content -->
 
