@@ -1,4 +1,3 @@
-<squarespace:query collection="blog" tag="{customContent.queryTag}" limit="99">
 
   <div 
     class="sqs-block summary-v2-block sqs-block-summary-v2 cc-summary-block" 
@@ -102,5 +101,3 @@
     </div>
 
   </div>
-
-</squarespace:query>

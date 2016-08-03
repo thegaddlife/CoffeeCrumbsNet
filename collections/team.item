@@ -39,9 +39,9 @@
             </div>
           </div>
           <div class="sqs-block horizontalrule-block sqs-block-horizontalrule" data-block-type="47"><div class="sqs-block-content"><hr></div></div>
-
-          {@|apply cc-summary-posts-partial.block}
-
+          <squarespace:query collection="blog" tag="{customContent.queryTag}" limit="99"> 
+            {@|apply cc-summary-posts-partial.block}
+          </squarespace:query>
           {.end}
 
         </div>
