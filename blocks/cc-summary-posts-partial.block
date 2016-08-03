@@ -90,8 +90,17 @@
             {.repeated section items}
 
                 <script>
-                    posts.push({ 'id' : '{id}' });
+                    posts.push({ 
+                        'id' : '{id}',
+                        'title' : '{title}',
+                        'author' : { 
+                            'id' : '{author.id}',
+                            'name' : '{author.displayName}',
+                            'url' : '{author.url}'
+                        }
+                    });
                 </script>
+                {.section body}<input type="text" value="{@|truncate 36}" />{.end}
 
             {.end}
             
