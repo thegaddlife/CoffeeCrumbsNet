@@ -95,8 +95,6 @@
                           summary-item-has-comments-enabled
                           positioned sqs-active-slide" data-type="image" style="width: 21.8789%; margin-bottom: 4.16141%; margin-right: 4.16141%; clear: left;">
 
-                      {.section item}
-
                       <!-- Thumbnail -->
                       <a href="#" class="summary-thumbnail-container sqs-gallery-image-container" data-description="">
                           <div class="summary-thumbnail img-wrapper" style="overflow: hidden; padding-bottom: 75%;">
@@ -143,10 +141,8 @@
                       </div>
                       <!-- End .summary-content -->
 
-                      {.end}
                       </div>
                       <!-- End .summary-item -->
-
 
                       {.end}
                        
