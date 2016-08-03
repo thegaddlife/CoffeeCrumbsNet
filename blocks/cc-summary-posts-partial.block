@@ -93,7 +93,7 @@
 
           <footer>
 
-            <a id="CCSummaryBlockLoadMoreLink" href="#">Load More Posts</a>
+            <a id="CCSummaryBlockLoadMoreLink" href="#" style="display:none">Load More Posts</a>
 
           </footer>
 
