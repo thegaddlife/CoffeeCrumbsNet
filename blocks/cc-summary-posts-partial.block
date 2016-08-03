@@ -57,7 +57,7 @@
 <script>
     posts.push({ 
         'id' : '{id}',
-        'title' : {title:json},
+        'title' : {title|json},
         'title1' : '{title|json}',
         'title2' : '{title|safe}',
         'title3' : '{title|smartypants}',
