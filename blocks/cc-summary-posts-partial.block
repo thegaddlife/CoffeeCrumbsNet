@@ -44,7 +44,7 @@
                 summary-item-has-author
                 summary-item-has-comments-enabled
                 positioned sqs-active-slide" data-type="image" 
-                style="display:none; width: 28.2892%; margin-bottom: 7.5662%; margin-right: 7.5662%; clear: left;">
+                style="width: 28.2892%; margin-bottom: 7.5662%; margin-right: 7.5662%; clear: left;">
 
             <a href="{fullUrl}" class="summary-thumbnail-container sqs-gallery-image-container" data-title="{title}" data-description="">
                 <div class="summary-thumbnail img-wrapper" style="overflow: hidden; padding-bottom: 75%;">
