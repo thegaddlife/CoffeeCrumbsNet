@@ -1,25 +1,43 @@
+$(function() {
+
+    $("#CCSummaryBlockLoadMoreLink").on("click", function() {
+        $(this).hide();
+        if (ccSummaryBlock.LoadImageBatch(9)) {
+            $(this).show();
+        }
+    });
+
+})
+
 ccSummaryBlock = {
 
     LoadImageBatch: function(count) {
 
         // find next {count} hidden summary-items
+        var hiddenSummaryItems = $(".summary-item:hidden", $(".cc-summary-block"));
 
+        // loop over them and load their images
 
+        // return indication of whether there are more posts hidden
+        return hiddenSummaryItems.length > count;
     },
 
-    LoadImage: function(summaryItemId) {
+    LoadImage: function(postId) {
 
-        var postBody = $(".hidden-post-body", $("#" + summaryItemId)).first().val();
-        var parsed = $('<div/>').append(postBody);
+        // go grab the post
+        var post = {};
+
+        // find the image from the post body
+        var parsed = $('<div/>').append(post.body);
         var imgSrc = $(parsed).find('.thumb-image').data('src');
 
-        // set the imgSrc async
-
-        if (imgSrc && imgSrc.length) {
-            var img = $(".summary-thumbnail-image", $("#" + id)).first();
-            img.attr("src", imgSrc.replace('http:', 'https:') + '?format=7500w');
-        }
-
+        var image = $("#ccSummaryBlock-image-" + postId);
+        var downloadingImage = new Image();
+        downloadingImage.onload = function() {
+            image.src = this.src;
+            // fade in
+        };
+        downloadingImage.src = imgSrc;
 
     }
 
