@@ -5,7 +5,7 @@
       <div class="row sqs-row">
         <div class="col sqs-col-12 span-12">
 
-          {.section item}
+          {.repeated section items}
 
           <div class="row sqs-row">
             <div class="col sqs-col-5 span-5">
