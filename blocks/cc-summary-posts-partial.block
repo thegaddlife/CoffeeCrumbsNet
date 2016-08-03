@@ -91,7 +91,7 @@
           </div>
           <!-- End .summary-item-list -->
 
-          <footer>
+          <footer class="summary-block-footer">
 
             <a id="CCSummaryBlockLoadMoreLink" href="#" style="display:none">Load More Posts</a>
 

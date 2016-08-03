@@ -1,8 +1,12 @@
 $(function() {
 
+    $(document).on("ready", function() {
+        //LoadImageBatch();
+    });
+
     $("#CCSummaryBlockLoadMoreLink").on("click", function() {
         $(this).hide();
-        if (ccSummaryBlock.LoadImageBatch(9)) {
+        if (ccSummaryBlock.LoadImageBatch()) {
             $(this).show();
         }
     });
@@ -10,6 +14,8 @@ $(function() {
 })
 
 ccSummaryBlock = {
+
+    ImageCount: 9,
 
     LoadImageBatch: function(count) {
 
