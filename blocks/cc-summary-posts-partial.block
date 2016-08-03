@@ -62,7 +62,7 @@ var posts = [];
         'id' : '{author.id}',
         'name' : '{author.displayName|json}',
         'url' : '{author.url}',
-        'body' : '{body|json|truncate 250}'
+        'body' : '{body|json|truncate 550}'
         }
     });
 {.end}
