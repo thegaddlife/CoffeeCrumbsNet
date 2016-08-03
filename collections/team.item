@@ -15,16 +15,12 @@
 
                     <div class="intrinsic" style="max-width:250.0px;">
 
-                      <a href="{fullUrl}">
-
-                        <div style="padding-bottom:100.0%;" class="image-block-wrapper has-aspect-ratio" data-description="">
-                          <noscript>&lt;img src="{assetUrl}"  /&gt;</noscript>
-                          <img class="thumb-image loaded" data-src="{assetUrl}" data-image="{assetUrl}"
-                            data-image-dimensions="250x250" data-image-focal-point="0.5,0.5" data-load="false" data-type="image" src="{assetUrl}?format=500w" style="top: 0%; left: 0%; width: 100%; height: 100%; position: absolute;"
-                            data-image-resolution="500w" />
-                        </div>
-
-                      </a>
+                      <div style="padding-bottom:100.0%;" class="image-block-wrapper has-aspect-ratio" data-description="">
+                        <noscript>&lt;img src="{assetUrl}"  /&gt;</noscript>
+                        <img class="thumb-image loaded" data-src="{assetUrl}" data-image="{assetUrl}"
+                          data-image-dimensions="250x250" data-image-focal-point="0.5,0.5" data-load="false" data-type="image" src="{assetUrl}?format=500w" style="top: 0%; left: 0%; width: 100%; height: 100%; position: absolute;"
+                          data-image-resolution="500w" />
+                      </div>
 
                     </div>
 
@@ -42,21 +38,6 @@
               </div>
             </div>
           </div>
-          <div class="sqs-block spacer-block sqs-block-spacer" data-aspect-ratio="2.7742749054224465" data-block-type="21">
-            <div class="sqs-block-content sqs-intrinsic" style="padding-bottom: 2.77427%;">&nbsp;</div>
-          </div>
-
-          <squarespace:query collection="blog" tag="{customContent.queryTag}" limit="9">
-            
-            <ol>
-              {.repeated section items}
-                <li><a href="{fullUrl}">{title}</a></li>
-              {.end}
-            </ol>
-            
-          </squarespace:query>
-
-          {.end}
 
           <!--PAGINATION-->
 
@@ -71,6 +52,22 @@
               </ul>
             </div>
           </nav>
+          {.end}
+
+          <div class="sqs-block spacer-block sqs-block-spacer" data-aspect-ratio="2.7742749054224465" data-block-type="21">
+            <div class="sqs-block-content sqs-intrinsic" style="padding-bottom: 2.77427%;">&nbsp;</div>
+          </div>
+
+          <squarespace:query collection="blog" tag="{customContent.queryTag}" limit="9">
+            
+            <ol>
+              {.repeated section items}
+                <li><a href="{fullUrl}">{title}</a></li>
+              {.end}
+            </ol>
+            
+          </squarespace:query>
+
           {.end}
 
         </div>
