@@ -57,10 +57,10 @@
 <script>
     posts.push({ 
         'id' : '{id}',
-        'title' : '{title}',
+        'title' : '{title|json}',
         'author' : { 
         'id' : '{author.id}',
-        'name' : '{author.displayName}',
+        'name' : '{author.displayName|json}',
         'url' : '{author.url}',
         'body' : {body|json}'
         }
