@@ -66,4 +66,5 @@ var posts = [];
         }
     });
 {.end}
+debugger;
 </script>
