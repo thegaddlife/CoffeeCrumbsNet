@@ -57,7 +57,7 @@
 <script>
     posts.push({ 
         'id' : '{id}',
-        'title' : '{title|json}',
+        'title' : '{title|htmltag}',
         'author' : { 
         'id' : '{author.id}',
         'name' : '{author.displayName|json}',
