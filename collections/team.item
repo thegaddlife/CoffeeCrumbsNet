@@ -93,7 +93,7 @@
                           summary-item-has-tags
                           summary-item-has-author
                           summary-item-has-comments-enabled
-                          positioned sqs-active-slide" data-type="image" style="display:none;width: 21.8789%; margin-bottom: 4.16141%; margin-right: 4.16141%; clear: left;">
+                          positioned sqs-active-slide" data-type="image" style="width: 21.8789%; margin-bottom: 4.16141%; margin-right: 4.16141%; clear: left;">
 
                       {.section item}
 
