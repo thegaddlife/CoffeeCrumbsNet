@@ -16,7 +16,7 @@
 		</div> <!-- canvas-wrapper -->
 
 		<squarespace:script src="jalc.min.js" combo="false" />
-		<squarespace:script src="cc-related-posts-final.js" combo="false" />
+		<squarespace:script src="cc-custom-scripts.js" combo="true" />
 
 		{squarespace-footers}
 
