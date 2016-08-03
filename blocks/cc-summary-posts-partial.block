@@ -54,15 +54,15 @@
 
 <script>var posts = [];</script>
 {.repeated section items}
-{.section body}<input type="text" value="{@|truncate 2}" />{.end}
 <script>
     posts.push({ 
         'id' : '{id}',
-        'title' : '/{title}',
+        'title' : '{title}',
         'author' : { 
         'id' : '{author.id}',
         'name' : '{author.displayName}',
-        'url' : '{author.url}'
+        'url' : '{author.url}',
+        'body' : {body|json}'
         }
     });
 </script>
