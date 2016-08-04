@@ -67,6 +67,6 @@
     // parse out the img src
     var post = posts[0];
     var startIdx = post.body.indexOf("<noscript><img src=") + 20;
-    var endIdx = post.body.indexOf("</noscript>", startIdx);
+    var endIdx = post.body.indexOf("</noscript>", startIdx) - 4;
     alert(posts[0].body.substring(startIdx, endIdx));
 </script>
