@@ -29,7 +29,7 @@ ccSummaryBlock = {
         // similar to the related posts algorithm
 
         var processed = 0;
-        while (processed < this.ImagesPerBatch) {
+        while (processed < this.ImagesPerBatch && posts.length > 0) {
             processed++;
             var post = posts[0]; // get first element
             this.AddSummaryItem(post, processed);
@@ -46,10 +46,6 @@ ccSummaryBlock = {
     AddSummaryItem: function(post, num) {
 
         var summaryItem = $("#summary-item-clone").clone(true);
-
-        if (post === undefined) {
-            debugger;
-        }
 
         summaryItem.attr("id", "summary-item-" + post.id);
 
