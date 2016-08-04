@@ -1,14 +1,15 @@
 $(function() {
 
     $(document).on("ready", function() {
-        ccSummaryBlock.LoadSummaryItems();
+        if (posts && posts.length > 0)
+            ccSummaryBlock.LoadSummaryItems();
     });
 
     $("#CCSummaryBlockLoadMoreLink").on("click", function() {
         ccSummaryBlock.LoadSummaryItems();
     });
 
-})
+});
 
 ccSummaryBlock = {
 
