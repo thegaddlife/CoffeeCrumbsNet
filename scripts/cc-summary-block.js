@@ -14,7 +14,7 @@ ccSummaryBlock = {
 
     ImageCount: 9,
 
-    LoadImageBatch: function(count) {
+    LoadSummaryItems: function() {
 
         var showMore = $("#CCSummaryBlockLoadMoreLink");
         showMore.hide();
@@ -33,6 +33,8 @@ ccSummaryBlock = {
             AddSummaryItem(post);
             posts = posts.slice(1); // remove it
         }
+
+        alert("Remaining: " + posts.length);
 
         // return indication of whether there are more posts to display
         if (posts.length > 0)
