@@ -58,8 +58,11 @@
 {.repeated section items}
     { "id":"{id}","title":{title|json},"author":{"id":"{author.id}","name":{author.displayName|json},"url":"{author.websiteUrl}"},"body":{body|truncate 1000|json} },
 {.end}
+    // add blank item to avoid extra comma
     {}
     ];
+    // remove blank item
+    posts.remove(posts.length);
     alert(posts.length);
     alert(posts[0].body.substring(100,40));
 </script>
