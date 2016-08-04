@@ -29,10 +29,10 @@ ccSummaryBlock = {
 
         var processed = 0;
         while (processed < this.ImageCount) {
-            processed++;
             var post = posts[0]; // get first element
-            this.AddSummaryItem(post);
+            this.AddSummaryItem(post, processed);
             posts = posts.slice(1); // remove it
+            processed++;
         }
 
         //alert("Remaining: " + posts.length);
@@ -42,10 +42,13 @@ ccSummaryBlock = {
             showMore.fadeIn();
     },
 
-    AddSummaryItem: function(post) {
+    AddSummaryItem: function(post, idx) {
 
         var summaryItem = $("#summary-item-clone").clone();
         summaryItem.attr("id", "summary-item-" + post.id);
+
+        if (idx % 3 === 0)
+            summaryItem.css("margin-right", "0");
 
         // update summary title link full url
         // update summary title link inner text
