@@ -53,7 +53,6 @@
 
 
 <script type="text/javascript">
-    alert("start");
     var posts = [
 {.repeated section items}
     { "id":"{id}","title":{title|json},"author":{"id":"{author.id}","name":{author.displayName|json},"url":"{author.websiteUrl}"},"body":{body|truncate 1000|json} },
@@ -62,7 +61,7 @@
     {}
     ];
     // remove blank item
-    posts.remove(posts.length);
+    posts.splice(posts.length, 1);
     alert(posts.length);
     alert(posts[0].body.substring(100,40));
 </script>
