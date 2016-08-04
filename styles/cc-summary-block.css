@@ -26,3 +26,17 @@
     float: right;
     margin-right: 25px;
 }
+
+
+/*Hide the author link on the team member pages*/
+
+.cc-summary-team .summary-metadata-item--author {
+    display: none;
+}
+
+
+/*Hide the category links on the category pages*/
+
+.cc-summary-category .summary-metadata-item--cats {
+    display: none;
+}
