@@ -30,7 +30,7 @@ ccSummaryBlock = {
         while (processed < this.ImageCount) {
             processed++;
             var post = posts[0]; // get first element
-            AddSummaryItem(post);
+            this.AddSummaryItem(post);
             posts = posts.slice(1); // remove it
         }
 
