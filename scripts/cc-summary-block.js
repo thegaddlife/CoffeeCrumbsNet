@@ -45,9 +45,12 @@ ccSummaryBlock = {
 
     AddSummaryItem: function(post, num) {
 
-        debugger;
-
         var summaryItem = $("#summary-item-clone").clone(true);
+
+        if (post === undefined) {
+            debugger;
+        }
+
         summaryItem.attr("id", "summary-item-" + post.id);
 
         if (num % 3 === 0)
@@ -101,7 +104,6 @@ ccSummaryBlock = {
 
         // add author link href to team member page (from bio)
         // add author link inner text = author display name
-        debugger;
         $(".summary-metadata-item--author a", summaryItem)
             .first()
             .attr("href", post.author.websiteUrl)
