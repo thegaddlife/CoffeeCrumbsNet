@@ -20,13 +20,19 @@ ccSummaryBlock = {
 
     LoadImageBatch: function(count) {
 
-        // find next {count} hidden summary-items
-        //var hiddenSummaryItems = $(".summary-item:hidden", $(".cc-summary-block"));
+        // any posts left?
+        if (!posts || posts.length === 0)
+            return false;
+
+        for (var i = 0; i < posts.length; i++) {
+            var post = posts[i];
+            AddSummaryItem(post);
+        }
 
         // loop over them and load their images
 
-        // return indication of whether there are more posts hidden
-        return true; //hiddenSummaryItems.length > count;
+        // return indication of whether there are more posts to display
+        return posts.length > 0;
     },
 
     LoadImage: function(post) {
