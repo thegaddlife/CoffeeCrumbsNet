@@ -1,6 +1,7 @@
 $(function() {
 
     $(document).on("ready", function() {
+        alert(posts.length);
         //LoadImageBatch();
     });
 
