@@ -70,10 +70,40 @@ ccSummaryBlock = {
             $(".summary-thumbnail-image", summaryItem)
                 .first()
                 .attr("src", imgSrc + '?format=700w')
-                .attr("href", post.fullUrl)
                 .attr("data-src", imgSrc)
                 .attr("data-image-dimensions", "800x535");
         }
+
+        // update anchor link href &
+        // update anchor link data-title = {post.title}
+        $(".summary-thumbnail-container", summaryItem)
+            .first()
+            .attr("href", post.fullUrl)
+            .attr("data-title", post.title);
+
+        // update summary title link full url
+        // update summary title link inner text
+        $(".summary-title-link", summaryItem)
+            .first()
+            .attr("href", post.fullUrl)
+            .attr("title", post.title)
+            .text(post.title);
+
+        var publishMoment = moment(post.publishOn);
+
+        // add time datetime="yyyy-mm-dd">
+        // add time inner text i.e. "Jul 18, 2016"
+        $(".summary-metadata-item--date", summaryItem)
+            .first()
+            .attr("datetime", publishMoment.format("YYYY-MM-DD"))
+            .text(publishMoment.format("MMM DD, YYYY"));
+
+        // add author link href to team member page (from bio)
+        // add author link inner text = author display name
+        $(".summary-metadata-item--author a", summaryItem)
+            .first()
+            .attr("href", post.author.websiteUrl)
+            .text(post.author.displayName);
 
         summaryItem.appendTo(".summary-item-list");
     },
