@@ -40,3 +40,12 @@
 .cc-summary-category .summary-metadata-item--cats {
     display: none;
 }
+
+.cc-summary-cat-link {
+    display: inline-block;
+    margin-right: 4px;
+}
+
+cc-summary-block .sqs-block-summary-v2 .summary-block-setting-secondary-metadata-date .summary-metadata--primary .summary-metadata-item:after {
+    margin: 0 .2em;
+}
