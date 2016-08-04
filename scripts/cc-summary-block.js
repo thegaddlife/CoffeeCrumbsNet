@@ -14,7 +14,7 @@ $(function() {
 
 ccSummaryBlock = {
 
-    ImageCount: 9,
+    ImagesPerBatch: 9,
 
     LoadSummaryItems: function() {
 
@@ -29,8 +29,7 @@ ccSummaryBlock = {
         // similar to the related posts algorithm
 
         var processed = 0;
-        while (processed < this.ImageCount) {
-            debugger;
+        while (processed < this.ImagesPerBatch) {
             processed++;
             var post = posts[0]; // get first element
             this.AddSummaryItem(post, processed);
@@ -45,6 +44,8 @@ ccSummaryBlock = {
     },
 
     AddSummaryItem: function(post, num) {
+
+        debugger;
 
         var summaryItem = $("#summary-item-clone").clone(true);
         summaryItem.attr("id", "summary-item-" + post.id);
@@ -106,24 +107,6 @@ ccSummaryBlock = {
             .text(post.author.displayName);
 
         summaryItem.appendTo(".summary-item-list");
-    },
-
-    LoadImage: function(post) {
-
-        // parse out the img src
-        var startIdx = post.body.indexOf("<noscript><img src=") + 20;
-        var endIdx = post.body.indexOf("</noscript>", startIdx) - 5;
-        var imgSrc = post.body.substring(startIdx, endIdx);
-
-        var image = $("#ccSummaryBlock-image-" + postId);
-
-        var downloadingImage = new Image();
-        downloadingImage.onload = function() {
-            image.src = this.src;
-            // fade in
-        };
-        downloadingImage.src = imgSrc;
-
     }
 
 }
