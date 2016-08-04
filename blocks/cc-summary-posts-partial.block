@@ -61,7 +61,7 @@
     {}
     ];
     // remove blank item
-    posts.splice(posts.length, 1);
+    posts.splice(posts.length-1, 1);
     alert(posts.length);
     alert(posts[0].body.substring(100,40));
 </script>
