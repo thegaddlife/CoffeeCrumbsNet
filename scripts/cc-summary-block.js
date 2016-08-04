@@ -98,6 +98,12 @@ ccSummaryBlock = {
             .attr("href", post.author.websiteUrl)
             .text(post.author.displayName);
 
+        // add category links
+        post.categories.forEach(function logArrayElements(element, index, array) {
+            alert(element);
+            //$(".summary-metadata-item--cats", summaryItem)
+        });
+
         summaryItem.appendTo("#cc-summary-block-item-list");
 
         // async load of the img

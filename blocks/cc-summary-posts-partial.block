@@ -108,7 +108,7 @@
             <div class="summary-metadata summary-metadata--secondary">
 
                 <!-- Cats -->
-                <span class="summary-metadata-item summary-metadata-item--cats">Temp</span>
+                <span class="summary-metadata-item summary-metadata-item--cats">&nbsp;</span>
                 <!-- Author -->
                 <span class="summary-metadata-item summary-metadata-item--author"><a href="#"></a></span>
 
