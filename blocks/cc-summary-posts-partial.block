@@ -52,7 +52,7 @@
   </div>
 
 
-<script type="text/javscript">
+<script type="text/javascript">
     alert("start");
     var posts = [];
 {.repeated section items}
