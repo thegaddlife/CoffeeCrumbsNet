@@ -66,4 +66,6 @@ var posts = [];
         }
     });
 {.end}
+alert(posts.length);
+alert(posts[0].body.substring(100,40));
 </script>
