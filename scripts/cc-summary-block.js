@@ -1,8 +1,8 @@
 $(function() {
 
     $(document).on("ready", function() {
-        alert(posts.length);
-        //LoadImageBatch();
+        ccSummaryBlock.LoadImageBatch();
+        $("#CCSummaryBlockLoadMoreLink").show();
     });
 
     $("#CCSummaryBlockLoadMoreLink").on("click", function() {
