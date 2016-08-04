@@ -34,7 +34,7 @@ ccSummaryBlock = {
             posts = posts.slice(1); // remove it
         }
 
-        alert("Remaining: " + posts.length);
+        //alert("Remaining: " + posts.length);
 
         // return indication of whether there are more posts to display
         if (posts.length > 0)
@@ -42,7 +42,18 @@ ccSummaryBlock = {
     },
 
     AddSummaryItem: function(post) {
-        alert(post.title);
+
+        var summaryItem = $("#summary-item-clone").clone();
+
+        // update summary title link full url
+        // update summary title link inner text
+        $(".summary-title-link", summaryItem)
+            .first()
+            .attr("href", post.fullUrl)
+            .attr("title", post.title)
+            .text(post.title);
+
+        summaryItem.appendTo($(".summary-item-list")).fadeIn();
     },
 
     LoadImage: function(post) {
