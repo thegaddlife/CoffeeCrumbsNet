@@ -1,15 +1,11 @@
 $(function() {
 
     $(document).on("ready", function() {
-        ccSummaryBlock.LoadImageBatch();
-        $("#CCSummaryBlockLoadMoreLink").show();
+        ccSummaryBlock.LoadSummaryItems();
     });
 
     $("#CCSummaryBlockLoadMoreLink").on("click", function() {
-        $(this).hide();
-        if (ccSummaryBlock.LoadImageBatch()) {
-            $(this).fadeIn();
-        }
+        ccSummaryBlock.LoadSummaryItems();
     });
 
 })
@@ -20,19 +16,31 @@ ccSummaryBlock = {
 
     LoadImageBatch: function(count) {
 
+        var showMore = $("#CCSummaryBlockLoadMoreLink");
+        showMore.hide();
+
         // any posts left?
         if (!posts || posts.length === 0)
             return false;
 
-        for (var i = 0; i < posts.length; i++) {
-            var post = posts[i];
+        // TODO: custom ordering and sorting here
+        // similar to the related posts algorithm
+
+        var processed = 0;
+        while (processed < this.ImageCount) {
+            processed++;
+            var post = posts[0]; // get first element
             AddSummaryItem(post);
+            posts = posts.slice(1); // remove it
         }
 
-        // loop over them and load their images
-
         // return indication of whether there are more posts to display
-        return posts.length > 0;
+        if (posts.length > 0)
+            showMore.fadeIn();
+    },
+
+    AddSummaryItem: function(post) {
+        alert(post.title);
     },
 
     LoadImage: function(post) {
