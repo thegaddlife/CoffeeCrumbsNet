@@ -46,6 +46,6 @@
     margin-right: 4px;
 }
 
-.cc-summary-block .sqs-block-summary-v2 .summary-metadata-item--date:after {
-    margin: 0 .2em !important;
+.cc-summary-block.sqs-block-summary-v2 .summary-metadata-item--date:after {
+    margin: 0 .1em !important;
 }
