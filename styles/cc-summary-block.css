@@ -3,6 +3,7 @@
     width: 100%;
     text-align: center;
     background-color: #e9e9e9;
+    border: solid 1px #e9e9e9;
     color: #b3996f;
     height: 41px;
     clear: both;
@@ -12,6 +13,5 @@
 }
 
 #CCSummaryBlockLoadMoreLink:hover {
-    background-color: #ccc;
-    text-decoration: underline !important;
+    border: solid 1px #ccc;
 }
