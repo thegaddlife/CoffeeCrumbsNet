@@ -12,7 +12,6 @@
 }
 
 #CCSummaryBlockLoadMoreLink:hover {
-    background-color: #b3996f;
-    color: #fff;
+    background-color: #ccc;
     text-decoration: underline !important;
 }
