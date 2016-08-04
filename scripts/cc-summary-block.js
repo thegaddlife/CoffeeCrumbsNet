@@ -107,7 +107,7 @@ ccSummaryBlock = {
             .attr("href", post.author.websiteUrl)
             .text(post.author.displayName);
 
-        summaryItem.appendTo(".summary-item-list");
+        summaryItem.appendTo("#cc-summary-block-item-list");
     }
 
 }

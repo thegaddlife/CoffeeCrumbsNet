@@ -30,7 +30,7 @@
               </div>
           </header>
 
-          <div class="summary-item-list sqs-gallery sqs-gallery-design-autogrid" style="margin-bottom: -7.5662%;">
+          <div id="cc-summary-block-item-list" class="summary-item-list sqs-gallery sqs-gallery-design-autogrid" style="margin-bottom: -7.5662%;">
             
           </div>
           <!-- End .summary-item-list -->
