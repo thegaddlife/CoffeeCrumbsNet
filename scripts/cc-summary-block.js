@@ -34,7 +34,7 @@ ccSummaryBlock = {
             posts = posts.slice(1); // remove it
         }
 
-        $(".summary-item").appendTo($(".summary-item-list"));
+        $(".summary-item").appendTo(".summary-item-list");
         //alert("Remaining: " + posts.length);
 
         // return indication of whether there are more posts to display
