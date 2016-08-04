@@ -16,3 +16,13 @@
     border: solid 1px #ccc;
     cursor: pointer;
 }
+
+.summary-block-footer #load-more-left {
+    float: left;
+    margin-left: 25px;
+}
+
+.summary-block-footer #load-more-right {
+    float: right;
+    margin-right: 25px;
+}
