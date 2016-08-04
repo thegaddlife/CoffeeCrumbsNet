@@ -29,6 +29,7 @@ ccSummaryBlock = {
 
         var processed = 0;
         while (processed < this.ImageCount) {
+            debugger;
             processed++;
             var post = posts[0]; // get first element
             this.AddSummaryItem(post, processed);
