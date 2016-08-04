@@ -68,5 +68,5 @@
     var post = posts[0];
     var startIdx = post.body.indexOf("<noscript><img src=");
     var endIdx = post.body.indexOf("</noscript>", startIdx);
-    alert(posts[0].body.substring(startIdx, endIdx - startIdx));
+    alert(posts[0].body.substring(startIdx, endIdx));
 </script>
