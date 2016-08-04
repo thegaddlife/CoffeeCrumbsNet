@@ -55,7 +55,7 @@
 <script type="text/javascript">
     var posts = [
 {.repeated section items}
-    { "id":"{id}","title":{title|json},"fullUrl":"{fullUrl}","categories":{categories},"author":{"id":"{author.id}","displayName":{author.displayName|json},"websiteUrl":"{author.websiteUrl}"},"publishOn":{publishOn}, "body":{body|truncate 1000|json} },
+    { "id":"{id}","title":{title|json},"fullUrl":"{fullUrl}","categories":{categories|json},"author":{"id":"{author.id}","displayName":{author.displayName|json},"websiteUrl":"{author.websiteUrl}"},"publishOn":{publishOn}, "body":{body|truncate 1000|json} },
 {.end}
     // add blank item to avoid extra comma
     {}
