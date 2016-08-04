@@ -37,7 +37,7 @@
 
           <footer class="summary-block-footer">
 
-            <a id="CCSummaryBlockLoadMoreLink" href="javascript:void(0);" style="display:none"><i class="fa-arrow">&nbsp;&nbsp;Load More Posts&nbsp;&nbsp;<i class="fa-arrow"></a>
+            <a id="CCSummaryBlockLoadMoreLink" href="javascript:void(0);" style="display:none"><i class="icon-chevron-down">&nbsp;&nbsp;Load More Posts&nbsp;&nbsp;<i class="icon-chevron-down"></a>
 
           </footer>
 
