@@ -45,7 +45,7 @@ ccSummaryBlock = {
     AddSummaryItem: function(post) {
 
         var summaryItem = $("#summary-item-clone").clone();
-        summaryItem.removeAttr("id");
+        summaryItem.attr("id", "summary-item-" + post.id);
 
         // update summary title link full url
         // update summary title link inner text
