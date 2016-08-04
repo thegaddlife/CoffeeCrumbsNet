@@ -63,5 +63,10 @@
     // remove blank item
     posts.splice(posts.length-1, 1);
     alert(posts.length);
-    alert(posts[0].body.substring(100,40));
+    
+    // parse out the img src
+    var post = posts[0];
+    var startIdx = post.indexOf("<noscript><img src=");
+    var endIdx = post.indexOf("</noscript>", startIdx);
+    alert(posts[0].body.substring(startIdx, endIdx - startIdx));
 </script>
