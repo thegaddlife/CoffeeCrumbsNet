@@ -63,8 +63,8 @@ ccSummaryBlock = {
                 .first()
                 .attr("src", imgSrc + '?format=700w')
                 .attr("href", post.fullUrl)
-                .data("src", imgSrc)
-                .data("image-dimensions", "800x535");
+                .attr("data-src", imgSrc)
+                .attr("data-image-dimensions", "800x535");
         }
 
         summaryItem.appendTo(".summary-item-list");
