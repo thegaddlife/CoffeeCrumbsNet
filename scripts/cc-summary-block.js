@@ -34,7 +34,6 @@ ccSummaryBlock = {
             posts = posts.slice(1); // remove it
         }
 
-        $(".summary-item").appendTo(".summary-item-list");
         //alert("Remaining: " + posts.length);
 
         // return indication of whether there are more posts to display
@@ -54,6 +53,15 @@ ccSummaryBlock = {
             .attr("href", post.fullUrl)
             .attr("title", post.title)
             .text(post.title);
+
+        var startIdx = post.body.indexOf("<noscript><img src=") + 20;
+        var endIdx = post.body.indexOf("</noscript>", startIdx) - 5;
+        var imgSrc = post.body.substring(startIdx, endIdx);
+
+        if (imgSrc && imgSrc.length)
+            $(".summary-thumbnail-image", summaryItem).first().attr("src", imgSrc.replace('http:', 'https:') + '?format=700w');
+
+        summaryItem.appendTo(".summary-item-list");
     },
 
     LoadImage: function(post) {
