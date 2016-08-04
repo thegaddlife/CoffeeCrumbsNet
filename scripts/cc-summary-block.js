@@ -1,7 +1,7 @@
 $(function() {
 
     $(document).on("ready", function() {
-        if (posts && posts.length > 0)
+        if (posts !== undefined && posts.length > 0)
             ccSummaryBlock.LoadSummaryItems();
     });
 
