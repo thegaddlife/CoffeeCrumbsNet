@@ -56,10 +56,16 @@ ccSummaryBlock = {
 
         var startIdx = post.body.indexOf("<noscript><img src=") + 20;
         var endIdx = post.body.indexOf("</noscript>", startIdx) - 5;
-        var imgSrc = post.body.substring(startIdx, endIdx);
+        var imgSrc = post.body.substring(startIdx, endIdx).replace('http:', 'https:');
 
-        if (imgSrc && imgSrc.length)
-            $(".summary-thumbnail-image", summaryItem).first().attr("src", imgSrc.replace('http:', 'https:') + '?format=700w');
+        if (imgSrc && imgSrc.length) {
+            $(".summary-thumbnail-image", summaryItem)
+                .first()
+                .attr("src", imgSrc + '?format=700w')
+                .attr("href", post.fullUrl)
+                .data("src", imgSrc)
+                .data("image-dimensions", "800x535");
+        }
 
         summaryItem.appendTo(".summary-item-list");
     },
