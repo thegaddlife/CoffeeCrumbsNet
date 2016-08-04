@@ -17,6 +17,7 @@
 
 		<squarespace:script src="jalc.min.js" combo="false" />
 		<squarespace:script src="cc-custom-scripts.js" combo="true" />
+		<squarespace:script src="cc-summary-block.js" combo="false" />
 
 		{squarespace-footers}
 
