@@ -53,16 +53,17 @@
 
 
 <script type="text/javscript">
+alert("start");
 var posts = [];
 {.repeated section items}
     posts.push({ 
-        'id' : '{id}',
-        'title' : {title|json},
-        'author' : { 
-        'id' : '{author.id}',
-        'name' : '{author.displayName|json}',
-        'url' : '{author.url}',
-        'body' : {body|json|truncate 1000}
+        "id" : "{id}",
+        "title" : {title|json},
+        "author" : { 
+        "id" : "{author.id}",
+        "name" : "{author.displayName|json}",
+        "url" : "{author.url}",
+        "body" : {body|json|truncate 1000}
         }
     });
 {.end}
