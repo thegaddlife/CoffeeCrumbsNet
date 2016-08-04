@@ -8,7 +8,7 @@ $(function() {
     $("#CCSummaryBlockLoadMoreLink").on("click", function() {
         $(this).hide();
         if (ccSummaryBlock.LoadImageBatch()) {
-            $(this).show();
+            $(this).fadeIn();
         }
     });
 
@@ -21,12 +21,12 @@ ccSummaryBlock = {
     LoadImageBatch: function(count) {
 
         // find next {count} hidden summary-items
-        var hiddenSummaryItems = $(".summary-item:hidden", $(".cc-summary-block"));
+        //var hiddenSummaryItems = $(".summary-item:hidden", $(".cc-summary-block"));
 
         // loop over them and load their images
 
         // return indication of whether there are more posts hidden
-        return hiddenSummaryItems.length > count;
+        return true; //hiddenSummaryItems.length > count;
     },
 
     LoadImage: function(post) {
