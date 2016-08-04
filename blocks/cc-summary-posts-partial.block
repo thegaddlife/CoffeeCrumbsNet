@@ -93,7 +93,8 @@
 
         <!-- Title -->
         <div class="summary-title">
-            <a href="#" class="summary-title-link"></a></div>
+            <a href="#" class="summary-title-link">&nbsp;</a>
+        </div>
 
         <!-- Metadata (Below Content) -->
         <div class="summary-metadata-container summary-metadata-container--below-content">
