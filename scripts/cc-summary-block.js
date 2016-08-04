@@ -47,7 +47,7 @@ ccSummaryBlock = {
 
         var summaryItem = $("#summary-item-clone").clone(true);
 
-        summaryItem.attr("id", "summary-item-" + post.id);
+        summaryItem.removeAttr("id");
 
         if (num % 3 === 0)
             summaryItem.css("margin-right", "0");
