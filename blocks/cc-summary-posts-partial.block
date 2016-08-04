@@ -24,13 +24,6 @@
 
         <div class="summary-item-list-container sqs-gallery-container">
 
-          <header class="summary-block-header">
-              <!-- Collection Title -->
-              <div class="summary-heading">
-                  <span class="summary-header-text">Essays from {title}</span>
-              </div>
-          </header>
-
           <div id="cc-summary-block-item-list" class="summary-item-list sqs-gallery sqs-gallery-design-autogrid" style="margin-bottom: -7.5662%;">
             
           </div>
