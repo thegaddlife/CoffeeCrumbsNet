@@ -14,7 +14,7 @@ $(function() {
 
 ccSummaryBlock = {
 
-    ImagesPerBatch: 3,
+    ImagesPerBatch: 9,
 
     LoadSummaryItems: function() {
 
