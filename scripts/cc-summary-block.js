@@ -34,6 +34,7 @@ ccSummaryBlock = {
             posts = posts.slice(1); // remove it
         }
 
+        $(".summary-item").appendTo($(".summary-item-list"));
         //alert("Remaining: " + posts.length);
 
         // return indication of whether there are more posts to display
@@ -43,9 +44,7 @@ ccSummaryBlock = {
 
     AddSummaryItem: function(post) {
 
-        var summaryList = $(".summary-item-list");
         var summaryItem = $("#summary-item-clone").clone();
-
         summaryItem.removeAttr("id");
 
         // update summary title link full url
@@ -55,9 +54,6 @@ ccSummaryBlock = {
             .attr("href", post.fullUrl)
             .attr("title", post.title)
             .text(post.title);
-
-        summaryItem.appendTo(summaryList);
-        summaryItem.fadeIn();
     },
 
     LoadImage: function(post) {
