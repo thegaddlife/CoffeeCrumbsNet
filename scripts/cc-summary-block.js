@@ -43,7 +43,10 @@ ccSummaryBlock = {
 
     AddSummaryItem: function(post) {
 
+        var summaryList = $(".summary-item-list");
         var summaryItem = $("#summary-item-clone").clone();
+
+        summaryItem.removeAttr("id");
 
         // update summary title link full url
         // update summary title link inner text
@@ -53,7 +56,8 @@ ccSummaryBlock = {
             .attr("title", post.title)
             .text(post.title);
 
-        summaryItem.appendTo($(".summary-item-list")).fadeIn();
+        summaryItem.appendTo(summaryList);
+        summaryItem.fadeIn();
     },
 
     LoadImage: function(post) {
