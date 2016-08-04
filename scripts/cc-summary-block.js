@@ -50,9 +50,11 @@ ccSummaryBlock = {
         summaryItem.removeAttr("id");
 
         if (num % 3 === 0)
-            summaryItem.css("margin-right", "0");
+            summaryItem.css("margin-right", "0"); // 3,6,9,12,...,21,24
         else if (num === 1)
-            summaryItem.addClass("sqs-active-slide");
+            summaryItem.addClass("sqs-active-slide").css("clear", "left"); // 1
+        else if (num % 3 === 1)
+            summaryItem.css("clear", "left"); // 4,7,10,13,...,22,25
 
         // update summary title link full url
         // update summary title link inner text
