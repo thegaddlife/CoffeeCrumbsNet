@@ -39,8 +39,11 @@ ccSummaryBlock = {
         //alert("Remaining: " + posts.length);
 
         // return indication of whether there are more posts to display
-        if (posts.length > 0)
-            showMore.fadeIn();
+        if (posts.length > 0) {
+            window.setTimeout(function() {
+                showMore.fadeIn();
+            }, 2000);
+        }
     },
 
     AddSummaryItem: function(post, num) {
