@@ -100,7 +100,7 @@ ccSummaryBlock = {
 
         // add category links
         post.categories.forEach(function logArrayElements(element, index, array) {
-            $('<a class="cc-summary-cat-link" href=/?category="' + $(element).param() + '">' + element + '</a>').appendTo($(".summary-metadata-item--cats", summaryItem));
+            $('<a class="cc-summary-cat-link" href=/?category="' + encodeURIComponent(element) + '">' + element + '</a>').appendTo($(".summary-metadata-item--cats", summaryItem));
         });
 
         summaryItem.appendTo("#cc-summary-block-item-list");
