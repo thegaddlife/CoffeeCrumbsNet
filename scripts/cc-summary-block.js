@@ -7,6 +7,7 @@ $(function() {
 
     $("#CCSummaryBlockLoadMoreLink").on("click", function() {
         ccSummaryBlock.LoadSummaryItems();
+        return false;
     });
 
 });
