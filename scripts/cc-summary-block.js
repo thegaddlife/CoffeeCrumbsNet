@@ -51,6 +51,8 @@ ccSummaryBlock = {
 
         if (num % 3 === 0)
             summaryItem.css("margin-right", "0");
+        else if (num === 1)
+            summaryItem.addClass("sqs-active-slide");
 
         // update summary title link full url
         // update summary title link inner text
