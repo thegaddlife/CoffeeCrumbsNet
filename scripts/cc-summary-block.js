@@ -28,16 +28,15 @@ ccSummaryBlock = {
         return hiddenSummaryItems.length > count;
     },
 
-    LoadImage: function(postId) {
+    LoadImage: function(post) {
 
-        // go grab the post
-        var post = {};
-
-        // find the image from the post body
-        var parsed = $('<div/>').append(post.body);
-        var imgSrc = $(parsed).find('.thumb-image').data('src');
+        // parse out the img src
+        var startIdx = post.body.indexOf("<noscript><img src=") + 20;
+        var endIdx = post.body.indexOf("</noscript>", startIdx) - 5;
+        var imgSrc = post.body.substring(startIdx, endIdx);
 
         var image = $("#ccSummaryBlock-image-" + postId);
+
         var downloadingImage = new Image();
         downloadingImage.onload = function() {
             image.src = this.src;
