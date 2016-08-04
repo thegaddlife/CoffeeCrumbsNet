@@ -14,7 +14,7 @@ $(function() {
 
 ccSummaryBlock = {
 
-    ImagesPerBatch: 9,
+    ImagesPerBatch: 3,
 
     LoadSummaryItems: function() {
 
@@ -64,18 +64,6 @@ ccSummaryBlock = {
             .attr("title", post.title)
             .text(post.title);
 
-        var startIdx = post.body.indexOf("<noscript><img src=") + 20;
-        var endIdx = post.body.indexOf("</noscript>", startIdx) - 5;
-        var imgSrc = post.body.substring(startIdx, endIdx).replace('http:', 'https:');
-
-        if (imgSrc && imgSrc.length) {
-            $(".summary-thumbnail-image", summaryItem)
-                .first()
-                .attr("src", imgSrc + '?format=700w')
-                .attr("data-src", imgSrc)
-                .attr("data-image-dimensions", "800x535");
-        }
-
         // update anchor link href &
         // update anchor link data-title = {post.title}
         $(".summary-thumbnail-container", summaryItem)
@@ -108,6 +96,28 @@ ccSummaryBlock = {
             .text(post.author.displayName);
 
         summaryItem.appendTo("#cc-summary-block-item-list");
+
+        // async load of the img
+        var startIdx = post.body.indexOf("<noscript><img src=") + 20;
+        var endIdx = post.body.indexOf("</noscript>", startIdx) - 5;
+        var imgSrc = post.body.substring(startIdx, endIdx).replace('http:', 'https:');
+
+        if (imgSrc && imgSrc.length) {
+
+            var image = $(".summary-thumbnail-image", summaryItem).first();
+            image
+                .attr("data-src", imgSrc)
+                .attr("data-image-dimensions", "800x535");
+
+            var downloadingImage = new Image();
+            downloadingImage.onload = function() {
+                image.attr("src", this.src);
+                debugger;
+                summaryItem.fadeIn();
+            };
+            downloadingImage.src = imgSrc + '?format=700w';
+
+        }
     }
 
 }
