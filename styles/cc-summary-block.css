@@ -40,11 +40,3 @@
 .cc-summary-category .summary-metadata-item--cats {
     display: none;
 }
-
-.cc-summary-cat-link:before {
-    content: ","
-}
-
-.cc-summary-cat-link:first:before {
-    content: ""
-}
