@@ -56,7 +56,7 @@
     alert("start");
     var posts = [];
 {.repeated section items}
-    posts.push({"id":"{id}","title":"test","author":{"id":"{author.id}","name":{author.displayName|json},"url":"{author.websiteUrl}"},"body":"test"});
+    posts.push({"id":"{id}","title":{title|json},"author":{"id":"{author.id}","name":{author.displayName|json},"url":"{author.websiteUrl}"},"body":{body|json|truncate 1000}});
 {.end}
     alert(posts.length);
     alert(posts[0].body.substring(100,40));
