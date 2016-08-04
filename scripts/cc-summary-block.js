@@ -1,7 +1,7 @@
 $(function() {
 
     $(document).on("ready", function() {
-        if (posts !== undefined && posts.length > 0)
+        if (document.getElementById("summary-item-clone") !== null)
             ccSummaryBlock.LoadSummaryItems();
     });
 
