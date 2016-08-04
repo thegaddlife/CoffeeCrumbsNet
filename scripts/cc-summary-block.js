@@ -46,7 +46,7 @@ ccSummaryBlock = {
 
     AddSummaryItem: function(post, num) {
 
-        var summaryItem = $("#summary-item-clone").clone();
+        var summaryItem = $("#summary-item-clone").clone(true);
         summaryItem.attr("id", "summary-item-" + post.id);
 
         if (num % 3 === 0)
