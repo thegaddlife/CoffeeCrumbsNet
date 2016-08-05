@@ -32,7 +32,7 @@
         <div class="sqs-block socialaccountlinks-v2-block sqs-block-socialaccountlinks-v2" data-block-type="54">
             <div class="sqs-block-content">
                 <nav class="sqs-svg-icon--list social-icon-alignment-left social-icons-color-black social-icons-size-medium social-icons-style-regular">
-                    <a href="http://www.facebook.com/coffeeandcrumbsblog" target="_blank" class="sqs-svg-icon--wrapper facebook" style="">
+                    <a href="http://www.facebook.com/coffeeandcrumbsblog" target="_blank" class="sqs-svg-icon--wrapper facebook facebook-{customContent.facebookOn}" style="">
                         <div><svg class="sqs-svg-icon--social" viewBox="0 0 64 64"><use class="sqs-use--background" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/universal/svg/social-accounts.svg#background"></use><use class="sqs-use--icon" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/universal/svg/social-accounts.svg#facebook-icon"></use><use class="sqs-use--mask" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/universal/svg/social-accounts.svg#facebook-mask"></use></svg></div>
                     </a>
                     <a href="http://instagram.com/coffeeandcrumbs" target="_blank" class="sqs-svg-icon--wrapper instagram" style="">
