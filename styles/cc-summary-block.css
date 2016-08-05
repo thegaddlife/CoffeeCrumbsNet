@@ -1,6 +1,5 @@
-#CCSummaryBlockLoadMoreLink {
+.cc-button-link {
     display: block;
-    margin-top: 15px;
     width: 100%;
     text-align: center;
     background-color: #f2f2f2;
@@ -12,9 +11,13 @@
     text-decoration: none !important;
 }
 
-#CCSummaryBlockLoadMoreLink:hover {
+.cc-button-link:hover {
     border: solid 1px #ccc;
     cursor: pointer;
+}
+
+#CCSummaryBlockLoadMoreLink {
+    margin-top: 15px;
 }
 
 .summary-block-footer #load-more-left {
