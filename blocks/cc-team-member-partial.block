@@ -41,6 +41,9 @@
                     <a href="https://twitter.com/Coffee__Crumbs" target="_blank" class="sqs-svg-icon--wrapper twitter" style="">
                         <div><svg class="sqs-svg-icon--social" viewBox="0 0 64 64"><use class="sqs-use--background" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/universal/svg/social-accounts.svg#background"></use><use class="sqs-use--icon" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/universal/svg/social-accounts.svg#twitter-icon"></use><use class="sqs-use--mask" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/universal/svg/social-accounts.svg#twitter-mask"></use></svg></div>
                     </a>
+                    <a href="https://pinterest.com/Coffee__Crumbs" target="_blank" class="sqs-svg-icon--wrapper pinterest" style="">
+                        <div><svg class="sqs-svg-icon--social" viewBox="0 0 64 64"><use class="sqs-use--background" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/universal/svg/social-accounts.svg#background"></use><use class="sqs-use--icon" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/universal/svg/social-accounts.svg#pinterest-icon"></use><use class="sqs-use--mask" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/universal/svg/social-accounts.svg#pinterest-mask"></use></svg></div>
+                    </a>
                 </nav>
             </div>
         </div>
