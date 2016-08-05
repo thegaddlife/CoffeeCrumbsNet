@@ -67,3 +67,11 @@
 .cc-team-member-social .itunes.itunes-true {
     display: inline-block;
 }
+
+.cc-team-link {
+    visibility: hidden;
+}
+
+.cc-team-link.cc-author-true {
+    visibility: visible;
+}
