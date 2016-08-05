@@ -77,6 +77,6 @@
     visibility: hidden;
 }
 
-.cc-team-link.cc-author-true {
+.cc-team-list .cc-team-link.cc-author-true {
     visibility: visible;
 }

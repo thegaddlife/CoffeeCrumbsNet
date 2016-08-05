@@ -24,7 +24,7 @@
         </div>
         <div class="sqs-block html-block sqs-block-html" data-block-type="2">
             <div class="sqs-block-content">
-                <a class="cc-button-link cc-team-link cc-author-{starred}" href="{fullUrl}">Read My Essays</a>
+                <a class="cc-team-link cc-author-{starred}" href="{fullUrl}">Read My Essays</a>
             </div>
         </div>
     </div>
