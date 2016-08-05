@@ -49,3 +49,11 @@
 .cc-summary-block.sqs-block-summary-v2 .summary-metadata-item--date:after {
     margin: 0 .1em !important;
 }
+
+.cc-team-member-social .facebook {
+    display: none;
+}
+
+.cc-team-member-social .facebook.facebook-true {
+    display: inline-block;
+}
