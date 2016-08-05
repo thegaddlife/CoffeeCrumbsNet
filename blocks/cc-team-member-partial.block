@@ -9,10 +9,9 @@
                         <a href="{fullUrl}">
 
                             <div style="padding-bottom:100.0%;" class="image-block-wrapper has-aspect-ratio" data-description="">
-                            <noscript>&lt;img src="{assetUrl}"  /&gt;</noscript>
-                            <img class="thumb-image loaded" data-src="{assetUrl}" data-image="{assetUrl}"
-                                data-image-dimensions="250x250" data-image-focal-point="0.5,0.5" data-load="false" data-type="image" src="{assetUrl}?format=500w" style="top: 0%; left: 0%; width: 100%; height: 100%; position: absolute;"
-                                data-image-resolution="500w" />
+                                <noscript>&lt;img src="{assetUrl}"  /&gt;</noscript>
+                                <img class="thumb-image loaded" data-src="{assetUrl}" data-image="{assetUrl}" data-image-dimensions="250x250" data-image-focal-point="0.5,0.5" data-load="false" data-type="image" src="{assetUrl}?format=500w" style="top: 0%; left: 0%; width: 100%; height: 100%; position: absolute;"
+                                    data-image-resolution="500w" />
                             </div>
 
                         </a>
@@ -28,6 +27,21 @@
         <div class="sqs-block html-block sqs-block-html" data-block-type="2">
             <div class="sqs-block-content">
                 <h3 style="margin-left:0px; margin-right:0px"><br><strong>{title}&nbsp;&nbsp;|&nbsp;&nbsp;{customContent.teamTitle}</strong></h3> {.section body}{@}{.end}
+            </div>
+        </div>
+        <div class="sqs-block socialaccountlinks-v2-block sqs-block-socialaccountlinks-v2" data-block-type="54">
+            <div class="sqs-block-content">
+                <nav class="sqs-svg-icon--list social-icon-alignment-center social-icons-color-black social-icons-size-medium social-icons-style-regular">
+                    <a href="http://www.facebook.com/coffeeandcrumbsblog" target="_blank" class="sqs-svg-icon--wrapper facebook" style="">
+                        <div><svg class="sqs-svg-icon--social" viewBox="0 0 64 64"><use class="sqs-use--background" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/universal/svg/social-accounts.svg#background"></use><use class="sqs-use--icon" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/universal/svg/social-accounts.svg#facebook-icon"></use><use class="sqs-use--mask" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/universal/svg/social-accounts.svg#facebook-mask"></use></svg></div>
+                    </a>
+                    <a href="http://instagram.com/coffeeandcrumbs" target="_blank" class="sqs-svg-icon--wrapper instagram" style="">
+                        <div><svg class="sqs-svg-icon--social" viewBox="0 0 64 64"><use class="sqs-use--background" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/universal/svg/social-accounts.svg#background"></use><use class="sqs-use--icon" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/universal/svg/social-accounts.svg#instagram-icon"></use><use class="sqs-use--mask" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/universal/svg/social-accounts.svg#instagram-mask"></use></svg></div>
+                    </a>
+                    <a href="https://twitter.com/Coffee__Crumbs" target="_blank" class="sqs-svg-icon--wrapper twitter" style="">
+                        <div><svg class="sqs-svg-icon--social" viewBox="0 0 64 64"><use class="sqs-use--background" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/universal/svg/social-accounts.svg#background"></use><use class="sqs-use--icon" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/universal/svg/social-accounts.svg#twitter-icon"></use><use class="sqs-use--mask" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/universal/svg/social-accounts.svg#twitter-mask"></use></svg></div>
+                    </a>
+                </nav>
             </div>
         </div>
     </div>
