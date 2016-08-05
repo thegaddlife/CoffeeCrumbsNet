@@ -86,3 +86,7 @@
 .cc-team-list .cc-team-link.cc-author-true {
     visibility: visible;
 }
+
+.sqs-svg-icon--list.social-icon-alignment-left {
+    text-align: center !important;
+}

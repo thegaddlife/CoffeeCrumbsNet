@@ -1,0 +1,257 @@
+/* /////////// TEXT AND LINK COLORS AND STYLES //////////// */
+
+a {
+    color: #b3996f !important;
+    text-decoration: underline !important;
+}
+
+h1 a,
+h2 a,
+h3 a,
+.date a,
+.summary-title a,
+.article-meta a,
+#navigation-top a,
+#mobile-navigation a,
+#commenting a,
+#prevLink i,
+#nextLink i {
+    color: #595959 !important;
+    text-decoration: none !important;
+}
+
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+.date a:hover,
+.summary-title a:hover,
+#navigation-top a:hover,
+#mobile-navigation a:hover,
+#commenting a .author:hover {
+    text-decoration: underline !important;
+}
+
+
+/* /////////// CIRCULAR IMAGES //////////// */
+
+
+/* Team List Images */
+
+.sqs-col-5 img,
+
+/* Writer Page Image */
+
+.sqs-col-3 img,
+.collection-layout-split-sidebars #sidebar-one-wrapper .thumb-image,
+.collection-layout-split-sidebars #sidebar-one-wrapper .summary-thumbnail,
+.collection-layout-split-sidebars .summary-thumbnail-image {
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+}
+
+
+/* remove margin from bottom of logo banner image */
+
+#banner-area #banner {
+    margin-bottom: 0;
+}
+
+
+/* use theme color for social icon fill */
+
+.social-icons-style-regular.social-icons-color-black .sqs-use--icon {
+    fill: #D8D3CD;
+}
+
+
+/* add some custom spacing to the h3 elements in the sidebar */
+
+body.underline-sidebar-h3 .vertical-navigation-bar h3 {
+    margin-top: .9em !important;
+}
+
+
+/* Padding above first image block in post */
+
+.post .sqs-block-image:first-child {
+    padding-top: 0;
+}
+
+
+/* creats some space beneath a page header (currently used for podcast page banner) */
+
+#page-body-header {
+    margin-bottom: 15px;
+}
+
+
+/* comment button custom color */
+
+.squarespace-comments .comment-btn,
+.squarespace-comments .comment-btn:hover {
+    background-color: #d8d3cd;
+    color: #54585b;
+}
+
+
+/* /////////// SPLIT SIDEBAR STYLES (PODCAST) //////////// */
+
+.collection-layout-split-sidebars {
+    .one-sidebar {
+        #sidebar-one-wrapper {
+            margin-left: -180px;
+            width: 180px;
+        }
+        #content-wrapper {
+            border-right-width: 180px;
+        }
+    }
+    #sidebar-two-blocks .summary-thumbnail-container {
+        pointer-events: none !important;
+    }
+    #page-body-wrapper .sqs-gallery-design-list .summary-item {
+        margin-bottom: 40px !important;
+    }
+    #page-body-footer .image-block-outer-wrapper .intrinsic {
+        max-width: 200px !important;
+    }
+}
+
+
+/* /////////// SPLIT SIDEBAR TABLET & MOBILE STYLES //////////// */
+
+@media only screen and (max-width: 768px) {
+    .collection-layout-split-sidebars {
+        #sidebar-two-blocks {
+            .image-block-outer-wrapper .intrinsic {
+                max-width: 250px !important;
+            }
+            a.summary-thumbnail-container {
+                max-width: 250px;
+                margin: auto;
+                margin-bottom: 15px;
+            }
+            .summary-thumbnail-image {
+                width: 250px;
+            }
+        }
+    }
+}
+
+
+/* /////////// MOBILE STYLES //////////// */
+
+@media only screen and (max-width: 640px) {
+    .sqs-col-7 h3,
+    .sqs-col-9 h3 {
+        text-align: center;
+        /* Center team member name for mobile */
+    }
+    #content .sqs-col-7 {
+        margin-bottom: 35px;
+        /* add space beneath team bio on mobile */
+    }
+    .cc-team-list .sqs-svg-icon--list.social-icon-alignment-left,
+    .cc-team-member .sqs-svg-icon--list.social-icon-alignment-left,
+    {
+        text-align: center !important;
+        /* override left align and center the social links on mobile */
+    }
+}
+
+
+/* ///////////// CC SUMMARY BLOCK AND TEAM STYLES ////////////////// */
+
+.cc-button-link {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #f2f2f2;
+    border: solid 1px #f2f2f2;
+    height: 26px;
+    clear: both;
+    padding-top: 7px;
+    font-size: 16px;
+    text-decoration: none !important;
+}
+
+.cc-button-link:hover {
+    border: solid 1px #ccc;
+    cursor: pointer;
+}
+
+#CCSummaryBlockLoadMoreLink {
+    margin-top: 15px;
+    padding-top: 11px;
+    height: 48px;
+}
+
+.summary-block-footer #load-more-left {
+    float: left;
+    margin-left: 25px;
+}
+
+.summary-block-footer #load-more-right {
+    float: right;
+    margin-right: 25px;
+}
+
+
+/*Hide the author link on the team member pages*/
+
+.cc-summary-team .sqs-block-summary-v2 .summary-block-setting-secondary-metadata-author .summary-item-has-author .summary-metadata--secondary .summary-metadata-item--author {
+    display: none;
+}
+
+
+/*Hide the category links on the category pages*/
+
+.cc-summary-category .summary-metadata-item--cats {
+    display: none;
+}
+
+.cc-summary-cat-link {
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.cc-summary-block.sqs-block-summary-v2 .summary-metadata-item--date:after {
+    margin: 0 .1em !important;
+}
+
+.cc-team-member-social .facebook,
+.cc-team-member-social .twitter,
+.cc-team-member-social .instagram,
+.cc-team-member-social .rss,
+.cc-team-member-social .pinterest,
+.cc-team-member-social .itunes {
+    display: none;
+}
+
+.cc-team-member-social .facebook.facebook-true,
+.cc-team-member-social .twitter.twitter-true,
+.cc-team-member-social .instagram.instagram-true,
+.cc-team-member-social .rss.rss-true,
+.cc-team-member-social .pinterest.pinterest-true,
+.cc-team-member-social .itunes.itunes-true {
+    display: inline-block;
+}
+
+.cc-team-link {
+    visibility: hidden;
+    display: block;
+    width: 122px;
+    background: url(/assets/CoffeeCrumbs_Mark1_Low.png) 0px 0px no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+    padding: 2px 0 5px 38px;
+}
+
+.cc-team-list .cc-team-link.cc-author-true {
+    visibility: visible;
+}
+
+.sqs-svg-icon--list.social-icon-alignment-left {
+    text-align: center !important;
+}
