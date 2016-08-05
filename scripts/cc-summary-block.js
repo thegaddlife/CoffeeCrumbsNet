@@ -123,7 +123,6 @@ ccSummaryBlock = {
             var downloadingImage = new Image();
             downloadingImage.onload = function() {
                 image.attr("src", this.src);
-                debugger;
                 summaryItem.fadeIn();
             };
             downloadingImage.src = imgSrc + '?format=700w';
