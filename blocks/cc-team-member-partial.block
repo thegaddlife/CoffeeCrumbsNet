@@ -22,6 +22,11 @@
 
             </div>
         </div>
+        <div class="sqs-block html-block sqs-block-html" data-block-type="2">
+            <div class="sqs-block-content">
+                <p class="text-align-center"><a href="{fullUrl}">Read My Essays</a></p>
+            </div>
+        </div>
     </div>
     <div class="col sqs-col-7 span-7">
         <div class="sqs-block html-block sqs-block-html" data-block-type="2">
