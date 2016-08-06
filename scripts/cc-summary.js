@@ -91,9 +91,9 @@ var ccSummaryBlock2 = {
 
         // return indication of whether there are more posts to display
         if (this.NextPageUrl !== "") {
-            window.setTimeout(function() {
+            window.setTimeout($.proxy(function() {
                 this.ShowMoreLink.fadeIn();
-            }, 2000);
+            }, this), 2000);
         }
 
     },
