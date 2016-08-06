@@ -177,6 +177,7 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
     margin-top: 15px;
     padding-top: 11px;
     height: 48px;
+    box-sizing: border-box;
 }
 
 #load-more-left {
