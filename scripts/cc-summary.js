@@ -12,12 +12,12 @@ $(function() {
 
 });
 
-ccSummaryBlock2 = {
+var ccSummaryBlock2 = {
 
     ImagesPerBatch: 12,
     TotalLoadedThisBatch: 0,
-    QueryType = "",
-    QueryVal = "",
+    QueryType: "",
+    QueryVal: "",
     NextPageUrl: "",
     LoadedPosts: [],
 
