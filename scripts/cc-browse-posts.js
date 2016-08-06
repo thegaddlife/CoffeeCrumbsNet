@@ -4,8 +4,8 @@ var CCBrowsePosts = {
 
         var title = $("#page-body-header").find("h3");
         var titleText = title.text();
-        alert(titleText);
 
+        title.text(titleText + "Some Category");
     }
 
 }
