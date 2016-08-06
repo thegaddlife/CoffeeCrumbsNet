@@ -342,7 +342,7 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
         margin-right: 7.5662%;
         clear: none;
     }
-    .cc-summary-item:nth-child(3) {
+    .cc-summary-item:nth-child(3n) {
         /* 3,6,9,12 */
         margin-right: 0px;
     }
