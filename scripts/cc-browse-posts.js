@@ -1,4 +1,4 @@
-$(document).on("load", function() {
+$(document).on("ready", function() {
 
     debugger;
     if ($("#BrowsePostsHeading").length) {
