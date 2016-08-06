@@ -22,24 +22,24 @@ ccSummaryBlock = {
         showMore.hide();
 
         // any posts left?
-        if (!posts || posts.length === 0)
+        if (!ccSummaryBlockPosts || ccSummaryBlockPosts.length === 0)
             return false;
 
         // TODO: custom ordering and sorting here
         // similar to the related posts algorithm
 
         var processed = 0;
-        while (processed < this.ImagesPerBatch && posts.length > 0) {
+        while (processed < this.ImagesPerBatch && ccSummaryBlockPosts.length > 0) {
             processed++;
-            var post = posts[0]; // get first element
+            var post = ccSummaryBlockPosts[0]; // get first element
             this.AddSummaryItem(post, processed);
-            posts = posts.slice(1); // remove it
+            ccSummaryBlockPosts = ccSummaryBlockPosts.slice(1); // remove it
         }
 
         //alert("Remaining: " + posts.length);
 
         // return indication of whether there are more posts to display
-        if (posts.length > 0) {
+        if (ccSummaryBlockPosts.length > 0) {
             window.setTimeout(function() {
                 showMore.fadeIn();
             }, 2000);

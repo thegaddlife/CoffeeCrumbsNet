@@ -1,8 +1,12 @@
-$(document).on("ready", function() {
+$(function() {
 
-    if ($("#BrowsePostsHeading").length) {
-        CCBrowsePosts.SetTitle();
-    }
+    $(document).on("ready", function() {
+
+        if ($("#BrowsePostsHeading").length) {
+            CCBrowsePosts.SetTitle();
+        }
+
+    });
 
 });
 

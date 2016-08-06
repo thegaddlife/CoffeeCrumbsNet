@@ -46,7 +46,7 @@
 
 
 <script type="text/javascript">
-    var posts = [
+    var ccSummaryBlockPosts = [
 {.repeated section items}
     { "id":"{id}","title":{title|json},"fullUrl":"{fullUrl}","categories":{categories|json},"author":{"id":"{author.id}","displayName":{author.displayName|json},"websiteUrl":"{author.websiteUrl}"},"publishOn":{publishOn}, "body":{body|truncate 1000|json} },
 {.end}
@@ -54,7 +54,7 @@
     {}
     ];
     // remove blank item
-    posts.splice(posts.length-1, 1);
+    ccSummaryBlockPosts.splice(ccSummaryBlockPosts.length-1, 1);
 </script>
 
 <!-- This initial summary item serves as a template -->
