@@ -69,8 +69,6 @@ var ccSummaryBlock2 = {
                     that.NextPageUrl = data.pagination.nextPageUrl;
                 }
 
-                debugger;
-
                 // check for the next page and add the promise;
                 // stop paging if we are at max capacity
                 if (morePages && that.TotalLoadedThisBatch < that.ImagesPerBatch)
@@ -85,6 +83,11 @@ var ccSummaryBlock2 = {
 
     ProcessSummaryBlock: function() {
 
+        // loop over this.LoadedPosts
+        for (i = 0; i < this.LoadedPosts.length; i++) {
+            AddSummaryItem(this.LoadedPosts[i]);
+        }
+
         // reset batch counter and loaded array
         this.TotalLoadedThisBatch = 0;
         this.LoadedPosts = [];
@@ -98,7 +101,7 @@ var ccSummaryBlock2 = {
 
     },
 
-    AddSummaryItem: function(post, num) {
+    AddSummaryItem: function(post) {
 
         var summaryItem = $("#cc-summary-item-clone").clone(true);
 
