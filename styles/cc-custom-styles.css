@@ -299,11 +299,13 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
 .cc-team-link {
     visibility: hidden;
     display: block;
-    width: 122px;
-    background: url(/assets/CoffeeCrumbs_Mark1_Low.png) 0px 0px no-repeat;
+    width: 43px;
+    background: url(/assets/CoffeeCrumbs_Mark3_Low.png) 0px 0px no-repeat;
     background-size: contain;
     margin: 0 auto;
-    padding: 2px 0 5px 38px;
+    padding: 6px 15px 5px 40px;
+    text-align: center;
+    font-size: 17.5px;
 }
 
 .cc-team-list .cc-team-link.cc-author-true {
