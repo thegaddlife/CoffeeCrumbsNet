@@ -313,14 +313,14 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
 @media only screen and (min-width: 641px) and (max-width: 768px) {
     /* two images per row */
     .cc-summary-block .cc-summary-item {
-        width: 46%;
-        margin-bottom: 8%;
-        margin-right: 8%;
+        width: 47%;
+        margin-bottom: 6%;
+        margin-right: 6%;
         clear: none;
     }
     .cc-summary-item:nth-child(odd) {
         clear: left;
-        margin-right: 8% !important;
+        margin-right: 6% !important;
     }
     .cc-summary-item:nth-child(even) {
         margin-right: 0px;
@@ -329,8 +329,8 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
     .cc-summary-block .cc-summary-item .cc-summary-thumbnail.img-wrapper img {
         top: 0px;
         left: -13px;
-        width: 300px;
-        height: 205px;
+        width: 352px;
+        height: 238px;
         position: absolute;
     }
 }
