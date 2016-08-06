@@ -140,31 +140,14 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
 }
 
 
-/* /////////// MOBILE STYLES //////////// */
-
-@media only screen and (max-width: 640px) {
-    .sqs-col-7 h3,
-    .sqs-col-9 h3 {
-        text-align: center;
-        /* Center team member name for mobile */
-    }
-    #content .sqs-col-7 {
-        margin-bottom: 35px;
-        /* add space beneath team bio on mobile */
-    }
-    .cc-team-list .sqs-svg-icon--list.social-icon-alignment-left,
-    .cc-team-member .sqs-svg-icon--list.social-icon-alignment-left,
-    {
-        text-align: center !important;
-        /* override left align and center the social links on mobile */
-    }
-}
-
-
 /* ///////////// CC SUMMARY BLOCK AND TEAM STYLES ////////////////// */
 
 .cc-summary-block-item-list {
     margin-bottom: -7.5662%;
+}
+
+.cc-team-list .spacer-block {
+    padding-bottom: 35px;
 }
 
 
@@ -188,6 +171,13 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
 .cc-summary-thumbnail.img-wrapper {
     overflow: hidden;
     padding-bottom: 70%;
+}
+
+.cc-team-list .sqs-svg-icon--list.social-icon-alignment-left,
+.cc-team-member .sqs-svg-icon--list.social-icon-alignment-left,
+{
+    text-align: center !important;
+    /* override left align and center the social links on mobile */
 }
 
 

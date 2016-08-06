@@ -10,7 +10,7 @@
           {@|apply cc-team-member-partial.block}
           
           <div class="sqs-block spacer-block sqs-block-spacer" data-aspect-ratio="2.7742749054224465" data-block-type="21">
-            <div class="sqs-block-content sqs-intrinsic" style="padding-bottom: 2.77427%;">&nbsp;</div>
+            <div class="sqs-block-content sqs-intrinsic">&nbsp;</div>
           </div>
 
           {.end}
