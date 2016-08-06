@@ -44,7 +44,7 @@
 
 <!-- This initial summary item serves as a template -->
 
-<div id="summary-item-clone" class="
+<div id="cc-summary-item-clone" class="
 summary-item
 cc-summary-item
 summary-item-record-type-text
