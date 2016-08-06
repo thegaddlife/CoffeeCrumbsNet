@@ -85,7 +85,7 @@ var ccSummaryBlock2 = {
 
         // loop over this.LoadedPosts
         for (i = 0; i < this.LoadedPosts.length; i++) {
-            AddSummaryItem(this.LoadedPosts[i]);
+            this.AddSummaryItem(this.LoadedPosts[i]);
         }
 
         // reset batch counter and loaded array
