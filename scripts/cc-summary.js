@@ -20,6 +20,7 @@ var ccSummaryBlock2 = {
     QueryVal: "",
     NextPageUrl: "",
     LoadedPosts: [],
+    ShowMoreLink: $("#CCSummaryLoadMoreLink"),
 
     InitPlugin: function() {
         this.QueryType = $("#CCSummaryBlock").data("cc-summary-query-type");
@@ -31,8 +32,7 @@ var ccSummaryBlock2 = {
 
     LoadSummaryItems: function() {
 
-        var showMore = $("#CCSummaryLoadMoreLink");
-        showMore.hide();
+        this.ShowMoreLink.hide();
 
         var rpPromises = [];
         var url = this.NextPageUrl !== "" ? this.NextPageUrl : "/blog/?" + this.QueryType + "=" + this.QueryVal;
@@ -92,7 +92,7 @@ var ccSummaryBlock2 = {
         // return indication of whether there are more posts to display
         if (this.NextPageUrl !== "") {
             window.setTimeout(function() {
-                showMore.fadeIn();
+                this.ShowMoreLink.fadeIn();
             }, 2000);
         }
 
