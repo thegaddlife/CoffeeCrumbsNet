@@ -29,7 +29,7 @@
         </div>
     </div>
     <div class="col sqs-col-7 span-7">
-        <div class="sqs-block html-block sqs-block-html" data-block-type="2">
+        <div class="cc-author-body sqs-block html-block sqs-block-html" data-block-type="2">
             <div class="sqs-block-content">
                 <h3 style="margin-left:0px; margin-right:0px"><br><strong>{title}&nbsp;&nbsp;|&nbsp;&nbsp;{customContent.teamTitle}</strong></h3> {.section body}{@}{.end}
             </div>
