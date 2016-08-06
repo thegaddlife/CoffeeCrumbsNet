@@ -190,7 +190,7 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
 
 @media only screen and (min-width: 547px) {
     /* two images per row */
-    .cc-summary-item {
+    .cc-summary-block .cc-summary-item {
         width: 44%;
         margin-bottom: 12%;
         margin-right: 12%;
@@ -199,7 +199,7 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
     .cc-summary-item:nth-child(odd) {
         clear: left;
     }
-    .cc-summary-item img {
+    .cc-summary-block .cc-summary-item .cc-summary-thumbnail.img-wrapper img {
         top: 0px;
         left: -13px;
         width: 247px;
@@ -211,10 +211,7 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
 
 /* Desktop > 1054 */
 
-@media only screen and (min-width: 1054px) {
-    .cc-summary-item {}
-    .cc-summary-item img {}
-}
+@media only screen and (min-width: 1054px) {}
 
 .cc-button-link {
     display: block;
