@@ -342,14 +342,13 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
         margin-right: 7.5662%;
         clear: none;
     }
-    .cc-summary-item:nth-child(2n+1) {
+    .cc-summary-item:nth-child(3) {
         /* 3,6,9,12 */
         margin-right: 0px;
     }
     .cc-summary-item:nth-child(3n+1) {
         /* 1,4,7,10... */
         clear: left;
-        margin-right: 7.5662%;
     }
     .cc-summary-block .cc-summary-item .cc-summary-thumbnail.img-wrapper img {
         top: 0px;
