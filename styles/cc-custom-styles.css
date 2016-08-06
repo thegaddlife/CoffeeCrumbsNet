@@ -198,6 +198,7 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
     }
     .cc-summary-item:nth-child(odd) {
         clear: left;
+        margin-right: 12% !important;
     }
     .cc-summary-item:nth-child(even) {
         margin-right: 0px;
