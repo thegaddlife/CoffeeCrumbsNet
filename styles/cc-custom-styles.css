@@ -188,7 +188,7 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
 
 /* Medium Size > 547 */
 
-@media only screen and (min-width: 547px) {
+@media only screen and (min-width: 548px) {
     /* two images per row */
     .cc-summary-block .cc-summary-item {
         width: 44%;
@@ -211,7 +211,7 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
 
 /* Desktop > 1054 */
 
-@media only screen and (min-width: 1054px) {}
+@media only screen and (min-width: 1055px) {}
 
 .cc-button-link {
     display: block;
