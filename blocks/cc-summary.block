@@ -29,7 +29,7 @@
 
                 <footer class="summary-block-footer">
 
-                    <a id="CCSummaryBlockLoadMoreLink" class="cc-button-link" href="javascript:void(0);" style="display:none"><i id="load-more-left" class="icon-chevron-down"></i>Load More Posts<i id="load-more-right" class="icon-chevron-down"></i></a>
+                    <a id="CCSummaryLoadMoreLink" class="cc-button-link" href="javascript:void(0);" style="display:none"><i id="load-more-left" class="icon-chevron-down"></i>Load More Posts<i id="load-more-right" class="icon-chevron-down"></i></a>
 
                 </footer>
 

@@ -5,7 +5,7 @@ $(function() {
             ccSummaryBlock2.LoadSummaryItems();
     });
 
-    $("#CCSummaryBlockLoadMoreLink").on("click", function() {
+    $("#CCSummaryLoadMoreLink").on("click", function() {
         ccSummaryBlock2.LoadSummaryItems();
         return false;
     });
@@ -19,7 +19,7 @@ ccSummaryBlock2 = {
 
     LoadSummaryItems: function() {
 
-        var showMore = $("#CCSummaryBlockLoadMoreLink");
+        var showMore = $("#CCSummaryLoadMoreLink");
         showMore.hide();
 
         this.NextPageUrl = "#SomeLink";
