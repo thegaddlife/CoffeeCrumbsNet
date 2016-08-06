@@ -346,7 +346,7 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
         /* 1,4,7,10... */
         clear: left;
     }
-    .cc-summary-item:nth-child(2n+1) {
+    .cc-summary-item:nth-child(2n+1):nth-child(1) {
         /* 3,6,9,12 */
         margin-right: 0px;
     }
