@@ -31,8 +31,6 @@ var ccSummaryBlock2 = {
 
     LoadSummaryItems: function() {
 
-        debugger;
-
         var showMore = $("#CCSummaryLoadMoreLink");
         showMore.hide();
 
@@ -72,16 +70,16 @@ var ccSummaryBlock2 = {
             .then(function(data) {
 
                 that.TotalLoadedThisBatch += data.items.length;
-                alert(that.TotalLoadedThisBatch);
-
                 Array.prototype.push.apply(that.LoadedPosts, data.items)
 
                 var morePages = false;
                 that.NextPageUrl = "";
-                if (data.Pagination && data.pagination.nextPageUrl) {
+                if (data.pagination && data.pagination.nextPageUrl) {
                     morePages = true;
-                    that.NextPageUrl = data.pagination.nextPage;
+                    that.NextPageUrl = data.pagination.nextPageUrl;
                 }
+
+                debugger;
 
                 // check for the next page and add the promise;
                 // stop paging if we are at max capacity
@@ -96,8 +94,7 @@ var ccSummaryBlock2 = {
     },
 
     ProcessSummaryBlock: function() {
-        alert(this.LoadedPosts.length);
-        alert(this.NextPageUrl);
+
     },
 
     AddSummaryItem: function(post, num) {
