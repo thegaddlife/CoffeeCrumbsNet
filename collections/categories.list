@@ -1,4 +1,15 @@
 <div class="sqs-layout sqs-grid-12 columns-12" data-type="page">
+	
+	<div class="row sqs-row">
+		<div class="col sqs-col-12 span-12">
+			<div class="sqs-block html-block sqs-block-html" data-block-type="2">
+				<div class="sqs-block-content">
+					<h1 class="text-align-center">Coffee + Crumbs Essay Categories</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	
 	<div class="row sqs-row">
 		<div class="col sqs-col-12 span-12">
 			<div class="sqs-block summary-v2-block sqs-block-summary-v2" data-block-json="{&quot;hSize&quot;:null,&quot;floatDir&quot;:null,&quot;collectionId&quot;:&quot;5313bd5ee4b06c7ef09c8d67&quot;,&quot;design&quot;:&quot;autogrid&quot;,&quot;headerText&quot;:&quot;Featured&quot;,&quot;textSize&quot;:&quot;medium&quot;,&quot;pageSize&quot;:12,&quot;imageAspectRatio&quot;:&quot;1.3333333333333333&quot;,&quot;columnWidth&quot;:285,&quot;gutter&quot;:80,&quot;listImageSize&quot;:30,&quot;listImageAlignment&quot;:&quot;left&quot;,&quot;slidesPerRow&quot;:3,&quot;textAlignment&quot;:&quot;center&quot;,&quot;showTitle&quot;:true,&quot;showThumbnail&quot;:true,&quot;showExcerpt&quot;:false,&quot;showReadMoreLink&quot;:false,&quot;showPrice&quot;:true,&quot;productQuickViewEnabled&quot;:false,&quot;showPastOrUpcomingEvents&quot;:&quot;Upcoming&quot;,&quot;metadataPosition&quot;:&quot;below-content&quot;,&quot;primaryMetadata&quot;:&quot;none&quot;,&quot;secondaryMetadata&quot;:&quot;none&quot;,&quot;filter&quot;:{&quot;category&quot;:&quot;&quot;},&quot;autoCrop&quot;:true,&quot;lightbox&quot;:false,&quot;mixedContent&quot;:true,&quot;blockId&quot;:&quot;dbe7e2471c4d18c9b09c&quot;}"
