@@ -230,8 +230,11 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
     display: inline-block;
 }
 
+.cc-essays-link.cc-author-false {
+    display: none;
+}
+
 .cc-team-link {
-    visibility: hidden;
     display: block;
     width: 43px;
     background: url(/assets/CoffeeCrumbs_Mark3_Low.png) 0px 0px no-repeat;
@@ -240,10 +243,6 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
     padding: 6px 15px 5px 40px;
     text-align: center;
     font-size: 17.5px;
-}
-
-.cc-team-list .cc-team-link.cc-author-true {
-    visibility: visible;
 }
 
 
