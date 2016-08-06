@@ -24,7 +24,7 @@
 
         <div class="summary-item-list-container sqs-gallery-container">
 
-          <div id="cc-summary-block-item-list" class="summary-item-list sqs-gallery sqs-gallery-design-autogrid" style="margin-bottom: -7.5662%;">
+          <div id="cc-summary-block-item-list" class="summary-item-list sqs-gallery sqs-gallery-design-autogrid">
             
           </div>
           <!-- End .summary-item-list -->
@@ -61,6 +61,7 @@
 
 <div id="summary-item-clone" class="
     summary-item
+    cc-summary-item
     summary-item-record-type-text
     sqs-gallery-design-autogrid-slide
     summary-item-has-thumbnail

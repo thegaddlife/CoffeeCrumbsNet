@@ -163,6 +163,10 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
 
 /* ///////////// CC SUMMARY BLOCK AND TEAM STYLES ////////////////// */
 
+.cc-summary-block-item-list {
+    margin-bottom: -7.5662%;
+}
+
 
 /* Mobile First */
 
