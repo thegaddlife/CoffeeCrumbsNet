@@ -1,5 +1,6 @@
 (function() {
 
+    debugger;
     if ($("#BrowsePostsHeading").length) {
         CCBrowsePosts.SetTitle();
     }
