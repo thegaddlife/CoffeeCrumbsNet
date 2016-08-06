@@ -1,16 +1,8 @@
-var CCBrowsePosts = {
+CCBrowsePosts.SetTitle = function() {
 
-    SetTitle: function() {
-
-        var queryParam = "Perspective";
-        $("#BrowsePostsHeading")
-            .text("Browse Essays - " + queryParam)
-            .fadeIn();
-
-    },
-
-    LoadSummaryItems: function() {
-
-    }
+    var queryParam = "Perspective";
+    $("#BrowsePostsHeading")
+        .text("Browse Essays - " + queryParam)
+        .fadeIn();
 
 }
