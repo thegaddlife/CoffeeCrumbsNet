@@ -1,6 +1,6 @@
 var CCBrowsePosts = {
 
-    SetTitle = function() {
+    SetTitle: function() {
 
         var title = document.getElementsByTagName("h3");
         var titleText = title.innerText;
