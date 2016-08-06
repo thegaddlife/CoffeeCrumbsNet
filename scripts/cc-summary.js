@@ -2,7 +2,7 @@ $(function() {
 
     $(document).on("ready", function() {
         if (document.getElementById("cc-summary-item-clone") !== null)
-            ccSummaryBlock2.LoadSummaryItems();
+            ccSummaryBlock2.InitPlugin();
     });
 
     $("#CCSummaryLoadMoreLink").on("click", function() {
@@ -15,14 +15,43 @@ $(function() {
 ccSummaryBlock2 = {
 
     ImagesPerBatch: 12,
+    TotalLoadedThisBatch: 0,
+    QueryType = "",
+    QueryVal = "",
     NextPageUrl: "",
+    LoadedPosts: [],
+
+    InitPlugin: function() {
+        this.QueryType = $("#CCSummaryBlock").data("cc-summary-query-type");
+        this.QueryVal = $("#CCSummaryBlock").data("cc-summary-query-value");
+
+        // first call
+        this.LoadSummaryItems();
+    },
 
     LoadSummaryItems: function() {
+
+        debugger;
 
         var showMore = $("#CCSummaryLoadMoreLink");
         showMore.hide();
 
-        this.NextPageUrl = "#SomeLink";
+        var rpPromises = [];
+        var url = this.NextPageUrl !== "" ? this.NextPageUrl : "/blog/?" + this.QueryType + "=" + this.QueryVal;
+        rpPromises.push(this.LoadRelatedPostsByUrl(url + "&format=json"));
+
+        $.when.apply($, rpPromises).then($.proxy(function(results) {
+
+            this.ProcessSummaryBlock();
+
+            // reset batch counter and loaded array
+            this.TotalLoadedThisBatch = 0;
+            this.LoadedPosts = [];
+
+        }, this), function() {
+            // error occurred
+            console.log("an error occurred while loading related posts")
+        });
 
         // return indication of whether there are more posts to display
         if (this.NextPageUrl !== "") {
@@ -30,6 +59,45 @@ ccSummaryBlock2 = {
                 showMore.fadeIn();
             }, 2000);
         }
+    },
+
+    LoadRelatedPostsByUrl: function(url) {
+
+        var that = this;
+
+        var req = $.ajax({
+                url: url,
+                type: "GET"
+            })
+            .then(function(data) {
+
+                that.TotalLoadedThisBatch += data.items.length;
+                alert(that.TotalLoadedThisBatch);
+
+                Array.prototype.push.apply(that.LoadedPosts, data.items)
+
+                var morePages = false;
+                that.NextPageUrl = "";
+                if (data.Pagination && data.pagination.nextPageUrl) {
+                    morePages = true;
+                    that.NextPageUrl = data.pagination.nextPage;
+                }
+
+                // check for the next page and add the promise;
+                // stop paging if we are at max capacity
+                if (morePages && that.TotalLoadedThisBatch < that.ImagesPerBatch)
+                    return that.LoadRelatedPostsByUrl(that.NextPageUrl + "&format=json");
+
+                return data.items;
+
+            });
+
+        return req;
+    },
+
+    ProcessSummaryBlock: function() {
+        alert(this.LoadedPosts.length);
+        alert(this.NextPageUrl);
     },
 
     AddSummaryItem: function(post, num) {
