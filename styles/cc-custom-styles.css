@@ -199,6 +199,9 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
     .cc-summary-item:nth-child(odd) {
         clear: left;
     }
+    .cc-summary-item:nth-child(even) {
+        margin-right: 0px;
+    }
     .cc-summary-block .cc-summary-item .cc-summary-thumbnail.img-wrapper img {
         top: 0px;
         left: -13px;
