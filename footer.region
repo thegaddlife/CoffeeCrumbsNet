@@ -17,6 +17,7 @@
 
 		<squarespace:script src="cc-custom-scripts.js" combo="true" />
 		<squarespace:script src="cc-summary-block.js" combo="false" />
+		<squarespace:script src="cc-browse-posts.js" combo="false" />
 
 		{squarespace-footers}
 
