@@ -363,5 +363,5 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
 /* BROWSE POSTS PAGE */
 
 #BrowsePostsHeading {
-    visibility: hidden;
+    display: none;
 }
