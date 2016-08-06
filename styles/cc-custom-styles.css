@@ -177,7 +177,7 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
     clear: left;
 }
 
-.cc-summary-block .cc-summary-block-item-list .cc-summary-item .img-wrapper img {
+.cc-summary-block .cc-summary-item .cc-summary-thumbnail.img-wrapper img {
     top: 0px;
     left: -29px;
     width: 527px;
