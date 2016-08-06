@@ -358,3 +358,10 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
         position: absolute;
     }
 }
+
+
+/* BROWSE POSTS PAGE */
+
+#BrowsePostsHeading {
+    visibility: hidden;
+}
