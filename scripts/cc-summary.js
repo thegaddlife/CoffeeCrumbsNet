@@ -42,21 +42,11 @@ var ccSummaryBlock2 = {
 
             this.ProcessSummaryBlock();
 
-            // reset batch counter and loaded array
-            this.TotalLoadedThisBatch = 0;
-            this.LoadedPosts = [];
-
         }, this), function() {
             // error occurred
             console.log("an error occurred while loading related posts")
         });
 
-        // return indication of whether there are more posts to display
-        if (this.NextPageUrl !== "") {
-            window.setTimeout(function() {
-                showMore.fadeIn();
-            }, 2000);
-        }
     },
 
     LoadRelatedPostsByUrl: function(url) {
@@ -94,6 +84,17 @@ var ccSummaryBlock2 = {
     },
 
     ProcessSummaryBlock: function() {
+
+        // reset batch counter and loaded array
+        this.TotalLoadedThisBatch = 0;
+        this.LoadedPosts = [];
+
+        // return indication of whether there are more posts to display
+        if (this.NextPageUrl !== "") {
+            window.setTimeout(function() {
+                showMore.fadeIn();
+            }, 2000);
+        }
 
     },
 
