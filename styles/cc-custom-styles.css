@@ -191,14 +191,14 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
 @media only screen and (min-width: 548px) {
     /* two images per row */
     .cc-summary-block .cc-summary-item {
-        width: 44%;
-        margin-bottom: 12%;
-        margin-right: 12%;
+        width: 45%;
+        margin-bottom: 10%;
+        margin-right: 10%;
         clear: none;
     }
     .cc-summary-item:nth-child(odd) {
         clear: left;
-        margin-right: 12% !important;
+        margin-right: 10% !important;
     }
     .cc-summary-item:nth-child(even) {
         margin-right: 0px;
@@ -207,11 +207,14 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
     .cc-summary-block .cc-summary-item .cc-summary-thumbnail.img-wrapper img {
         top: 0px;
         left: -13px;
-        width: 247px;
-        height: 165px;
+        width: 276px;
+        height: 185px;
         position: absolute;
     }
 }
+
+
+/* 641px */
 
 
 /* Desktop > 1054 */
