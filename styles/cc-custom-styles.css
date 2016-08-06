@@ -230,6 +230,7 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
     display: inline-block;
 }
 
+.cc-team-member .cc-essays-link,
 .cc-essays-link.cc-author-false {
     display: none;
 }
