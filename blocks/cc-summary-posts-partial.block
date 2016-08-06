@@ -69,14 +69,14 @@
     summary-item-has-author
     summary-item-has-comments-enabled
     positioned" data-type="image" 
-    style="display: none; width: 28.2892%; margin-bottom: 7.5662%; margin-right: 7.5662%;">
+    style="display: none;"> 
 
     <a href="#" class="summary-thumbnail-container sqs-gallery-image-container" data-title="" data-description="">
-        <div class="summary-thumbnail img-wrapper" style="overflow: hidden; padding-bottom: 75%;">
+        <div class="summary-thumbnail cc-summary-thumbnail img-wrapper">
 
             <img 
                 data-load="false" 
-                class="summary-thumbnail-image loaded" style="top: 0px; left: -14px; width: 252px; height: 168px; position: absolute;" 
+                class="summary-thumbnail-image loaded" 
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" 
                 data-image-resolution="750w">
 
