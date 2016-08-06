@@ -364,4 +364,5 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
 
 #BrowsePostsHeading {
     display: none;
+    font-weight: 700;
 }
