@@ -6,7 +6,8 @@ $(function() {
     });
 
     $("#CCSummaryLoadMoreLink").on("click", function() {
-        ccSummaryBlock2.LoadSummaryItems();
+        if (ccSummaryBlock2.IsLoading === false)
+            ccSummaryBlock2.LoadSummaryItems();
         return false;
     });
 
@@ -14,6 +15,9 @@ $(function() {
 
 var ccSummaryBlock2 = {
 
+    IsLoading: true,
+    LoadingText: "Loading Essays ...",
+    LoadMoreText: "Load More Essays",
     ImagesPerBatch: 12,
     TotalLoadedThisBatch: 0,
     QueryType: "",
@@ -32,7 +36,8 @@ var ccSummaryBlock2 = {
 
     LoadSummaryItems: function() {
 
-        this.ShowMoreLink.hide();
+        this.IsLoading = true;
+        this.ShowMoreLink.text(this.LoadingText);
 
         var rpPromises = [];
         var url = this.NextPageUrl !== "" ? this.NextPageUrl : "/blog/?" + this.QueryType + "=" + this.QueryVal;
@@ -91,12 +96,15 @@ var ccSummaryBlock2 = {
         // reset batch counter and loaded array
         this.TotalLoadedThisBatch = 0;
         this.LoadedPosts = [];
+        this.IsLoading = false;
 
         // return indication of whether there are more posts to display
         if (this.NextPageUrl !== "") {
             window.setTimeout($.proxy(function() {
-                this.ShowMoreLink.fadeIn();
+                this.ShowMoreLink.text(this.LoadMoreText);
             }, this), 2000);
+        } else {
+            this.ShowMoreLink.fadeOut();
         }
 
     },
