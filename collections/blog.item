@@ -53,7 +53,7 @@
 
             {.section sourceUrl}<span class="source"><span class="delimiter">/</span><a href="{sourceUrl}" target="_blank"><i class="icon-share"></i>Source</a></span>{.end}
 
-            {.section categories}<div class="categories"><i class="icon-bookmark"></i>{.repeated section @}<a href="{collection.fullUrl}?category={@|url-encode}" rel="tag">{@}</a>{.alternates with}, {.end}</div>{.end}
+            {.section categories}<div class="categories"><i class="icon-bookmark"></i>{.repeated section @}<a href="{collection.fullUrl}/category/{@|url-encode}" rel="tag">{@}</a>{.alternates with}, {.end}</div>{.end}
             {.section tags}<div class="tags"><i class="icon-tag"></i>{.repeated section @}<a href="{collection.fullUrl}?tag={@|url-encode}" rel="tag">{@}</a>{.alternates with}, {.end}</div>{.end}
 
             <div class="shareLoveButtons">
