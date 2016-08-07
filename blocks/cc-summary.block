@@ -1,5 +1,8 @@
 <div id="CCSummaryBlock" class="sqs-block summary-v2-block sqs-block-summary-v2 cc-summary-block" data-block-json="{&quot;hSize&quot;:null,&quot;floatDir&quot;:null,&quot;collectionId&quot;:&quot;5313bd5ee4b06c7ef09c8d67&quot;,&quot;design&quot;:&quot;autogrid&quot;,&quot;headerText&quot;:&quot;Featured&quot;,&quot;textSize&quot;:&quot;medium&quot;,&quot;pageSize&quot;:99,&quot;imageAspectRatio&quot;:&quot;1.3333333333333333&quot;,&quot;columnWidth&quot;:250,&quot;gutter&quot;:60,&quot;listImageSize&quot;:99,&quot;listImageAlignment&quot;:&quot;left&quot;,&quot;slidesPerRow&quot;:3,&quot;textAlignment&quot;:&quot;left&quot;,&quot;showTitle&quot;:true,&quot;showThumbnail&quot;:true,&quot;showExcerpt&quot;:false,&quot;showReadMoreLink&quot;:false,&quot;showPrice&quot;:true,&quot;productQuickViewEnabled&quot;:false,&quot;showPastOrUpcomingEvents&quot;:&quot;Upcoming&quot;,&quot;metadataPosition&quot;:&quot;below-content&quot;,&quot;primaryMetadata&quot;:&quot;date&quot;,&quot;secondaryMetadata&quot;:&quot;cats&quot;,&quot;filter&quot;:{&quot;tag&quot;:&quot;author name&quot;},&quot;autoCrop&quot;:true,&quot;lightbox&quot;:false,&quot;mixedContent&quot;:true,&quot;blockId&quot;:&quot;153949b11af6f47a6646&quot;}"
-    data-cc-summary-query-type="{customContent.queryType}" data-cc-summary-query-value="{customContent.queryValue}" data-block-type="55">
+    data-cc-summary-query-type="{customContent.queryType}" 
+    data-cc-summary-query-value="{customContent.queryValue}" 
+    data-cc-load-item="{starred}"
+    data-block-type="55">
 
     <div class="sqs-block-content">
 

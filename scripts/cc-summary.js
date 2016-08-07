@@ -1,9 +1,10 @@
-document.addEventListener("DOMContentLoaded", function(event) {
+$(function() {
 
-    //$(document).on("ready", function() {
-    if (document.getElementById("cc-summary-item-clone") !== null)
-        ccSummaryBlock2.InitPlugin();
-    //});
+    $(document).on("ready", function() {
+        var ccSummaryBlock = $("#CCSummaryBlock");
+        if (ccSummaryBlock.length && ccSummaryBlock.attr("data-cc-load-item") === "true")
+            ccSummaryBlock2.InitPlugin();
+    });
 
 });
 
