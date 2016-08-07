@@ -360,11 +360,3 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
         position: absolute;
     }
 }
-
-
-/* BROWSE POSTS PAGE */
-
-#BrowsePostsHeading {
-    display: none;
-    font-weight: 700;
-}
