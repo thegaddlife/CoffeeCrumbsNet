@@ -161,9 +161,9 @@ var ccSummaryBlock2 = {
 
         // add category links
         var catLinks = $(".summary-metadata-item--cats", summaryItem);
-        post.categories.forEach(function logArrayElements(element, index, array) {
+        post.categories.forEach(function processCategory(element, index, array) {
             var cat = encodeURIComponent(element).replace(/%20/g, "+");
-            $('<a class="cc-summary-cat-link" href="/?category=' + cat + '">' + element + '</a>')
+            $('<a class="cc-summary-cat-link" href="/category/' + cat + '">' + element + '</a>')
                 .appendTo(catLinks);
         });
 
