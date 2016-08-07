@@ -1,6 +1,7 @@
 $(function() {
 
     $(document).on("ready", function() {
+        alert("ready");
         if (document.getElementById("cc-summary-item-clone") !== null)
             ccSummaryBlock2.InitPlugin();
     });
@@ -36,6 +37,7 @@ var ccSummaryBlock2 = {
 
     LoadSummaryItems: function() {
 
+        alert("Loading");
         this.IsLoading = true;
         this.ShowMoreLink.fadeIn().find("#EssaysLoadingText").text(this.LoadingText);
 
