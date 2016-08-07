@@ -68,22 +68,25 @@ var ccSummaryBlock2 = {
             })
             .then(function(data) {
 
-                that.TotalLoadedThisBatch += data.items.length;
-                Array.prototype.push.apply(that.LoadedPosts, data.items)
+                if (data.items) {
 
-                var morePages = false;
-                that.NextPageUrl = "";
-                if (data.pagination && data.pagination.nextPageUrl) {
-                    morePages = true;
-                    that.NextPageUrl = data.pagination.nextPageUrl;
+                    that.TotalLoadedThisBatch += data.items.length;
+                    Array.prototype.push.apply(that.LoadedPosts, data.items)
+
+                    var morePages = false;
+                    that.NextPageUrl = "";
+                    if (data.pagination && data.pagination.nextPageUrl) {
+                        morePages = true;
+                        that.NextPageUrl = data.pagination.nextPageUrl;
+                    }
+
+                    // check for the next page and add the promise;
+                    // stop paging if we are at max capacity
+                    if (morePages && that.TotalLoadedThisBatch < that.ImagesPerBatch)
+                        return that.LoadRelatedPostsByUrl(that.NextPageUrl + "&format=json");
+
+                    return data.items;
                 }
-
-                // check for the next page and add the promise;
-                // stop paging if we are at max capacity
-                if (morePages && that.TotalLoadedThisBatch < that.ImagesPerBatch)
-                    return that.LoadRelatedPostsByUrl(that.NextPageUrl + "&format=json");
-
-                return data.items;
 
             });
 
