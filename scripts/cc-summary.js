@@ -103,13 +103,10 @@ var ccSummaryBlock2 = {
         this.IsLoading = false;
 
         // return indication of whether there are more posts to display
-        if (this.NextPageUrl !== "") {
-            window.setTimeout($.proxy(function() {
-                this.ShowMoreLink.find("#EssaysLoadingText").text(this.LoadMoreText);
-            }, this), 2000);
-        } else {
+        if (this.NextPageUrl !== "")
+            this.ShowMoreLink.find("#EssaysLoadingText").text(this.LoadMoreText);
+        else
             this.ShowMoreLink.fadeOut();
-        }
 
     },
 
