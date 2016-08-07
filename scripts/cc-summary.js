@@ -184,8 +184,7 @@ var ccSummaryBlock2 = {
 
             var downloadingImage = new Image();
             downloadingImage.onload = function() {
-                //image.attr("src", this.src);
-                //summaryItem.fadeIn();
+                image.attr("src", this.src);
             };
             downloadingImage.src = imgSrc + '?format=700w';
 
