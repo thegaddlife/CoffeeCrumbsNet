@@ -37,7 +37,7 @@ var ccSummaryBlock2 = {
     LoadSummaryItems: function() {
 
         this.IsLoading = true;
-        this.ShowMoreLink.text(this.LoadingText);
+        this.ShowMoreLink.fadeIn().find("#EssaysLoadingText").text(this.LoadingText);
 
         var rpPromises = [];
         var url = this.NextPageUrl !== "" ? this.NextPageUrl : "/blog/?" + this.QueryType + "=" + this.QueryVal;
@@ -101,7 +101,7 @@ var ccSummaryBlock2 = {
         // return indication of whether there are more posts to display
         if (this.NextPageUrl !== "") {
             window.setTimeout($.proxy(function() {
-                this.ShowMoreLink.text(this.LoadMoreText);
+                this.ShowMoreLink.find("#EssaysLoadingText").text(this.LoadMoreText);
             }, this), 2000);
         } else {
             this.ShowMoreLink.fadeOut();
