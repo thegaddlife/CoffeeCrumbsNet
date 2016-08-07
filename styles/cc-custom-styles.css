@@ -267,7 +267,7 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
     width: 527px;
     height: 352px;
     position: absolute;
-    background: url(/assets/loading.gif) 50% no-repeat;
+    background: url(/assets/cc-loading.gif) 50% no-repeat;
 }
 
 .cc-summary-thumbnail.img-wrapper {
