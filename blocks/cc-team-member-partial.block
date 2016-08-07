@@ -29,9 +29,9 @@
         </div>
     </div>
     <div class="col sqs-col-7 span-7">
-        <div class="cc-author-body sqs-block html-block sqs-block-html" data-block-type="2">
+        <div class="cc-author-title sqs-block html-block sqs-block-html" data-block-type="2">
             <div class="sqs-block-content">
-                <h3 style="margin-left:0px; margin-right:0px"><br><strong><a href="{fullUrl}">{title}</a>&nbsp;&nbsp;|&nbsp;&nbsp;{customContent.teamTitle}</strong></h3> {.section body}{@}{.end}
+                <h3 style="margin-left:0px; margin-right:0px"><br><strong><a href="{fullUrl}">{title}</a>&nbsp;&nbsp;|&nbsp;&nbsp;{customContent.teamTitle}</strong></h3> 
             </div>
         </div>
         <div class="cc-team-member-social sqs-block socialaccountlinks-v2-block sqs-block-socialaccountlinks-v2" data-block-type="54">
@@ -56,6 +56,11 @@
                         <div><svg class="sqs-svg-icon--social" viewBox="0 0 64 64"><use class="sqs-use--background" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/universal/svg/social-accounts.svg#background"></use><use class="sqs-use--icon" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/universal/svg/social-accounts.svg#rss-icon"></use><use class="sqs-use--mask" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/universal/svg/social-accounts.svg#rss-mask"></use></svg></div>
                     </a>
                 </nav>
+            </div>
+        </div>
+        <div class="cc-author-body sqs-block html-block sqs-block-html" data-block-type="2">
+            <div class="sqs-block-content">
+                {.section body}{@}{.end}
             </div>
         </div>
     </div>
