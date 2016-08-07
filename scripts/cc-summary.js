@@ -166,7 +166,9 @@ var ccSummaryBlock2 = {
                 .appendTo(catLinks);
         });
 
-        summaryItem.appendTo("#cc-summary-block-item-list");
+        summaryItem
+            .appendTo("#cc-summary-block-item-list")
+            .fadeIn();;
 
         // async load of the img
         var startIdx = post.body.indexOf("<noscript><img src=") + 20;
@@ -183,7 +185,7 @@ var ccSummaryBlock2 = {
             var downloadingImage = new Image();
             downloadingImage.onload = function() {
                 image.attr("src", this.src);
-                summaryItem.fadeIn();
+                //summaryItem.fadeIn();
             };
             downloadingImage.src = imgSrc + '?format=700w';
 

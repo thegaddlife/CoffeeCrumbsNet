@@ -63,8 +63,9 @@ positioned" data-type="image" style="display: none;">
     <a href="#" class="summary-thumbnail-container sqs-gallery-image-container" data-title="" data-description="">
         <div class="summary-thumbnail cc-summary-thumbnail img-wrapper">
 
-            <img data-load="false" class="summary-thumbnail-image loaded" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-image-resolution="750w">
-
+            <img data-load="false" class="summary-thumbnail-image loaded" 
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-image-resolution="750w">
+            
         </div>
     </a>
 
