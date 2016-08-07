@@ -201,7 +201,7 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
 
 /*Hide the category links on the category pages*/
 
-.cc-summary-category .summary-metadata-item--cats {
+.cc-summary-category .sqs-block-summary-v2 .summary-block-setting-secondary-metadata-author .summary-item-has-author .summary-metadata--secondary .summary-metadata-item--cats {
     display: none;
 }
 
