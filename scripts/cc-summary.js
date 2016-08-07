@@ -162,7 +162,10 @@ var ccSummaryBlock2 = {
         // add category links
         var catLinks = $(".summary-metadata-item--cats", summaryItem);
         post.categories.forEach(function processCategory(element, index, array) {
-            var cat = encodeURIComponent(element).replace(/%20/g, "-").replace("%2b", "").toLowerCase();
+            // strip out +
+            var cat = element.replace("+", "").toLowerCase();
+            // replace space in URI with a dash
+            cat = encodeURIComponent(cat).replace(/%20/g, "-");
             $('<a class="cc-summary-cat-link" href="/category/' + cat + '">' + element + '</a>')
                 .appendTo(catLinks);
         });
