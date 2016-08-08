@@ -1,9 +1,5 @@
 <div class="author-block post-{id}" style="">
 {.section author}
-  {.section avatarAssetUrl}
-  <div class="author-avatar" style="background-image: url({@});"></div>
-  {.end}
-  <h3 class="author-name"><a href="{collection.fullUrl}?author={id}">{displayName}</a></h3>
-  <div class="author-bio"><p>{bio}</p></div>
+  <h3 class="author-name"><a href="{websiteUrl}">{displayName}</a></h3>
 {.end}
 </div>
