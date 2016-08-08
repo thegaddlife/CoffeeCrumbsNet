@@ -274,13 +274,6 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
     padding-bottom: 70%;
 }
 
-.cc-team-list .sqs-svg-icon--list.social-icon-alignment-left,
-.cc-team-member .sqs-svg-icon--list.social-icon-alignment-left,
-{
-    text-align: center !important;
-    /* override left align and center the social links on mobile */
-}
-
 
 /* Medium Size > 547 */
 
@@ -304,6 +297,12 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
         width: 276px;
         height: 185px;
         position: absolute;
+    }
+    .cc-team-list .sqs-svg-icon--list.social-icon-alignment-center,
+    .cc-team-member .sqs-svg-icon--list.social-icon-alignment-center,
+    {
+        text-align: left !important;
+        /* override center align and left align the social links above mobile */
     }
 }
 
