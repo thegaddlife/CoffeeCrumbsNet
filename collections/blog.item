@@ -63,8 +63,6 @@
 
             {@|apply author-block.block}
 
-            {@|apply cc-related-posts-partial.block}
-
             <div class="post-entry-injection clear-fix">{postItemInjectCode}</div>
 
           </div>
