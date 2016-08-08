@@ -234,7 +234,7 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
 
 /* remove margin from last visible social icon */
 
-.cc-team-member-social .sqs-block-content .sqs-svg-icon--list .social-icon-true {
+.cc-team-member-social .social-icon-true:last-child {
     margin: 0 0 0 0 !important;
 }
 
