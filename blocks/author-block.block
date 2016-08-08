@@ -2,7 +2,7 @@
 <squarespace:query collection="blog" limit="1">
   
   <div class="featured-wrapper">
-    {.repeated section items}
+    {.section item}
     <div class="featured-post">
       {.main-image?}<img {@|image-meta} />{.end}
       <h2>{title}</h2>
