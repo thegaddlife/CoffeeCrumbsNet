@@ -307,6 +307,9 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
         text-align: left !important;
         /* override center align and left align the social links above mobile */
     }
+    .cc-author-title h3 {
+        text-align: left;
+    }
 }
 
 
