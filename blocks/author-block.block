@@ -1,8 +1,8 @@
 <div class="author-block">
-<squarespace:query collection="blog" limit="1">
+<squarespace:query collection="blog" limit="10">
   
   <div class="featured-wrapper">
-    {.section item}
+    {.repeated section items}
     <div class="featured-post">
       {.main-image?}<img {@|image-meta} />{.end}
       <h2>{title}</h2>
