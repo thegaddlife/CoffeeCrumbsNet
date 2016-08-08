@@ -1,5 +1,5 @@
 <div class="author-block">
-<squarespace:query collection="blog" featured="true" limit="1">
+<squarespace:query collection="blog" limit="1">
   
   <div class="featured-wrapper">
     {.repeated section items}
