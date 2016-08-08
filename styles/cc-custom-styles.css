@@ -97,45 +97,41 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
 
 /* /////////// SPLIT SIDEBAR STYLES (PODCAST) //////////// */
 
-.collection-layout-split-sidebars {
-    .one-sidebar {
-        #sidebar-one-wrapper {
-            margin-left: -180px;
-            width: 180px;
-        }
-        #content-wrapper {
-            border-right-width: 180px;
-        }
-    }
-    #sidebar-two-blocks .summary-thumbnail-container {
-        pointer-events: none !important;
-    }
-    #page-body-wrapper .sqs-gallery-design-list .summary-item {
-        margin-bottom: 40px !important;
-    }
-    #page-body-footer .image-block-outer-wrapper .intrinsic {
-        max-width: 200px !important;
-    }
+.collection-layout-split-sidebars .one-sidebar #sidebar-one-wrapper {
+    margin-left: -180px;
+    width: 180px;
+}
+
+.collection-layout-split-sidebars .one-sidebar #content-wrapper {
+    border-right-width: 180px;
+}
+
+.collection-layout-split-sidebars #sidebar-two-blocks .summary-thumbnail-container {
+    pointer-events: none !important;
+}
+
+.collection-layout-split-sidebars #page-body-wrapper .sqs-gallery-design-list .summary-item {
+    margin-bottom: 40px !important;
+}
+
+.collection-layout-split-sidebars #page-body-footer .image-block-outer-wrapper .intrinsic {
+    max-width: 200px !important;
 }
 
 
 /* /////////// SPLIT SIDEBAR TABLET & MOBILE STYLES //////////// */
 
 @media only screen and (max-width: 768px) {
-    .collection-layout-split-sidebars {
-        #sidebar-two-blocks {
-            .image-block-outer-wrapper .intrinsic {
-                max-width: 250px !important;
-            }
-            a.summary-thumbnail-container {
-                max-width: 250px;
-                margin: auto;
-                margin-bottom: 15px;
-            }
-            .summary-thumbnail-image {
-                width: 250px;
-            }
-        }
+    .collection-layout-split-sidebars #sidebar-two-blocks .image-block-outer-wrapper .intrinsic {
+        max-width: 250px !important;
+    }
+    .collection-layout-split-sidebars #sidebar-two-blocks a.summary-thumbnail-container {
+        max-width: 250px;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+    .collection-layout-split-sidebars #sidebar-two-blocks .summary-thumbnail-image {
+        width: 250px;
     }
 }
 
