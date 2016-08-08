@@ -164,8 +164,9 @@ var ccSummaryBlock2 = {
         post.categories.forEach(function processCategory(element, index, array) {
             // strip out + and &
             var cat = element.replace("+", "").replace("&", "").toLowerCase();
-            // replace space in URI with a dash
-            cat = encodeURIComponent(cat).replace(/%20/g, "-");
+            // replace space in URI with a dash; also double dash with single
+            // for cases where ampersand is removed between two spaces
+            cat = encodeURIComponent(cat).replace(/%20/g, "-").replace("--", "-");
             $('<a class="cc-summary-cat-link" href="/category/' + cat + '">' + element + '</a>')
                 .appendTo(catLinks);
         });
