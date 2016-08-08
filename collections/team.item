@@ -31,10 +31,13 @@
           {.section prevItem}
           <li class="prev"><a href="{fullUrl}" title="{title}" id="prevLink"><i class="icon-chevron-left"></i><span class="prev-title">{title|truncate 36}</span></a></li>
           {.or}
-          <li class="no-prev"><a href="{collection.fullUrl}"><i class="icon-list"></i>{collection.title}</a></li>{.end} {.section nextItem}
+          <li class="no-prev"><a href="{collection.fullUrl}"><i class="icon-list"></i>{collection.title}</a></li>
+          {.end} 
+          {.section nextItem}
           <li class="next"><a href="{fullUrl}" title="{title}" id="nextLink"><span class="next-title">{title|truncate 36}</span><i class="icon-chevron-right"></i></a></li>
           {.or}
-          <li class="no-next"><a href="{collection.fullUrl}"><i class="icon-list"></i>{collection.title}</a></li>{.end}
+          <li class="no-next"><a href="{collection.fullUrl}"><i class="icon-list"></i>{collection.title}</a></li>
+          {.end}
         </ul>
       </div>
     </nav>
