@@ -1,5 +1,5 @@
 <div class="author-block post-{id}" style="">
-<squarespace:query collection="the-team" tag="50312c9fe4b00d577d15a857" limit="1">  
+<squarespace:query collection="the-team" limit="1">  
     {.repeated section items}
       {title}
     {.end}
