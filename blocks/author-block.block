@@ -1,7 +1,9 @@
 <div class="author-block">
 <squarespace:query collection="blog" limit="1">  
+    <div>
     {.repeated section items}
       {title}
     {.end}
+    </div>
 </squarespace:query>
 </div>
