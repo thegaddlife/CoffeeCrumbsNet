@@ -231,6 +231,13 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
     display: inline-block;
 }
 
+
+/* remove margin from last visible social icon */
+
+.social-icons-size-medium.social-icons-style-regular.social-icon-alignment-left .sqs-svg-icon--wrapper.social-icon-true:last {
+    margin-right: 0;
+}
+
 .cc-team-member .cc-essays-link,
 .cc-essays-link.cc-author-false {
     display: none;
@@ -360,6 +367,9 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
         position: absolute;
     }
 }
+
+
+/* don't hide the paging links for mobile on team and category pages */
 
 .content-wrapper.cc-summary-category .pagination .prev-title,
 .content-wrapper.cc-summary-category .pagination .next-title,
