@@ -1,6 +1,6 @@
 
 <div class="author-block post-{id}" style="">
 {.section author}
-  {@|apply cc-team-member-partial.block}
+  {@|apply cc-author-byline.block}
 {.end}
 </div>

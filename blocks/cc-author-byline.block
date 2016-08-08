@@ -1,0 +1,43 @@
+<div class="row sqs-row">
+    <div class="col sqs-col-5 span-5">
+        <div class="sqs-block image-block sqs-block-image" data-block-type="5">
+            <div class="sqs-block-content">
+                <div class="image-block-outer-wrapper layout-caption-hidden ">
+
+                    <div class="intrinsic" style="max-width:250.0px;">
+
+                        <a href="#">
+
+                            <div style="padding-bottom:100.0%;" class="image-block-wrapper has-aspect-ratio" data-description="">
+                                <noscript>&lt;img src="#"  /&gt;</noscript>
+                                <img class="thumb-image loaded" data-src="" data-image="" data-image-dimensions="250x250" data-image-focal-point="0.5,0.5" data-load="false" data-type="image" src="#?format=500w" style="top: 0%; left: 0%; width: 100%; height: 100%; position: absolute;"
+                                    data-image-resolution="500w" />
+                            </div>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="cc-essays-link sqs-block html-block sqs-block-html" data-block-type="2">
+            <div class="sqs-block-content">
+                <a class="cc-team-link" href="#">Essays</a>
+            </div>
+        </div>
+    </div>
+    <div class="col sqs-col-7 span-7">
+        <div class="cc-author-title sqs-block html-block sqs-block-html" data-block-type="2">
+            <div class="sqs-block-content">
+                <h3 style="margin-left:0px; margin-right:0px"><br><strong><a href="#">Author Name</a></strong></h3> 
+            </div>
+        </div>
+        <div class="cc-author-body sqs-block html-block sqs-block-html" data-block-type="2">
+            <div class="sqs-block-content">
+                bio
+            </div>
+        </div>
+    </div>
+</div>
