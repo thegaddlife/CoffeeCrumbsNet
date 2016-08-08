@@ -1,5 +1,14 @@
 <div class="author-block post-{id}" style="">
 {.section author}
   <h3 class="author-name"><a href="{websiteUrl}">{displayName}</a></h3>
+<squarespace:query collection="the-team" tag="{id}" limit="1">
+  
+  <ol>
+    {.repeated section items}
+      <li><a href="{fullUrl}">{title}</a></li>
+    {.end}
+  </ol>
+  
+</squarespace:query>
 {.end}
 </div>
