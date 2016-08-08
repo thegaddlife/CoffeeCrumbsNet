@@ -231,13 +231,6 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
     display: inline-block;
 }
 
-
-/* remove margin from last visible social icon */
-
-.social-icons-size-medium.social-icons-style-regular.social-icon-alignment-left .sqs-svg-icon--wrapper {
-    margin: 0 0 0 0 !important;
-}
-
 .cc-team-member .cc-essays-link,
 .cc-essays-link.cc-author-false {
     display: none;
