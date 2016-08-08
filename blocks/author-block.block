@@ -1,14 +1,9 @@
-<div class="author-block">
-<squarespace:query collection="blog" limit="10">
-  
-  <div class="featured-wrapper">
-    {.repeated section items}
-    <div class="featured-post">
-      {.main-image?}<img {@|image-meta} />{.end}
-      <h2>{title}</h2>
-    </div>
-    {.end}
-  </div>
-  
-</squarespace:query>
+{.section author}
+<div class="author-block" style="">
+  {.section avatarAssetUrl}
+  <div class="author-avatar" style="background-image: url({@});"></div>
+  {.end}
+  <h3 class="author-name"><a href="{collection.fullUrl}?author={id}">{displayName}</a></h3>
+  <div class="author-bio"><p>{bio}</p></div>
 </div>
+{.end}
