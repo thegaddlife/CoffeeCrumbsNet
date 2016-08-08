@@ -5,6 +5,13 @@ a {
     text-decoration: underline !important;
 }
 
+
+/* Cap first letter of each word all summary block titles */
+
+.summary-title {
+    text-transform: capitalize;
+}
+
 h1 a,
 h2 a,
 h3 a,
