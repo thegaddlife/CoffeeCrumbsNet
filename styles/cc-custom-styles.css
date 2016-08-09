@@ -397,6 +397,12 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
     font-size: 14.5px;
 }
 
+.collection-type-blog .post .author-block img {
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+}
+
 
 /* dont all caps the pagination links */
 
