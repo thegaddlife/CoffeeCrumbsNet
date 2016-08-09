@@ -6,8 +6,8 @@
                     <div class="intrinsic" style="max-width:250.0px;">
                         <a href="#">
                             <div style="padding-bottom:100.0%;" class="image-block-wrapper has-aspect-ratio" data-description="">
-                                <noscript>&lt;img src="#"  /&gt;</noscript>
-                                <img class="thumb-image loaded" data-src="" data-image="" data-image-dimensions="250x250" data-image-focal-point="0.5,0.5" data-load="false" data-type="image" src="#?format=500w" style="top: 0%; left: 0%; width: 100%; height: 100%; position: absolute;"
+                                <noscript>&lt;img src="http://static1.squarespace.com/static/5313b7c3e4b08cb68817cf91/57a1653e20099e152fec5f08/57a17276e4fcb5198837cc04/1470607247155/static1.squarespace-4.jpg"  /&gt;</noscript>
+                                <img class="thumb-image loaded" data-src="http://static1.squarespace.com/static/5313b7c3e4b08cb68817cf91/57a1653e20099e152fec5f08/57a17276e4fcb5198837cc04/1470607247155/static1.squarespace-4.jpg" data-image="" data-image-dimensions="250x250" data-image-focal-point="0.5,0.5" data-load="false" data-type="image" src="http://static1.squarespace.com/static/5313b7c3e4b08cb68817cf91/57a1653e20099e152fec5f08/57a17276e4fcb5198837cc04/1470607247155/static1.squarespace-4.jpg?format=500w" style="top: 0%; left: 0%; width: 100%; height: 100%; position: absolute;"
                                     data-image-resolution="500w" />
                             </div>
                         </a>
@@ -24,12 +24,16 @@
     <div class="col sqs-col-10 span-10">
         <div class="cc-author-title sqs-block html-block sqs-block-html" data-block-type="2">
             <div class="sqs-block-content">
-                <h3 style="margin-left:0px; margin-right:0px"><br><strong><a href="#">Author Name</a></strong></h3> 
+                <h3 style="margin-left:0px; margin-right:0px"><br><strong><a href="#">Melanie Dale</a></strong></h3> 
             </div>
         </div>
         <div class="cc-author-body sqs-block html-block sqs-block-html" data-block-type="2">
             <div class="sqs-block-content">
-                bio
+                Melanie Dale lives with her hubby and three kids in the Atlanta area, where she enjoys recording 
+                her podcast, Lighten Up with Melanie Dale, and blogging at Unexpected.org. The author of two 
+                books, Women Are Scary: The Totally Awkward Adventure of Finding Mom Friends and It’s Not 
+                Fair: Learning to Love the Life You Didn’t Choose, she’s a panelist for MomsEveryday TV and 
+                an advocate for Children's HopeChest.
             </div>
         </div>
     </div>
