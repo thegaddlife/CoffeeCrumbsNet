@@ -30,12 +30,12 @@
 
       {.section body}<div class="body entry-content">{@}</div>{.end}
 
+      {@|apply author-block.block}
+
     <!--POST FOOTER-->
 
       <footer class="article-meta">
           <div>
-
-            {@|apply author-block.block}
 
             <span class="article-dateline">
               <span class="date"><a href="{fullUrl}"><i class="icon-calendar"></i><time class="published" datetime="{addedOn|date %F}">{addedOn|date %B %d, %Y}</time></a><span class="delimiter">/</span></span>
