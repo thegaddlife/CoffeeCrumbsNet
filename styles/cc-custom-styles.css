@@ -392,6 +392,11 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
     display: block;
 }
 
+.collection-type-blog .post .author-block .cc-team-link {
+    padding: 3px 12px 5px 32px;
+    font-size: 14.5px;
+}
+
 
 /* dont all caps the pagination links */
 
