@@ -35,6 +35,8 @@
       <footer class="article-meta">
           <div>
 
+            {@|apply author-block.block}
+
             <span class="article-dateline">
               <span class="date"><a href="{fullUrl}"><i class="icon-calendar"></i><time class="published" datetime="{addedOn|date %F}">{addedOn|date %B %d, %Y}</time></a><span class="delimiter">/</span></span>
             </span>
@@ -60,8 +62,6 @@
               {@|like-button}
               {@|social-button-inline}
             </div>
-
-            {@|apply author-block.block}
 
             <div class="post-entry-injection clear-fix">{postItemInjectCode}</div>
 
