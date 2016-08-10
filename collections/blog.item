@@ -30,10 +30,6 @@
 
       {.section body}<div class="body entry-content">{@}</div>{.end}
 
-      <div class="sqs-block horizontalrule-block sqs-block-horizontalrule" data-block-type="47">
-        <div class="sqs-block-content"><hr></div>
-      </div>
-
       {@|apply author-block.block}
 
     <!--POST FOOTER-->
