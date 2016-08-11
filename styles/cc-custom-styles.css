@@ -418,7 +418,7 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
 
 /* Mid Size -> Desktop */
 
-@media only screen and (min-width: 893px) {
+@media only screen and (min-width: 641px) {
     #item-5633e65be4b030c7001f8cdf .sqs-col-2 .sqs-block-image {
         margin: 0 0 0 15px;
     }
