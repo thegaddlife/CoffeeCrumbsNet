@@ -420,7 +420,7 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
 
 @media only screen and (min-width: 641px) {
     #item-5633e65be4b030c7001f8cdf .sqs-col-2 .sqs-block-image {
-        margin: 0 0 0 15px;
+        margin: 0;
     }
     #item-5633e65be4b030c7001f8cdf .socialaccountlinks-v2-block .sqs-svg-icon--list.social-icon-alignment-left {
         text-align: left;
