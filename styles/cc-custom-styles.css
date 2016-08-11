@@ -384,12 +384,8 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
 
 /* -------- BEGIN AUTHOR BLOCK STYLES ----------*/
 
-.collection-type-blog .post .author-block {
-    display: none;
-}
 
-
-/* Mobile Styles */
+/* Mobile Styles First */
 
 #item-5633e65be4b030c7001f8cdf .sqs-col-2,
 #item-5633e65be4b030c7001f8cdf .sqs-col-10,
