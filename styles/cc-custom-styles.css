@@ -416,9 +416,21 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
 }
 
 
-/* Mid Size -> Desktop */
+/* Mid Size - no sidebar  */
 
-@media only screen and (min-width: 641px) {
+@media only screen and (min-width: 641px) and (max-width: 769px) {
+    #item-5633e65be4b030c7001f8cdf .sqs-col-2 .sqs-block-image {
+        margin: 0;
+    }
+    #item-5633e65be4b030c7001f8cdf .socialaccountlinks-v2-block .sqs-svg-icon--list.social-icon-alignment-left {
+        text-align: left;
+    }
+    #item-5633e65be4b030c7001f8cdf .sqs-col-10 {
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 893px) {
     #item-5633e65be4b030c7001f8cdf .sqs-col-2 .sqs-block-image {
         margin: 0;
     }
