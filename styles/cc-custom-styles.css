@@ -391,6 +391,12 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
 
 /* Mobile Styles */
 
+#item-5633e65be4b030c7001f8cdf .sqs-col-2,
+#item-5633e65be4b030c7001f8cdf .sqs-col-10,
+{
+    width: 100% !important;
+}
+
 #item-5633e65be4b030c7001f8cdf .sqs-col-2 .sqs-block-image {
     margin: 0 auto;
     width: 85px;
@@ -428,7 +434,15 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
     #item-5633e65be4b030c7001f8cdf .sqs-col-10 {
         text-align: left;
     }
+    #item-5633e65be4b030c7001f8cdf .sqs-col-2,
+    #item-5633e65be4b030c7001f8cdf .sqs-col-10,
+    {
+        width: initial !important;
+    }
 }
+
+
+/* 769 -> 893 goes back to mobile while sidebar pops back in */
 
 @media only screen and (min-width: 893px) {
     #item-5633e65be4b030c7001f8cdf .sqs-col-2 .sqs-block-image {
@@ -439,6 +453,11 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
     }
     #item-5633e65be4b030c7001f8cdf .sqs-col-10 {
         text-align: left;
+    }
+    #item-5633e65be4b030c7001f8cdf .sqs-col-2,
+    #item-5633e65be4b030c7001f8cdf .sqs-col-10,
+    {
+        width: initial !important;
     }
 }
 
