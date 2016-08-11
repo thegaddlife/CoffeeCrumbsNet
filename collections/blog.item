@@ -30,8 +30,6 @@
 
       {.section body}<div class="body entry-content">{@}</div>{.end}
 
-      {@|apply author-block.block}
-
     <!--POST FOOTER-->
 
       <footer class="article-meta">
@@ -62,6 +60,8 @@
               {@|like-button}
               {@|social-button-inline}
             </div>
+
+            {@|apply author-block.block}
 
             <div class="post-entry-injection clear-fix">{postItemInjectCode}</div>
 

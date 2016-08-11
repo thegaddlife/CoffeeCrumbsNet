@@ -382,7 +382,7 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
 }
 
 
-/* AUTHOR BLOCK */
+/* -------- BEGIN AUTHOR BLOCK STYLES ----------*/
 
 .collection-type-blog .post .author-block {
     display: none;
@@ -425,12 +425,7 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
 /* Mid Size - no sidebar  */
 
 @media only screen and (min-width: 641px) and (max-width: 769px) {
-    #item-5633e65be4b030c7001f8cdf .sqs-col-2 .sqs-block-image {
-        margin: 0;
-    }
-    #item-5633e65be4b030c7001f8cdf .socialaccountlinks-v2-block .sqs-svg-icon--list.social-icon-alignment-left {
-        text-align: left;
-    }
+    #item-5633e65be4b030c7001f8cdf .socialaccountlinks-v2-block .sqs-svg-icon--list.social-icon-alignment-left,
     #item-5633e65be4b030c7001f8cdf .sqs-col-10 {
         text-align: left;
     }
@@ -446,13 +441,7 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
 /* 769 -> 893 goes back to mobile while sidebar pops back in */
 
 @media only screen and (min-width: 893px) {
-    #item-5633e65be4b030c7001f8cdf .sqs-col-2 .sqs-block-image {
-        margin: 0;
-    }
-    #item-5633e65be4b030c7001f8cdf .socialaccountlinks-v2-block .sqs-svg-icon--list.social-icon-alignment-left {
-        text-align: left;
-    }
-    #item-5633e65be4b030c7001f8cdf .sqs-col-10 {
+    #item-5633e65be4b030c7001f8cdf .socialaccountlinks-v2-block .sqs-svg-icon--list.social-icon-alignment-left #item-5633e65be4b030c7001f8cdf .sqs-col-10 {
         text-align: left;
     }
     #item-5633e65be4b030c7001f8cdf .sqs-col-2 {
@@ -462,6 +451,9 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
         width: 83.3333% !important;
     }
 }
+
+
+/* -------- END AUTHOR BLOCK STYLES ----------*/
 
 
 /* dont all caps the pagination links */
