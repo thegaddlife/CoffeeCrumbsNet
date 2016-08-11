@@ -388,20 +388,19 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
     display: none;
 }
 
-#item-5633e65be4b030c7001f8cdf .post .socialaccountlinks-v2-block {
-    background-color: #d0cdc0;
-    margin: 0 17px 0;
+#item-5633e65be4b030c7001f8cdf .post .sqs-row {
+    background-color: #f9f9f9;
+    margin: 18px 16px 0;
+    padding-top: 10px;
+    padding-bottom: 15px;
 }
 
-#item-5633e65be4b030c7001f8cdf .sqs-col-2 img.thumb-image {
-    border-radius: 200px;
+#item-5633e65be4b030c7001f8cdf .sqs-col-2 .sqs-block-image {
+    width: 85px;
+    margin-left: 15px;
 }
 
-#item-5633e65be4b030c7001f8cdf article header {
-    margin-bottom: 7px;
-}
-
-#item-5633e65be4b030c7001f8cdf .sqs-col-1 img {
+#item-5633e65be4b030c7001f8cdf .sqs-col-2 .sqs-block-image img.thumb-image {
     border-radius: 200px;
 }
 
