@@ -388,7 +388,7 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
     display: none;
 }
 
-#item-5633e65be4b030c7001f8cdf .post .sqs-row {
+#item-5633e65be4b030c7001f8cdf .post .sqs-row:last-child {
     background-color: #f9f9f9;
     margin: 18px 16px 0;
     padding-top: 10px;
