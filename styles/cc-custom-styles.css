@@ -393,6 +393,14 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
     display: none;
 }
 
+#item-5633e65be4b030c7001f8cdf article header {
+    margin-bottom: 7px;
+}
+
+#item-5633e65be4b030c7001f8cdf .sql-col-1 img {
+    border-radius: 200px;
+}
+
 .collection-type-blog .post .author-block .cc-team-link {
     padding: 3px 12px 5px 32px;
     font-size: 14.5px;
