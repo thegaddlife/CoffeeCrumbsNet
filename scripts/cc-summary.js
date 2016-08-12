@@ -2,8 +2,12 @@ $(function() {
 
     $(document).on("ready", function() {
         var ccSummaryBlock = $("#CCSummaryBlock");
-        if (ccSummaryBlock.length && ccSummaryBlock.attr("data-cc-load-item") === "true")
-            ccSummaryBlock2.InitPlugin();
+        if (ccSummaryBlock.length && ccSummaryBlock.attr("data-cc-load-item") === "true") {
+
+            ccSummaryBlock2.QueryType = ccSummaryBlock.data("cc-summary-query-type");
+            ccSummaryBlock2.QueryVal = ccSummaryBlock.data("cc-summary-query-value");
+            ccSummaryBlock2.LoadSummaryItems();
+        }
     });
 
 });
@@ -24,7 +28,6 @@ var ccSummaryBlock2 = {
     ShowLoading: true,
     LoadingText: "Loading Essays ...",
     LoadMoreText: "Load More Essays",
-    DivWrapper: $("#CCSummaryBlock"),
     ImagesPerBatch: 12,
     TotalLoadedThisBatch: 0,
     QueryType: "",
@@ -32,14 +35,6 @@ var ccSummaryBlock2 = {
     NextPageUrl: "",
     LoadedPosts: [],
     ShowMoreLink: $("#CCSummaryLoadMoreLink"),
-
-    InitPlugin: function() {
-        this.QueryType = $("#CCSummaryBlock").data("cc-summary-query-type");
-        this.QueryVal = $("#CCSummaryBlock").data("cc-summary-query-value");
-
-        // first call
-        this.LoadSummaryItems();
-    },
 
     LoadSummaryItems: function() {
 

@@ -10,7 +10,9 @@ $(function() {
 
 var ccAuthorBlock2 = {
 
-    GuestWriterId: "53f58994e4b0a4359f9f0e7b",
+    WriterIds: [
+        "53efc207e4b0b8045113b6e5"
+    ],
 
     InitPlugin: function() {
 
@@ -23,7 +25,7 @@ var ccAuthorBlock2 = {
         var authorId = $("essay-author-link").data("author-id");;
         debugger;
 
-        if (authorId === "" || authorId === this.GuestWriterId)
+        if (authorId === "" || this.WriterIds.includes(authorId) === false)
             return;
 
         $.ajax({
@@ -36,9 +38,9 @@ var ccAuthorBlock2 = {
 
         // Call CC Summary block
         ccSummaryBlock2.ShowLoading = false;
-        ccSummaryBlock2.DivWrapper.attr("data-cc-summary-query-type", "author");
-        ccSummaryBlock2.DivWrapper.attr("data-cc-summary-query-value", "123424");
-        ccSummaryBlock2.InitPlugin();
+        ccSummaryBlock2.QueryType = "author";
+        ccSummaryBlock2.QueryValue = authorId;
+        //ccSummaryBlock2.LoadSummaryItems();
     },
 
     SetAuthor: function(data) {
