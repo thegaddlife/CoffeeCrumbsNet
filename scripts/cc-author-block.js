@@ -61,8 +61,17 @@ var ccAuthorBlock2 = {
         $("#cc-author-more-from").text("More from " + author.author.firstName);
 
         // social links
+        // remove jsont errors
         $(".cc-team-member .cc-social-icon")
-            .removeClass("cc-social-icon-[JSONT: Can't resolve 'customContent.facebookOn'.]");
+            .removeClass("cc-social-icon-[JSONT: Can't resolve 'customContent.facebookOn'.]")
+            .removeClass("cc-social-icon-[JSONT: Can't resolve 'customContent.instagramOn'.]")
+            .removeClass("cc-social-icon-[JSONT: Can't resolve 'customContent.twitterOn'.]")
+            .removeClass("cc-social-icon-[JSONT: Can't resolve 'customContent.pinterestOn'.]")
+            .removeClass("cc-social-icon-[JSONT: Can't resolve 'customContent.itunesOn'.]")
+            .removeClass("cc-social-icon-[JSONT: Can't resolve 'customContent.rssOn'.]");
+
+        if (author.customContent.facebookOn)
+            $(".cc-team-member .cc-social-icon.facebook").addClass("cc-social-icon-true");
     },
 
     AfterLoad: function() {
