@@ -198,7 +198,8 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
 
 /*Hide the author link on the team member pages*/
 
-.cc-summary-team .sqs-block-summary-v2 .summary-block-setting-secondary-metadata-author .summary-item-has-author .summary-metadata--secondary .summary-metadata-item--author {
+.cc-summary-team .sqs-block-summary-v2 .summary-block-setting-secondary-metadata-author .summary-item-has-author .summary-metadata--secondary .summary-metadata-item--author,
+#cc-author-block-wrapper .sqs-block-summary-v2 .summary-block-setting-secondary-metadata-author .summary-item-has-author .summary-metadata--secondary .summary-metadata-item--author {
     display: none;
 }
 
