@@ -17,7 +17,7 @@ var ccAuthorBlock2 = {
     LoadAuthor: function() {
 
         // get author id
-        var authorId = $("essay-author-link").data("author-id");;
+        var authorId = $("#essay-author-link").data("author-id");;
         debugger;
 
         if (authorId === "" || this.WriterIds.includes(authorId) === false)
