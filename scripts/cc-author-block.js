@@ -61,8 +61,8 @@ var ccAuthorBlock2 = {
         $("#cc-author-more-from").text("More from " + author.author.firstName);
 
         // social links
-        //social-icon-{customContent.facebookOn} facebook-{customContent.facebookOn}
-
+        $(".cc-team-member .cc-social-icon")
+            .removeClass("cc-social-icon-{customContent.facebookOn}");
     },
 
     AfterLoad: function() {
