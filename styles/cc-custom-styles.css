@@ -384,6 +384,14 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
 
 /* -------- BEGIN AUTHOR BLOCK STYLES ----------*/
 
+#cc-author-block-container {
+    display: none;
+}
+
+#item-5633e65be4b030c7001f8cdf #cc-author-block-container {
+    display: block;
+}
+
 
 /* Mobile Styles First */
 

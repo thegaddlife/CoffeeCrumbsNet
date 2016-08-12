@@ -61,7 +61,7 @@
               {@|social-button-inline}
             </div>
 
-            {@|apply author-block.block}
+            {@|apply cc-author-byline.block}
 
             <div class="post-entry-injection clear-fix">{postItemInjectCode}</div>
 
