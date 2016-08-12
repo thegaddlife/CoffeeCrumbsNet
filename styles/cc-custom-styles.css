@@ -385,16 +385,8 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
 
 /* -------- BEGIN AUTHOR BLOCK STYLES ----------*/
 
-#cc-author-block-container,
-#cc-author-related {
+#cc-author-block-wrapper {
     display: none;
-}
-
-#item-5633e65be4b030c7001f8cdf #cc-author-block-container,
-#item-5633e65be4b030c7001f8cdf #cc-author-related,
-#item-540fe214e4b06e9036e95da6 #cc-author-block-container,
-#item-540fe214e4b06e9036e95da6 #cc-author-related {
-    display: block;
 }
 
 

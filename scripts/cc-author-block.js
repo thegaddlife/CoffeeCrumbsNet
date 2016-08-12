@@ -63,7 +63,7 @@ var ccAuthorBlock2 = {
     },
 
     AfterLoad: function() {
-        alert('done');
+        $("#cc-author-block-wrapper").fadeIn();
     }
 
 }

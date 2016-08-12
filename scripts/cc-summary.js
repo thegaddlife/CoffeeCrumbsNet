@@ -49,8 +49,7 @@ var ccSummaryBlock2 = {
         $.when.apply($, rpPromises).then($.proxy(function(results) {
 
             this.ProcessSummaryBlock();
-            if (callBack)
-                callBack();
+            if (callBack) callBack();
 
         }, this), function() {
             // error occurred
