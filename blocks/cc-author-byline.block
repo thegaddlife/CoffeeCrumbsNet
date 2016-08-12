@@ -24,7 +24,7 @@
 				<div id="cc-author-excerpt" class="sqs-block-content">
 				</div>
 			</div>
-			<div class="sqs-block socialaccountlinks-v2-block sqs-block-socialaccountlinks-v2" data-block-type="54">
+			<div style="display:none" class="sqs-block socialaccountlinks-v2-block sqs-block-socialaccountlinks-v2" data-block-type="54">
 				<div class="sqs-block-content">
 					<nav class="sqs-svg-icon--list social-icon-alignment-left social-icons-color-black social-icons-size-medium social-icons-style-regular ">
 						<a href="https://www.facebook.com/{customContent.facebookLink}" target="_blank" class="sqs-svg-icon--wrapper facebook social-icon-{customContent.facebookOn} facebook-{customContent.facebookOn}" style="">
