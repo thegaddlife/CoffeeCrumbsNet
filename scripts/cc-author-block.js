@@ -11,7 +11,8 @@ $(function() {
 var ccAuthorBlock2 = {
 
     WriterIds: [
-        "53efc207e4b0b8045113b6e5"
+        "53efc207e4b0b8045113b6e5",
+        "50312c9fe4b00d577d15a857"
     ],
 
     LoadAuthor: function() {
