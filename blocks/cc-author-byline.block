@@ -25,7 +25,7 @@
 				<div id="cc-author-excerpt" class="sqs-block-content">
 				</div>
 			</div>
-			<!-- Add social icons -->
+        	{@|apply cc-social-media-icons-partial.block}
 		</div>
 	</div>
 
