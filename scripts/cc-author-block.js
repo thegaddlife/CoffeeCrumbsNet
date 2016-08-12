@@ -55,6 +55,9 @@ var ccAuthorBlock2 = {
         // excerpt
         $("#cc-author-excerpt").html(author.excerpt);
 
+        // more from ...
+        $("#cc-author-more-from").text("More from " + author.author.firstName);
+
         // social links
 
     }
