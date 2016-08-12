@@ -61,6 +61,7 @@ var ccAuthorBlock2 = {
         $("#cc-author-more-from").text("More from " + author.author.firstName);
 
         // social links
+        //social-icon-{customContent.facebookOn} facebook-{customContent.facebookOn}
 
     },
 

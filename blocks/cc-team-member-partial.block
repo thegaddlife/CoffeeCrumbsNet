@@ -34,30 +34,9 @@
                 <h3 style="margin-left:0px; margin-right:0px"><br><strong><a href="{fullUrl}">{title}</a>&nbsp;&nbsp;|&nbsp;&nbsp;{customContent.teamTitle}</strong></h3> 
             </div>
         </div>
-        <div class="cc-team-member-social sqs-block socialaccountlinks-v2-block sqs-block-socialaccountlinks-v2" data-block-type="54">
-            <div class="sqs-block-content">
-                <nav class="sqs-svg-icon--list social-icon-alignment-center social-icons-color-black social-icons-size-medium social-icons-style-regular">
-                    <a href="https://www.facebook.com/{customContent.facebookLink}" target="_blank" class="sqs-svg-icon--wrapper facebook social-icon-{customContent.facebookOn} facebook-{customContent.facebookOn}" style="">
-                        <div><svg class="sqs-svg-icon--social" viewBox="0 0 64 64"><use class="sqs-use--background" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/universal/svg/social-accounts.svg#background"></use><use class="sqs-use--icon" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/universal/svg/social-accounts.svg#facebook-icon"></use><use class="sqs-use--mask" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/universal/svg/social-accounts.svg#facebook-mask"></use></svg></div>
-                    </a>
-                    <a href="https://www.instagram.com/{customContent.instagramLink}" target="_blank" class="sqs-svg-icon--wrapper instagram social-icon-{customContent.instagramOn} instagram-{customContent.instagramOn}" style="">
-                        <div><svg class="sqs-svg-icon--social" viewBox="0 0 64 64"><use class="sqs-use--background" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/universal/svg/social-accounts.svg#background"></use><use class="sqs-use--icon" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/universal/svg/social-accounts.svg#instagram-icon"></use><use class="sqs-use--mask" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/universal/svg/social-accounts.svg#instagram-mask"></use></svg></div>
-                    </a>
-                    <a href="https://www.twitter.com/{customContent.twitterLink}" target="_blank" class="sqs-svg-icon--wrapper twitter social-icon-{customContent.twitterOn} twitter-{customContent.twitterOn}" style="">
-                        <div><svg class="sqs-svg-icon--social" viewBox="0 0 64 64"><use class="sqs-use--background" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/universal/svg/social-accounts.svg#background"></use><use class="sqs-use--icon" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/universal/svg/social-accounts.svg#twitter-icon"></use><use class="sqs-use--mask" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/universal/svg/social-accounts.svg#twitter-mask"></use></svg></div>
-                    </a>
-                    <a href="https://www.pinterest.com/{customContent.pinterestLink}" target="_blank" class="sqs-svg-icon--wrapper pinterest social-icon-{customContent.pinterestOn} pinterest-{customContent.pinterestOn}" style="">
-                        <div><svg class="sqs-svg-icon--social" viewBox="0 0 64 64"><use class="sqs-use--background" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/universal/svg/social-accounts.svg#background"></use><use class="sqs-use--icon" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/universal/svg/social-accounts.svg#pinterest-icon"></use><use class="sqs-use--mask" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/universal/svg/social-accounts.svg#pinterest-mask"></use></svg></div>
-                    </a>
-                    <a href="{customContent.itunesLink}" target="_blank" class="sqs-svg-icon--wrapper itunes social-icon-{customContent.itunesOn} itunes-{customContent.itunesOn}" style="">
-                        <div><svg class="sqs-svg-icon--social" viewBox="0 0 64 64"><use class="sqs-use--background" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/universal/svg/social-accounts.svg#background"></use><use class="sqs-use--icon" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/universal/svg/social-accounts.svg#itunes-icon"></use><use class="sqs-use--mask" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/universal/svg/social-accounts.svg#itunes-mask"></use></svg></div>
-                    </a>
-                    <a href="{customContent.rssLink}" target="_blank" class="sqs-svg-icon--wrapper rss social-icon-{customContent.rssOn} rss-{customContent.rssOn}" style="">
-                        <div><svg class="sqs-svg-icon--social" viewBox="0 0 64 64"><use class="sqs-use--background" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/universal/svg/social-accounts.svg#background"></use><use class="sqs-use--icon" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/universal/svg/social-accounts.svg#rss-icon"></use><use class="sqs-use--mask" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/universal/svg/social-accounts.svg#rss-mask"></use></svg></div>
-                    </a>
-                </nav>
-            </div>
-        </div>
+      
+        {@|apply cc-social-media-icons-partial.block}
+
         <div class="cc-author-body sqs-block html-block sqs-block-html" data-block-type="2">
             <div class="sqs-block-content">
                 {.section body}{@}{.end}
