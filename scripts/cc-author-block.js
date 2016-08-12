@@ -44,6 +44,12 @@ var ccAuthorBlock2 = {
     SetAuthor: function(author) {
 
         // image
+        var $img = $("#cc-author-image");
+        var imgUrl = author.assetUrl;
+        $img
+            .data("src", imgUrl)
+            .data("image", imgUrl)
+            .attr("src", imgUrl + "?format=300w");
 
         // excerpt
         $("#cc-author-excerpt").html(author.excerpt);
