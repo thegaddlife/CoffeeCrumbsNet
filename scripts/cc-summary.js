@@ -96,7 +96,7 @@ var ccSummaryBlock2 = {
 
         // loop over this.LoadedPosts; stop adding summary items
         // for this block if the max has been met
-        for (i = 0; i < this.LoadedPosts.length && this.LoadedPosts.length < this.ImagesPerBatch; i++) {
+        for (i = 0; i < this.LoadedPosts.length; i++) {
             this.AddSummaryItem(this.LoadedPosts[i]);
         }
 
