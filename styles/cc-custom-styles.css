@@ -395,30 +395,30 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
 
 /* Mobile Styles First */
 
-#item-5633e65be4b030c7001f8cdf .sqs-col-2,
-#item-5633e65be4b030c7001f8cdf .sqs-col-10,
+#cc-author-block-container .sqs-col-2,
+#cc-author-block-container .sqs-col-10,
 {
     width: 100% !important;
 }
 
-#item-5633e65be4b030c7001f8cdf .sqs-col-2 .sqs-block-image {
+#cc-author-block-container .sqs-col-2 .sqs-block-image {
     margin: 0 auto;
     width: 85px;
 }
 
-#item-5633e65be4b030c7001f8cdf .sqs-col-2 .sqs-block-image img.thumb-image {
+#cc-author-block-container .sqs-col-2 .sqs-block-image img.thumb-image {
     border-radius: 200px;
 }
 
-#item-5633e65be4b030c7001f8cdf .sqs-col-10 {
+#cc-author-block-container .sqs-col-10 {
     text-align: center;
 }
 
-#item-5633e65be4b030c7001f8cdf .socialaccountlinks-v2-block .sqs-svg-icon--list.social-icon-alignment-left {
+.socialaccountlinks-v2-block .sqs-svg-icon--list.social-icon-alignment-left {
     text-align: center;
 }
 
-#item-5633e65be4b030c7001f8cdf .post .sqs-row .sqs-row {
+.post .sqs-row .sqs-row {
     background-color: #f9f9f9;
     margin: 18px 16px 20px;
     padding-top: 10px;
@@ -437,14 +437,14 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
 /* Mid Size - no sidebar  */
 
 @media only screen and (min-width: 641px) and (max-width: 769px) {
-    #item-5633e65be4b030c7001f8cdf .socialaccountlinks-v2-block .sqs-svg-icon--list.social-icon-alignment-left,
-    #item-5633e65be4b030c7001f8cdf .sqs-col-10 {
+    .socialaccountlinks-v2-block .sqs-svg-icon--list.social-icon-alignment-left,
+    .sqs-col-10 {
         text-align: left;
     }
-    #item-5633e65be4b030c7001f8cdf .sqs-col-2 {
+    .sqs-col-2 {
         width: 16.6667% !important;
     }
-    #item-5633e65be4b030c7001f8cdf .sqs-col-10 {
+    .sqs-col-10 {
         width: 83.3333% !important;
     }
 }
@@ -453,14 +453,14 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
 /* 769 -> 893 goes back to mobile while sidebar pops back in */
 
 @media only screen and (min-width: 893px) {
-    #item-5633e65be4b030c7001f8cdf .socialaccountlinks-v2-block .sqs-svg-icon--list.social-icon-alignment-left,
-    #item-5633e65be4b030c7001f8cdf .sqs-col-10 {
+    .socialaccountlinks-v2-block .sqs-svg-icon--list.social-icon-alignment-left,
+    .sqs-col-10 {
         text-align: left;
     }
-    #item-5633e65be4b030c7001f8cdf .sqs-col-2 {
+    .sqs-col-2 {
         width: 16.6667% !important;
     }
-    #item-5633e65be4b030c7001f8cdf .sqs-col-10 {
+    .sqs-col-10 {
         width: 83.3333% !important;
     }
 }

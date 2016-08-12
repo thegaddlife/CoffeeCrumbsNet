@@ -28,7 +28,12 @@
 
     <!--POST BODY-->
 
-      {.section body}<div class="body entry-content">{@}</div>{.end}
+      {.section body}
+        <div class="body entry-content">
+        {@}
+        {@|apply cc-author-byline.block}
+        </div>
+      {.end}
 
     <!--POST FOOTER-->
 
@@ -60,8 +65,6 @@
               {@|like-button}
               {@|social-button-inline}
             </div>
-
-            {@|apply cc-author-byline.block}
 
             <div class="post-entry-injection clear-fix">{postItemInjectCode}</div>
 
