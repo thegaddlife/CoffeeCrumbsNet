@@ -1,4 +1,4 @@
-<div class="sqs-block socialaccountlinks-v2-block sqs-block-socialaccountlinks-v2" data-block-type="54">
+<div class="cc-team-member sqs-block socialaccountlinks-v2-block sqs-block-socialaccountlinks-v2" data-block-type="54">
     <div class="sqs-block-content">
         <nav class="sqs-svg-icon--list social-icon-alignment-left social-icons-color-black social-icons-size-medium social-icons-style-regular ">
             <a href="https://www.facebook.com/{customContent.facebookLink}" target="_blank" class="sqs-svg-icon--wrapper cc-social-icon facebook cc-social-icon-{customContent.facebookOn}" style="">
