@@ -62,7 +62,7 @@ var ccAuthorBlock2 = {
 
         // social links
         $(".cc-team-member .cc-social-icon")
-            .removeClass("cc-social-icon-{customContent.facebookOn}");
+            .removeClass("cc-social-icon-[JSONT: Can't resolve 'customContent.facebookOn'.]");
     },
 
     AfterLoad: function() {
