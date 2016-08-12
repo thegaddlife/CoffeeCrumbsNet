@@ -22,13 +22,15 @@ var ccAuthorBlock2 = {
         if (authorId === "" || this.WriterIds.includes(authorId) === false)
             return;
 
+        var that = this;
+
         $.ajax({
             url: "/the-team?author=" + authorId + "&format=json",
             type: "GET",
             async: false
         }).done(function(data) {
             if (data.items.length === 1)
-                this.SetAuthor(data.items[0]);
+                that.SetAuthor(data.items[0]);
         });
 
         // Call CC Summary block
