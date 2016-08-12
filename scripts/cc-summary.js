@@ -34,8 +34,8 @@ var ccSummaryBlock2 = {
     ShowMoreLink: $("#CCSummaryLoadMoreLink"),
 
     InitPlugin: function() {
-        this.QueryType = DivWrapper.data("cc-summary-query-type");
-        this.QueryVal = DivWrapper.data("cc-summary-query-value");
+        this.QueryType = $("#CCSummaryBlock").data("cc-summary-query-type");
+        this.QueryVal = $("#CCSummaryBlock").data("cc-summary-query-value");
 
         // first call
         this.LoadSummaryItems();
