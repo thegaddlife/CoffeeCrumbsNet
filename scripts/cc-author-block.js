@@ -45,6 +45,8 @@ var ccAuthorBlock2 = {
     SetAuthor: function(author) {
 
         // image
+        $("#cc-author-image-link").attr("href", author.fullUrl);
+
         var $img = $("#cc-author-image");
         var imgUrl = author.assetUrl;
         $img

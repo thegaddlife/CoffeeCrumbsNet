@@ -8,10 +8,11 @@
 						<div class="intrinsic" style="max-width:250.0px;">
 
 							<div style="padding-bottom:100.0%;" class="image-block-wrapper has-aspect-ratio" data-description="">
+								<a id="cc-author-image-link" href="#">
 								<img id="cc-author-image" class="thumb-image loaded" 
 									style="top: 0%; left: 0%; width: 100%; height: 100%; position: absolute;" data-image-resolution="300w">
+								</a>
 							</div>
-
 						</div>
 
 					</div>
