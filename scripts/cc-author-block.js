@@ -47,7 +47,7 @@ var ccAuthorBlock2 = {
             type: "GET",
             async: false
         }).done(function(data) {
-            if (data.items.length === 1)
+            if (data.items && data.items.length === 1)
                 that.SetAuthor(data.items[0]);
         });
 
