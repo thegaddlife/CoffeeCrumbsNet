@@ -39,7 +39,7 @@ var ccAuthorBlock2 = {
         ccSummaryBlock2.ImagesPerBatch = 3;
         ccSummaryBlock2.QueryType = "author";
         ccSummaryBlock2.QueryVal = authorId;
-        ccSummaryBlock2.LoadSummaryItems();
+        ccSummaryBlock2.LoadSummaryItems(this.AfterLoad);
     },
 
     SetAuthor: function(author) {
@@ -60,6 +60,10 @@ var ccAuthorBlock2 = {
 
         // social links
 
+    },
+
+    AfterLoad: function() {
+        alert('done');
     }
 
 }
