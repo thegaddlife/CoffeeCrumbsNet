@@ -20,7 +20,8 @@ var ccAuthorBlock2 = {
         "53efc217e4b0b8045113b707",
         "53efc22ce4b0a6d42412cf78",
         "53efc1b4e4b00e67f7f132fc",
-        "563ee68ee4b07f78f2d7fd5b"
+        "563ee68ee4b07f78f2d7fd5b",
+        "542cc758e4b07e808b11715e"
     ],
 
     SocialLinks: {
