@@ -70,8 +70,11 @@ var ccAuthorBlock2 = {
             .removeClass("cc-social-icon-[JSONT: Can't resolve 'customContent.itunesOn'.]")
             .removeClass("cc-social-icon-[JSONT: Can't resolve 'customContent.rssOn'.]");
 
-        if (author.customContent.facebookOn)
-            $(".cc-team-member .cc-social-icon.facebook").addClass("cc-social-icon-true");
+        if (author.customContent.facebookOn) {
+            $(".cc-team-member .cc-social-icon.facebook")
+                .attr("href", author.customContent.facebookUrl)
+                .addClass("cc-social-icon-true");
+        }
     },
 
     AfterLoad: function() {
