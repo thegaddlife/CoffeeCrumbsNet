@@ -21,8 +21,10 @@ $(function() {
 var ccSummaryBlock2 = {
 
     IsLoading: true,
+    ShowLoading: true,
     LoadingText: "Loading Essays ...",
     LoadMoreText: "Load More Essays",
+    DivWrapper: $("#CCSummaryBlock"),
     ImagesPerBatch: 12,
     TotalLoadedThisBatch: 0,
     QueryType: "",
@@ -32,8 +34,8 @@ var ccSummaryBlock2 = {
     ShowMoreLink: $("#CCSummaryLoadMoreLink"),
 
     InitPlugin: function() {
-        this.QueryType = $("#CCSummaryBlock").data("cc-summary-query-type");
-        this.QueryVal = $("#CCSummaryBlock").data("cc-summary-query-value");
+        this.QueryType = DivWrapper.data("cc-summary-query-type");
+        this.QueryVal = DivWrapper.data("cc-summary-query-value");
 
         // first call
         this.LoadSummaryItems();
@@ -42,7 +44,8 @@ var ccSummaryBlock2 = {
     LoadSummaryItems: function() {
 
         this.IsLoading = true;
-        this.ShowMoreLink.fadeIn().find("#EssaysLoadingText").text(this.LoadingText);
+        if (this.ShowLoading === true)
+            this.ShowMoreLink.fadeIn().find("#EssaysLoadingText").text(this.LoadingText);
 
         var rpPromises = [];
         var url = this.NextPageUrl !== "" ? this.NextPageUrl : "/blog/?" + this.QueryType + "=" + this.QueryVal;
@@ -107,7 +110,7 @@ var ccSummaryBlock2 = {
         this.IsLoading = false;
 
         // return indication of whether there are more posts to display
-        if (this.NextPageUrl !== "")
+        if (this.NextPageUrl !== "" && this.ShowLoading === true)
             this.ShowMoreLink.find("#EssaysLoadingText").text(this.LoadMoreText);
         else
             this.ShowMoreLink.fadeOut();
