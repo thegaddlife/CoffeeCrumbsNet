@@ -35,9 +35,9 @@ var ccAuthorBlock2 = {
 
         // Call CC Summary block
         ccSummaryBlock2.ShowLoading = false;
-        ccSummaryBlock2.ImagesPerBatch = 3;
+        ccSummaryBlock2.ImagesPerBatch = 4;
         ccSummaryBlock2.QueryType = "author";
-        ccSummaryBlock2.QueryValue = authorId;
+        ccSummaryBlock2.QueryVal = authorId;
         ccSummaryBlock2.LoadSummaryItems();
     },
 
