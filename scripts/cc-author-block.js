@@ -2,7 +2,7 @@ $(function() {
 
     $(document).on("ready", function() {
         var ccAuthorBlock = $("#cc-author-block-wrapper");
-        if (ccAuthorBlock.length && ccAuthorBlock.is(":visible"))
+        if (ccAuthorBlock.length)
             ccAuthorBlock2.LoadAuthor();
     });
 
@@ -18,7 +18,6 @@ var ccAuthorBlock2 = {
 
         // get author id
         var authorId = $("#essay-author-link").data("author-id");;
-        debugger;
 
         if (authorId === "" || this.WriterIds.includes(authorId) === false)
             return;
@@ -28,7 +27,8 @@ var ccAuthorBlock2 = {
             type: "GET",
             async: false
         }).done(function(data) {
-            SetAuthor(data);
+            if (data.items.length === 1)
+                this.SetAuthor(data.items[0]);
         });
 
         // Call CC Summary block
@@ -38,7 +38,13 @@ var ccAuthorBlock2 = {
         //ccSummaryBlock2.LoadSummaryItems();
     },
 
-    SetAuthor: function(data) {
+    SetAuthor: function(author) {
+
+        // image
+
+        // excerpt
+
+        // social links
 
     }
 
