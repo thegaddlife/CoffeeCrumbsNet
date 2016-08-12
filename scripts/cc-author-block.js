@@ -17,6 +17,9 @@ var ccAuthorBlock2 = {
 
     SocialLinks: {
         FacebookUrl: "https://www.facebook.com/",
+        InstagramUrl: "https://www.instagram.com/",
+        TwitterUrl: "https://www.twitter.com/",
+        PinterestUrl: "https://www.pinterest.com/"
     },
 
     LoadAuthor: function() {
@@ -76,7 +79,16 @@ var ccAuthorBlock2 = {
 
         if (author.customContent.facebookOn)
             $(".cc-team-member .cc-social-icon.facebook").attr("href", this.SocialLinks.FacebookUrl + author.customContent.facebookLink).addClass("cc-social-icon-true");
-
+        if (author.customContent.instagramOn)
+            $(".cc-team-member .cc-social-icon.instagram").attr("href", this.SocialLinks.InstagramUrl + author.customContent.instagramLink).addClass("cc-social-icon-true");
+        if (author.customContent.twitterOn)
+            $(".cc-team-member .cc-social-icon.twitter").attr("href", this.SocialLinks.TwitterUrl + author.customContent.twitterLink).addClass("cc-social-icon-true");
+        if (author.customContent.pinterestOn)
+            $(".cc-team-member .cc-social-icon.pinterest").attr("href", this.SocialLinks.PinterestUrl + author.customContent.pinterestLink).addClass("cc-social-icon-true");
+        if (author.customContent.itunesOn)
+            $(".cc-team-member .cc-social-icon.itunes").attr("href", author.customContent.itunesLink).addClass("cc-social-icon-true");
+        if (author.customContent.rssOn)
+            $(".cc-team-member .cc-social-icon.rss").attr("href", author.customContent.rssLink).addClass("cc-social-icon-true");
 
     },
 
