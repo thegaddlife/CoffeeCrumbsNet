@@ -46,6 +46,7 @@ var ccAuthorBlock2 = {
         // image
 
         // excerpt
+        $("#cc-author-excerpt").html(author.excerpt);
 
         // social links
 

@@ -9,9 +9,14 @@
 
 							<div style="padding-bottom:100.0%;" class="image-block-wrapper has-aspect-ratio" data-description="">
 								<noscript>&lt;img src="http://static1.squarespace.com/static/5313b7c3e4b08cb68817cf91/t/57ac009729687f7e343e9c89/1470890141493/"  /&gt;</noscript>
-								<img class="thumb-image loaded" data-src="http://static1.squarespace.com/static/5313b7c3e4b08cb68817cf91/t/57ac009729687f7e343e9c89/1470890141493/" data-image="http://static1.squarespace.com/static/5313b7c3e4b08cb68817cf91/t/57ac009729687f7e343e9c89/1470890141493/"
-												data-image-dimensions="250x250" data-image-focal-point="0.5,0.5" data-load="false" data-image-id="57ac009729687f7e343e9c89" data-type="image" src="http://static1.squarespace.com/static/5313b7c3e4b08cb68817cf91/t/57ac009729687f7e343e9c89/1470890141493/?format=300w"
-												style="top: 0%; left: 0%; width: 100%; height: 100%; position: absolute;" data-image-resolution="300w">
+								<img class="thumb-image loaded" 
+								data-src="http://static1.squarespace.com/static/5313b7c3e4b08cb68817cf91/t/57ac009729687f7e343e9c89/1470890141493/" 
+								data-image="http://static1.squarespace.com/static/5313b7c3e4b08cb68817cf91/t/57ac009729687f7e343e9c89/1470890141493/"
+								data-image-dimensions="250x250" data-image-focal-point="0.5,0.5" 
+								data-load="false" 
+								data-image-id="57ac009729687f7e343e9c89" data-type="image" 
+								src="http://static1.squarespace.com/static/5313b7c3e4b08cb68817cf91/t/57ac009729687f7e343e9c89/1470890141493/?format=300w"
+								style="top: 0%; left: 0%; width: 100%; height: 100%; position: absolute;" data-image-resolution="300w">
 							</div>
 
 						</div>
@@ -23,8 +28,7 @@
 		</div>
 		<div class="col sqs-col-10 span-10">
 			<div class="sqs-block html-block sqs-block-html" data-block-type="2">
-				<div class="sqs-block-content">
-					<p><a href="#some-link">Melanie</a> is a writer from Atlanta, GA. Her new book <a href="#another-link">Learning to Love the Life You Didn't Choose</a> is in bookstores now.</p>
+				<div id="cc-author-excerpt" class="sqs-block-content">
 				</div>
 			</div>
 			<div class="sqs-block socialaccountlinks-v2-block sqs-block-socialaccountlinks-v2" data-block-type="54">
