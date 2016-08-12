@@ -80,7 +80,7 @@ var ccSummaryBlock2 = {
                     }
 
                     // check for the next page and add the promise;
-                    // stop paging if we are at max capacity
+                    // stop paging if we are at max capacity for this load
                     if (morePages && that.TotalLoadedThisBatch < that.ImagesPerBatch)
                         return that.LoadRelatedPostsByUrl(that.NextPageUrl + "&format=json");
 
@@ -94,8 +94,9 @@ var ccSummaryBlock2 = {
 
     ProcessSummaryBlock: function() {
 
-        // loop over this.LoadedPosts
-        for (i = 0; i < this.LoadedPosts.length; i++) {
+        // loop over this.LoadedPosts; stop adding summary items
+        // for this block if the max has been met
+        for (i = 0; i < this.LoadedPosts.length && this.LoadedPosts.length < this.ImagesPerBatch; i++) {
             this.AddSummaryItem(this.LoadedPosts[i]);
         }
 
