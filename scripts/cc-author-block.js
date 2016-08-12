@@ -72,7 +72,7 @@ var ccAuthorBlock2 = {
             .attr("src", imgUrl + "?format=300w");
 
         // excerpt
-        $("#cc-author-excerpt").html(author.excerpt.replace(/'/g, "%27"));
+        $("#cc-author-excerpt").html(author.excerpt.replace(/'/g, "'"));
 
         // more from ...
         $("#cc-author-more-from").text("More from " + author.author.firstName);
