@@ -15,6 +15,10 @@ var ccAuthorBlock2 = {
         "50312c9fe4b00d577d15a857"
     ],
 
+    SocialLinks: {
+        FacebookUrl: "https://www.facebook.com/",
+    },
+
     LoadAuthor: function() {
 
         // get author id
@@ -71,7 +75,7 @@ var ccAuthorBlock2 = {
             .removeClass("cc-social-icon-[JSONT: Can't resolve 'customContent.rssOn'.]");
 
         if (author.customContent.facebookOn)
-            $(".cc-team-member .cc-social-icon.facebook").attr("href", author.customContent.facebookLink).addClass("cc-social-icon-true");
+            $(".cc-team-member .cc-social-icon.facebook").attr("href", this.SocialLinks.FacebookUrl + author.customContent.facebookLink).addClass("cc-social-icon-true");
 
 
     },
