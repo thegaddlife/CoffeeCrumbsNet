@@ -355,6 +355,14 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
     }
 }
 
+@media only screen and (min-width: 769px) and (max-width: 892px) {
+    .cc-team-list .sqs-svg-icon--list.social-icon-alignment-center,
+    .cc-team-member .sqs-svg-icon--list.social-icon-alignment-center,
+    {
+        text-align: center !important;
+    }
+}
+
 
 /* Desktop > 893 */
 
