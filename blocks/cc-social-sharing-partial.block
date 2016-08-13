@@ -26,6 +26,10 @@
           <span class="like-count Share-buttons-item-label">{likeCount} Likes</span>
         </a>
 
+        <a href="#commenting" class="Share-buttons-item" style="display:none">
+          <span class="Share-buttons-item-label">{publicCommentCount} Comments</span>
+        </a>
+
       </div>
 
     </div>
