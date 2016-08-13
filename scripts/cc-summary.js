@@ -97,7 +97,6 @@ var ccSummaryBlock2 = {
 
         // remove the current postid from the array
         var currentPostId = $("article").data("item-id");
-        debugger;
 
         // loop over this.LoadedPosts; stop adding summary items
         // for this block if the max has been met
