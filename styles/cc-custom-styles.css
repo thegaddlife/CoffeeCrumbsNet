@@ -502,7 +502,6 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
 }
 
 .cc-social-sharing .Share-buttons .Share-buttons-item {
-    padding-left: 0;
     border: 1px solid #ddd;
     display: inline-block;
     vertical-align: middle;
@@ -510,12 +509,7 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
     margin: 4px;
     white-space: nowrap;
     border-radius: 25px;
-    padding: 0 13px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    letter-spacing: 0em;
-    text-transform: uppercase;
+    padding: 0 13px 0 0;
     font-family: "europa";
     font-size: 14px;
     text-transform: none;
