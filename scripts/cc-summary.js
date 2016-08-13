@@ -2,8 +2,11 @@ $(function() {
 
     $(document).on("ready", function() {
         var ccSummaryBlock = $("#CCSummaryBlock");
-        if (ccSummaryBlock.length && ccSummaryBlock.attr("data-cc-load-item") === "true") {
+        if (ccSummaryBlock.length &&
+            ccSummaryBlock.attr("data-cc-load-item") === "true" &&
+            $("body").hasClass("collection-type-blog") === false) {
 
+            // auto load the summary block if this is not a post page
             ccSummaryBlock2.QueryType = ccSummaryBlock.data("cc-summary-query-type");
             ccSummaryBlock2.QueryVal = ccSummaryBlock.data("cc-summary-query-value");
             ccSummaryBlock2.LoadSummaryItems();
