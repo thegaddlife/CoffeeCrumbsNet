@@ -1,11 +1,11 @@
 <div class="blog-item-actions blog-item-actions--footer cc-social-sharing">
 
   <div class="blog-item-actions-wrapper">
-    <div class="Share sqs-share-buttons" data-item-identifier="57ae0a8b46c3c4e55990fffc" data-item-path="home/2016/8/12/hope-index-vol-7-birth-life-and-the-creative-process">
+    <div class="Share sqs-share-buttons" data-item-identifier="{id}" data-item-path="{fullUrl}">
 
       <div class="Share-buttons">
 
-        <a href="https://www.facebook.com/sharer/sharer.php?u={fullUrl:url-encode}" class="Share-buttons-item Share-buttons-item--social" target="_blank" data-service="facebook">
+        <a href="https://www.facebook.com/sharer/sharer.php?u={baseUrl:url-encode}{fullUrl:url-encode}" class="Share-buttons-item Share-buttons-item--social" target="_blank" data-service="facebook">
           <svg class="Share-buttons-item-icon" viewBox="0 0 64 64">
           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/universal/svg/social-accounts.svg#facebook-icon"></use>
         <svg></svg></svg><span class="Share-buttons-item-label">Facebook</span><span class="Share-buttons-item-count">0</span>

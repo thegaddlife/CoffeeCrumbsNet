@@ -499,7 +499,13 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
     display: none;
 }
 
-.Share-buttons .Share-buttons-item {
+.blog-item-actions--footer {
+    text-align: left;
+    display: block;
+    margin: 0 0 70px;
+}
+
+.cc-social-sharing .Share-buttons .Share-buttons-item {
     padding-left: 0;
     border: 1px solid #ddd;
     display: inline-block;
@@ -521,9 +527,34 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
     font-weight: 700;
     font-style: normal;
     line-height: 40px;
-    text-decoration: none;
-    color: #333;
+    text-decoration: none !important;
+    color: #333 !important;
     fill: #333;
+}
+
+.cc-social-sharing .Share-buttons-item-icon {
+    display: inline-block;
+}
+
+.cc-social-sharing svg:not(:root) {
+    overflow: hidden;
+}
+
+.cc-social-sharing .Share-buttons-item-icon {
+    display: none;
+    vertical-align: top;
+    width: 40px;
+    height: 40px;
+}
+
+.cc-social-sharing svg {
+    font-size: 0;
+    line-height: 1;
+}
+
+.cc-social-sharing .Share-buttons-item-label {
+    display: inline-block;
+    vertical-align: top;
 }
 
 
