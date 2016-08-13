@@ -33,7 +33,7 @@
 		<a href="#commenting">
 			<i class="icon-comment"></i>&nbsp;&nbsp;&nbsp;Click to view {publicCommentCount} Comments
 		</a>
-	</span>
+	</div>
 	
 	<div id="cc-author-related" class="sqs-block html-block sqs-block-html" data-block-type="2">
 		<div class="sqs-block-content">
