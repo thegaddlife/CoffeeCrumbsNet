@@ -444,7 +444,7 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
 
 /* Mid Size - no sidebar  */
 
-@media only screen and (min-width: 641px) and (max-width: 769px) {
+@media only screen and (min-width: 641px) and (max-width: 768px) {
     #cc-author-block-container .socialaccountlinks-v2-block .sqs-svg-icon--list.social-icon-alignment-left,
     #cc-author-block-container .sqs-col-10 {
         text-align: left;
