@@ -558,12 +558,8 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
     display: none;
 }
 
-.cc-social-sharing .Share-buttons-item--comments {
-    margin: 10px 0px 0px 10px;
-}
-
-.cc-social-sharing .Share-buttons-item--comments .Share-buttons-item-label {
-    margin-left: -17px;
+.cc-social-sharing .Share-buttons-item--comments .Share-buttons-item-icon {
+    margin: 10px -17px 0px 10px;
 }
 
 
