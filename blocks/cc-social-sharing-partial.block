@@ -23,13 +23,18 @@
         </svg><span class="Share-buttons-item-label">Pinterest</span><span class="Share-buttons-item-count">0</span>
         </a>
 
-        <a href="#" class="Share-buttons-item Share-buttons-item--like" data-item-identifier="57ae0a8b46c3c4e55990fffc" data-like-count="0" data-service="squarespace-like">
+        <span class="sqs-simple-like" data-item-id="{id}" data-like-count="{likeCount}">
+          <span class="like-icon"></span>
+          <span class="like-count">{likeCount} Likes</span>
+        </span>
+
+        <!--<a href="#" class="Share-buttons-item Share-buttons-item--like" data-item-identifier="57ae0a8b46c3c4e55990fffc" data-like-count="0" data-service="squarespace-like">
           <svg class="Share-buttons-item-icon" viewBox="0 0 64 64">
           <g class="svg-icon">
             <path d="M39.9,37.8c-7.3,4.8-7.7,6.9-7.9,7.8c-0.2-0.9-0.6-3-7.9-7.8c-16-10.6,1.4-25.4,7.9-11.7C38.5,12.4,55.9,27.3,39.9,37.8z"></path>
           </g>
         </svg><span class="Share-buttons-item-label">0 Likes</span>
-        </a>
+        </a>-->
 
       </div>
 
