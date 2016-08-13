@@ -495,10 +495,6 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
 
 /* CC SOCIAL SHARING */
 
-.cc-social-sharing {
-    display: none;
-}
-
 .blog-item-actions--footer {
     text-align: left;
     display: block;
@@ -555,6 +551,10 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
 .cc-social-sharing .Share-buttons-item-label {
     display: inline-block;
     vertical-align: top;
+}
+
+.cc-social-sharing {
+    display: none !important;
 }
 
 
