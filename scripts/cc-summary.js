@@ -101,10 +101,13 @@ var ccSummaryBlock2 = {
 
         // loop over this.LoadedPosts; stop adding summary items
         // for this block if the max has been met
+        var j = 0;
         for (i = 0; i < this.LoadedPosts.length; i++) {
             var post = this.LoadedPosts[i];
-            if (post.id !== currentPostId && i < this.ImagesPerBatch)
+            if (post.id !== currentPostId && j < this.ImagesPerBatch) {
                 this.AddSummaryItem(post);
+                j++;
+            }
         }
 
         // reset batch counter and loaded array
