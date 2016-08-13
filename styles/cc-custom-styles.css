@@ -315,9 +315,6 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
     #cc-mobile-view-comments {
         display: none;
     }
-    .blog-item-actions--footer {
-        text-align: left;
-    }
 }
 
 @media only screen and (min-width: 641px) {
