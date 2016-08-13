@@ -553,6 +553,10 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
     vertical-align: top;
 }
 
+.cc-social-sharing .Share-buttons-item-count {
+    display: none;
+}
+
 .cc-social-sharing {
     display: none !important;
 }
