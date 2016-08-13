@@ -533,6 +533,12 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
     height: 40px;
 }
 
+.cc-social-sharing .sqs-simple-like .Share-buttons-item-icon {
+    width: 20px;
+    height: 20px;
+    margin: 10px 10px 0 10px;
+}
+
 .cc-social-sharing svg {
     font-size: 0;
     line-height: 1;
