@@ -24,8 +24,8 @@
         </a>
 
         <a href="#" class="Share-buttons-item sqs-simple-like" data-item-id="{id}" data-like-count="{likeCount}">
-          <span class="like-icon"></span>
-          <span class="like-count">{likeCount} Likes</span>
+          <span class="like-icon Share-buttons-item-icon"></span>
+          <span class="like-count Share-buttons-item-label">{likeCount} Likes</span>
         </a>
 
         <!--<a href="#" class="Share-buttons-item Share-buttons-item--like" data-item-identifier="57ae0a8b46c3c4e55990fffc" data-like-count="0" data-service="squarespace-like">
