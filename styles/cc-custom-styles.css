@@ -208,6 +208,10 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
     color: #fff !important;
 }
 
+#cc-mobile-view-comments a span {
+    text-decoration: underline !important;
+}
+
 
 /*Hide the author link on the team member pages*/
 
