@@ -315,6 +315,9 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
     #cc-mobile-view-comments {
         display: none;
     }
+    .blog-item-actions--footer {
+        text-align: left;
+    }
 }
 
 @media only screen and (min-width: 641px) {
@@ -496,9 +499,9 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
 /* CC SOCIAL SHARING */
 
 .blog-item-actions--footer {
-    text-align: left;
+    text-align: center;
     display: block;
-    margin: 0 0 15px;
+    margin: 15px 0;
 }
 
 .cc-social-sharing .Share-buttons .Share-buttons-item {
