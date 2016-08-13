@@ -26,17 +26,13 @@
           <span class="like-count Share-buttons-item-label">{likeCount} Likes</span>
         </a>
 
-        <a href="#" style="display:none" class="Share-buttons-item">
+        <a href="#commenting" class="Share-buttons-item Share-buttons-item--comments" style="display:none">
           <svg class="Share-buttons-item-icon" viewBox="0 0 64 64">
             <g class="svg-icon">
               <path d="M12 1c-6.628 0-12 4.573-12 10.213 0 2.39.932 4.591 2.427 6.164l-2.427 5.623 7.563-2.26c9.495 2.598 16.437-3.251 16.437-9.527 0-5.64-5.372-10.213-12-10.213z"/>
             </g>
           </svg><span class="Share-buttons-item-label">{publicCommentCount} Comments</span>
         </a>
-
-        <!--
-              <path d="M39.9,37.8c-7.3,4.8-7.7,6.9-7.9,7.8c-0.2-0.9-0.6-3-7.9-7.8c-16-10.6,1.4-25.4,7.9-11.7C38.5,12.4,55.9,27.3,39.9,37.8z"></path>
-        -->
 
       </div>
 
