@@ -40,10 +40,6 @@
 
       <footer class="article-meta">
           <div>
-<span class="comments" style="display:none">
-          <a href="/blog/2016/6/30/i-was-just-her#commenting">
-            <i class="icon-comment"></i>20 Comments</a>
-        </span>
 
             <span class="article-dateline">
               <span class="date"><a href="{fullUrl}"><i class="icon-calendar"></i><time class="published" datetime="{addedOn|date %F}">{addedOn|date %B %d, %Y}</time></a><span class="delimiter">/</span></span>
