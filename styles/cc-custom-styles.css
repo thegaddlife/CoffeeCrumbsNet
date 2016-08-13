@@ -531,13 +531,13 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
     vertical-align: top;
     width: 40px;
     height: 40px;
-    fill: white;
 }
 
 .cc-social-sharing .sqs-simple-like .Share-buttons-item-icon {
     width: 20px;
     height: 20px;
     margin: 10px 10px 0 10px;
+    fill: white;
 }
 
 .cc-social-sharing svg {
