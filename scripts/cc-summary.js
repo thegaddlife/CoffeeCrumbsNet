@@ -95,11 +95,16 @@ var ccSummaryBlock2 = {
 
     ProcessSummaryBlock: function() {
 
+        // remove the current postid from the array
+        var currentPostId = $("article").data("item-id");
+        debugger;
+
         // loop over this.LoadedPosts; stop adding summary items
         // for this block if the max has been met
         for (i = 0; i < this.LoadedPosts.length; i++) {
-            if (i < this.ImagesPerBatch)
-                this.AddSummaryItem(this.LoadedPosts[i]);
+            var post = this.LoadedPosts[i];
+            if (post.id !== currentPostId && i < this.ImagesPerBatch)
+                this.AddSummaryItem(post);
         }
 
         // reset batch counter and loaded array
