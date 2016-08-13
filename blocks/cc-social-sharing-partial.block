@@ -11,7 +11,7 @@
         <svg></svg></svg><span class="Share-buttons-item-label">Facebook</span><span class="Share-buttons-item-count">0</span>
         </a>
 
-        <a href="https://twitter.com/intent/tweet?url={website.baseUrl|url-encode}{fullUrl|url-encode}" class="Share-buttons-item Share-buttons-item--social" target="_blank" data-service="twitter">
+        <a href="https://twitter.com/intent/tweet?url={website.baseUrl|url-encode}{fullUrl|url-encode}&amp;text={title|url-encode}" class="Share-buttons-item Share-buttons-item--social" target="_blank" data-service="twitter">
           <svg class="Share-buttons-item-icon" viewBox="0 0 64 64">
           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/universal/svg/social-accounts.svg#twitter-icon"></use>
         </svg><span class="Share-buttons-item-label">Twitter</span>
