@@ -34,10 +34,7 @@
           </svg><span class="Share-buttons-item-label">{publicCommentCount} Comments</span>
         </a>
 
-        <span class="comments" style="display:none">
-          <a href="/blog/2016/6/30/i-was-just-her#commenting">
-            <i class="icon-comment"></i>20 Comments</a>
-        </span>
+        
 
       </div>
 
