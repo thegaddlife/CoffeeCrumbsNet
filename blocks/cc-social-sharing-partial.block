@@ -31,7 +31,7 @@
             <g class="svg-icon">
               <path d="M39.9,37.8c-7.3,4.8-7.7,6.9-7.9,7.8c-0.2-0.9-0.6-3-7.9-7.8c-16-10.6,1.4-25.4,7.9-11.7C38.5,12.4,55.9,27.3,39.9,37.8z"></path>
             </g>
-          </svg><span class="Share-buttons-item-label">2 Likes</span>
+          </svg><span class="Share-buttons-item-label">{publicCommentsCount} Comment</span>
         </a>
 
         <!--
