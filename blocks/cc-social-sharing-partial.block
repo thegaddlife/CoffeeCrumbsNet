@@ -17,12 +17,6 @@
         </svg><span class="Share-buttons-item-label">Twitter</span>
         </a>
 
-        <a href="https://www.pinterest.com/pin/create/link/?url={website.baseUrl|url-encode}{fullUrl|url-encode}" class="Share-buttons-item Share-buttons-item--social" target="_blank" data-service="pinterest">
-          <svg class="Share-buttons-item-icon" viewBox="0 0 64 64">
-          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/universal/svg/social-accounts.svg#pinterest-icon"></use>
-        </svg><span class="Share-buttons-item-label">Pinterest</span><span class="Share-buttons-item-count">0</span>
-        </a>
-
         <a href="#" class="Share-buttons-item sqs-simple-like" data-item-id="{id}" data-like-count="{likeCount}">
           <svg class="Share-buttons-item-icon like-icon" viewBox="0 0 64 64">
             <g class="svg-icon">
