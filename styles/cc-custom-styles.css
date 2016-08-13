@@ -491,3 +491,13 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
 .pagination ul .next-title {
     text-transform: capitalize;
 }
+
+
+/* CC SOCIAL SHARING */
+
+.cc-social-sharing {
+    display: none;
+}
+
+
+/* END SOCIAL SHARING */

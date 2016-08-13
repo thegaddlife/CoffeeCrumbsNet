@@ -1,0 +1,38 @@
+<div class="blog-item-actions blog-item-actions--footer cc-social-sharing">
+
+  <div class="blog-item-actions-wrapper">
+    <div class="Share sqs-share-buttons" data-item-identifier="57ae0a8b46c3c4e55990fffc" data-item-path="home/2016/8/12/hope-index-vol-7-birth-life-and-the-creative-process">
+
+      <div class="Share-buttons">
+
+        <a href="https://www.facebook.com/sharer/sharer.php?u={fullUrl:url-encode}" class="Share-buttons-item Share-buttons-item--social" target="_blank" data-service="facebook">
+          <svg class="Share-buttons-item-icon" viewBox="0 0 64 64">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/universal/svg/social-accounts.svg#facebook-icon"></use>
+        <svg></svg></svg><span class="Share-buttons-item-label">Facebook</span><span class="Share-buttons-item-count">0</span>
+        </a>
+
+        <a href="https://twitter.com/intent/tweet?url={}&amp;text={}" class="Share-buttons-item Share-buttons-item--social" target="_blank" data-service="twitter">
+          <svg class="Share-buttons-item-icon" viewBox="0 0 64 64">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/universal/svg/social-accounts.svg#twitter-icon"></use>
+        </svg><span class="Share-buttons-item-label">Twitter</span>
+        </a>
+
+        <a href="https://www.pinterest.com/pin/create/link/?description={}&amp;media={}&amp;url={}" class="Share-buttons-item Share-buttons-item--social" target="_blank" data-service="pinterest">
+          <svg class="Share-buttons-item-icon" viewBox="0 0 64 64">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/universal/svg/social-accounts.svg#pinterest-icon"></use>
+        </svg><span class="Share-buttons-item-label">Pinterest</span><span class="Share-buttons-item-count">0</span>
+        </a>
+
+        <a href="#" class="Share-buttons-item Share-buttons-item--like" data-item-identifier="57ae0a8b46c3c4e55990fffc" data-like-count="0" data-service="squarespace-like">
+          <svg class="Share-buttons-item-icon" viewBox="0 0 64 64">
+          <g class="svg-icon">
+            <path d="M39.9,37.8c-7.3,4.8-7.7,6.9-7.9,7.8c-0.2-0.9-0.6-3-7.9-7.8c-16-10.6,1.4-25.4,7.9-11.7C38.5,12.4,55.9,27.3,39.9,37.8z"></path>
+          </g>
+        </svg><span class="Share-buttons-item-label">0 Likes</span>
+        </a>
+
+      </div>
+
+    </div>
+  </div>
+</div>

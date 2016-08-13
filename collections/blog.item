@@ -31,6 +31,7 @@
       {.section body}
         <div class="body entry-content">
         {@}
+        {@|apply cc-social-sharing-partial.block}
         {@|apply cc-author-byline.block}
         </div>
       {.end}
