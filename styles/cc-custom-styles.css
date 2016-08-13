@@ -195,6 +195,19 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
     margin-right: 25px;
 }
 
+#cc-mobile-view-comments {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0 15px;
+    background: #b3996f;
+}
+
+#cc-mobile-view-comments a {
+    text-decoration: none;
+    color: #fff;
+}
+
 
 /*Hide the author link on the team member pages*/
 
@@ -293,6 +306,9 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
         width: 276px;
         height: 185px;
         position: absolute;
+    }
+    #cc-mobile-view-comments {
+        display: none;
     }
 }
 

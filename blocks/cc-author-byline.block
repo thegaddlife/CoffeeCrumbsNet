@@ -29,9 +29,9 @@
 		</div>
 	</div>
 	
-	<span class="comments">
+	<div id="cc-mobile-view-comments" class="comments">
 		<a href="#commenting">
-			<i class="icon-comment"></i>Click to view {publicCommentCount} Comments
+			<i class="icon-comment"></i>&nbsp;&nbsp;&nbsp;Click to view {publicCommentCount} Comments
 		</a>
 	</span>
 	
