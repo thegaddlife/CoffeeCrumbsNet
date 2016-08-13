@@ -204,8 +204,8 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
 }
 
 #cc-mobile-view-comments a {
-    text-decoration: none;
-    color: #fff;
+    text-decoration: none !important;
+    color: #fff !important;
 }
 
 
