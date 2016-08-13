@@ -28,12 +28,15 @@
         	{@|apply cc-social-media-icons-partial.block}
 		</div>
 	</div>
+	
+	<a href="#comments">Comments</a>
 
 	<div id="cc-author-related" class="sqs-block html-block sqs-block-html" data-block-type="2">
 		<div class="sqs-block-content">
 			<h3 id="cc-author-more-from">...</h3>
 		</div>
 	</div>
+
 
 	{@|apply cc-summary.block}
 
