@@ -24,7 +24,7 @@
         </a>
 
         <a href="#" class="Share-buttons-item sqs-simple-like" data-item-id="{id}" data-like-count="{likeCount}">
-          <span class="like-icon Share-buttons-item-icon"></span>
+          <span class="like-icon"></span>
           <span class="like-count Share-buttons-item-label">{likeCount} Likes</span>
         </a>
 
