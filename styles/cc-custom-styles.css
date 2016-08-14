@@ -237,11 +237,13 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
     margin: 0 .1em !important;
 }
 
-.cc-social-icon {
+#cc-author-block-wrapper .cc-social-icon,
+.cc-team-member .cc-social-icon {
     display: none;
 }
 
-.cc-social-icon.cc-social-icon-true {
+#cc-author-block-wrapper .cc-social-icon.cc-social-icon-true,
+.cc-team-member .cc-social-icon {
     display: inline-block;
 }
 
