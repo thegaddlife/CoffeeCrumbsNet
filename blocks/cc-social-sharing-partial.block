@@ -1,4 +1,4 @@
-<div class="blog-item-actions blog-item-actions--footer cc-social-sharing">
+<div style="display:none" class="blog-item-actions blog-item-actions--footer cc-social-sharing">
 
   <div class="blog-item-actions-wrapper">
     <div class="Share sqs-share-buttons" data-item-identifier="{id}" data-item-path="{fullUrl}">
