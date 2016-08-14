@@ -44,6 +44,8 @@
           {@|apply cc-social-sharing-partial.block}
           {@|apply cc-author-byline.block}
 
+          <div class="article-meta-taxonomy">
+
           <span class="article-dateline">
             <span class="date"><a href="{fullUrl}"><i class="icon-calendar"></i><time class="published" datetime="{addedOn|date %F}">{addedOn|date %B %d, %Y}</time></a><span class="delimiter">/</span></span>
           </span>
@@ -65,6 +67,8 @@
             <a href="{collection.fullUrl}?tag={@|url-encode}" rel="tag">{@}</a> {.alternates with}, {.end}
           </div>
           {.end}
+          </div>
+          
           <div class="post-entry-injection clear-fix">{postItemInjectCode}</div>
 
         </div>
