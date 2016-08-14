@@ -507,7 +507,8 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
     margin: 15px 0;
 }
 
-.cc-social-sharing .Share-buttons .Share-buttons-item {
+.cc-social-sharing .Share-buttons .Share-buttons-item,
+.cc-social-sharing .Share-buttons .comments {
     border: 1px solid #ddd;
     display: inline-block;
     vertical-align: middle;
@@ -525,6 +526,10 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
     text-decoration: none !important;
     color: #666 !important;
     fill: #666 !important;
+}
+
+.cc-social-sharing .comments {
+    padding: 0 13px;
 }
 
 .cc-social-sharing svg:not(:root) {
