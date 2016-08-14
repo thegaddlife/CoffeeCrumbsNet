@@ -495,6 +495,10 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
     border-top: Solid 1px #58545b;
 }
 
+#cc-author-related {
+    display: none;
+}
+
 
 /* -------- END AUTHOR BLOCK STYLES ----------*/
 
