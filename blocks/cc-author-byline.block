@@ -29,19 +29,4 @@
 		</div>
 	</div>
 	
-	<!--<div id="cc-mobile-view-comments" class="comments">
-		<a href="#commenting">
-			<i class="icon-comment"></i>&nbsp;&nbsp;&nbsp;<span>Click to view {publicCommentCount} Comments</span>
-		</a>
-	</div>-->
-	
-	<div id="cc-author-related" class="sqs-block html-block sqs-block-html" data-block-type="2">
-		<div class="sqs-block-content">
-			<h3 id="cc-author-more-from">...</h3>
-		</div>
-	</div>
-
-
-	{@|apply cc-summary.block}
-
 </div>

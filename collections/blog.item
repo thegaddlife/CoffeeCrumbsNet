@@ -68,7 +68,9 @@
           </div>
           {.end}
           </div>
-          
+
+          {@|apply cc-author-related-posts.block}
+
           <div class="post-entry-injection clear-fix">{postItemInjectCode}</div>
 
         </div>
