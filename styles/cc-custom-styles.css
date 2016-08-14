@@ -488,6 +488,12 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
     }
 }
 
+#cc-author-more-from {
+    margin-top: 10px;
+    padding-top: 20px;
+    border-top: Solid 1px #58545b;
+}
+
 
 /* -------- END AUTHOR BLOCK STYLES ----------*/
 
