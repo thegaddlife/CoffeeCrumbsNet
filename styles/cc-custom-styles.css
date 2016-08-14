@@ -411,8 +411,8 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
 }
 
 #cc-author-block-wrapper #cc-author-block-container #cc-author-excerpt a {
-    color: #b3996f;
-    text-decoration: underline;
+    color: #b3996f !important;
+    text-decoration: underline !important;
 }
 
 
