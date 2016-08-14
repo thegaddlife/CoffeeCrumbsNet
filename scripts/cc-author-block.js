@@ -36,6 +36,7 @@ var ccAuthorBlock2 = {
 
         // get author id
         var authorId = $("#essay-author-link").data("author-id");;
+        debugger;
 
         if (authorId === "" || this.WriterIds.includes(authorId) === false)
             return;
