@@ -427,6 +427,7 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
 #cc-author-block-container .sqs-col-2 .sqs-block-image {
     margin: 0 auto;
     width: 85px;
+    padding-top: 10px;
 }
 
 #cc-author-block-container .sqs-col-2 .sqs-block-image img.thumb-image {
