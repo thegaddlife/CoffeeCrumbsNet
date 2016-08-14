@@ -528,8 +528,8 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
     fill: #666 !important;
 }
 
-.cc-social-sharing .comments {
-    padding: 0 13px;
+.cc-social-sharing .Share-buttons .comments {
+    padding-left: 13px;
 }
 
 .cc-social-sharing svg:not(:root) {
