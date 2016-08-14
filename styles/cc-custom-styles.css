@@ -410,6 +410,11 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
     display: none;
 }
 
+#cc-author-block-wrapper #cc-author-block-container #cc-author-excerpt a {
+    color: #b3996f;
+    text-decoration: underline;
+}
+
 
 /* Mobile Styles First */
 
