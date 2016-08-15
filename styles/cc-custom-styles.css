@@ -536,8 +536,8 @@ article .post .article-meta .cc-summary-block.sqs-block-summary-v2 .summary-meta
     margin: 5px 0 30px;
 }
 
-.cc-social-sharing .Share-buttons .Share-buttons-item,
-.cc-social-sharing .Share-buttons .comments {
+.cc-social-sharing .cc-Share-buttons .cc-Share-buttons-item,
+.cc-social-sharing .cc-Share-buttons .comments {
     border: 1px solid #ddd;
     display: inline-block;
     vertical-align: middle;
@@ -557,7 +557,7 @@ article .post .article-meta .cc-summary-block.sqs-block-summary-v2 .summary-meta
     fill: #666 !important;
 }
 
-.cc-social-sharing .Share-buttons .comments {
+.cc-social-sharing .cc-Share-buttons .comments {
     padding-left: 13px;
 }
 
@@ -565,7 +565,7 @@ article .post .article-meta .cc-summary-block.sqs-block-summary-v2 .summary-meta
     overflow: hidden;
 }
 
-.cc-social-sharing .Share-buttons-item-icon {
+.cc-social-sharing .cc-Share-buttons-item-icon {
     display: inline-block;
     vertical-align: top;
     width: 40px;
@@ -576,7 +576,7 @@ article .post .article-meta .cc-summary-block.sqs-block-summary-v2 .summary-meta
     fill: white !important;
 }
 
-.cc-social-sharing .sqs-simple-like .Share-buttons-item-icon {
+.cc-social-sharing .sqs-simple-like .cc-Share-buttons-item-icon {
     width: 20px;
     height: 20px;
     margin: 10px 10px 0 10px;
@@ -588,16 +588,16 @@ article .post .article-meta .cc-summary-block.sqs-block-summary-v2 .summary-meta
     line-height: 1;
 }
 
-.cc-social-sharing .Share-buttons-item-label {
+.cc-social-sharing .cc-Share-buttons-item-label {
     display: inline-block;
     vertical-align: top;
 }
 
-.cc-social-sharing .Share-buttons-item-count {
+.cc-social-sharing .cc-Share-buttons-item-count {
     display: none;
 }
 
-.cc-social-sharing .Share-buttons-item--comments .Share-buttons-item-icon {
+.cc-social-sharing .cc-Share-buttons-item--comments .cc-Share-buttons-item-icon {
     margin: 10px -17px 0px 10px;
 }
 
