@@ -214,7 +214,7 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
 }
 
 
-/*Hide the author link on the team member pages*/
+/*Hide the author link on the team member pages and related posts*/
 
 .cc-summary-team .sqs-block-summary-v2 .summary-block-setting-secondary-metadata-author .summary-item-has-author .summary-metadata--secondary .summary-metadata-item--author,
 #cc-author-related .sqs-block-summary-v2 .summary-block-setting-secondary-metadata-author .summary-item-has-author .summary-metadata--secondary .summary-metadata-item--author {
@@ -222,9 +222,10 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
 }
 
 
-/*Hide the category links on the category pages*/
+/*Hide the category links on the category pages and related posts*/
 
-.cc-summary-category .sqs-block-summary-v2 .summary-block-setting-secondary-metadata-author .summary-item-has-author .summary-metadata--secondary .summary-metadata-item--cats {
+.cc-summary-category .sqs-block-summary-v2 .summary-block-setting-secondary-metadata-author .summary-item-has-author .summary-metadata--secondary .summary-metadata-item--cats,
+#cc-author-related .sqs-block-summary-v2 .summary-block-setting-secondary-metadata-author .summary-item-has-author .summary-metadata--secondary .summary-metadata-item--cats {
     display: none;
 }
 
@@ -237,7 +238,8 @@ article .post .article-meta .cc-summary-block a.summary-thumbnail-container .sum
 }
 
 article .post .article-meta .cc-summary-block .summary-metadata-item {
-    color: #58545b
+    color: #58545b;
+    font-weight: normal;
 }
 
 .cc-summary-cat-link {
