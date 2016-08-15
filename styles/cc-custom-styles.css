@@ -616,7 +616,7 @@ article .post .article-meta .cc-summary-block.sqs-block-summary-v2 .summary-meta
     .cc-post-sharing.Share.sqs-share-buttons {
         float: left;
     }
-    .cc-post-likes-comments {
+    .cc-social-sharing .cc-post-likes-comments {
         float: right;
         margin-top: 0;
     }
