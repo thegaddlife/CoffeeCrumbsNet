@@ -55,5 +55,4 @@
          });
      }
 
-     $("a.cc-sharing-comments-jump").prop("onclick", null);
  });
