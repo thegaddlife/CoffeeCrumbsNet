@@ -53,6 +53,11 @@
         <footer class="article-meta">
           <div>
 
+            {@|apply cc-social-sharing-partial.block}
+            {@|apply cc-author-byline.block}
+
+            <div class="article-meta-taxonomy">
+
             <span class="article-dateline">
               <span class="date"><a href="{fullUrl}"><i class="icon-calendar"></i><time class="published" datetime="{addedOn|date %F}">{addedOn|date %B %d, %Y}</time></a><span class="delimiter">/</span></span>
             </span>
@@ -61,29 +66,11 @@
               {.section author}<span class="author"><a href="{collection.fullUrl}?author={id}" rel="author"><i class="icon-user"></i>{displayName}</a><span class="delimiter">/</span></span>{.end}
             </span>
 
-            {.comments?}
-              {.if websiteSettings.disqusShortname}
-              <span class="comments"><a href="{fullUrl}" class="comment-link"><i class="icon-comment"></i>{@|comment-link}</a></span>
-              {.or}
-              <span class="comments"><a href="{fullUrl}#commenting"><i class="icon-comment"></i>{.section publicCommentCount}{@} Comment{@|pluralize}{.or}Comment{.end}</a></span>
-              {.end}
-            {.end}
-
             {.section sourceUrl}<span class="source"><span class="delimiter">/</span><a href="{sourceUrl}" target="_blank"><i class="icon-share"></i>Source</a></span>{.end}
-
             {.section categories}<div class="categories"><i class="icon-bookmark"></i>{.repeated section @}<a href="{collection.fullUrl}category/{@|slugify}" rel="tag">{@}</a>{.alternates with}, {.end}</div>{.end}
             {.section tags}<div class="tags"><i class="icon-tag"></i>{.repeated section @}<a href="{collection.fullUrl}?tag={@|url-encode}" rel="tag">{@}</a>{.alternates with}, {.end}</div>{.end}
 
-            <div class="shareLoveButtons">
-              {@|like-button}
-              {@|social-button-inline}
             </div>
-
-            {.if excerpt}{.or}
-              {@|apply author-block.block}
-            {.end}
-
-            {@|apply cc-related-posts-partial.block}
 
             <div class="post-entry-injection">{postItemInjectCode}</div>
 
