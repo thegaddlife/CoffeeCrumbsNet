@@ -533,16 +533,21 @@ article .post .article-meta .cc-summary-block.sqs-block-summary-v2 .summary-meta
 /* CC SOCIAL SHARING */
 
 .blog-item-actions--footer {
-    display: inline-block;
     margin: 5px 0 0;
+    width: 100%;
+    text-align: center;
 }
 
-.cc-post-sharing.Share.sqs-share-buttons {
-    float: left;
-}
-
-.cc-post-likes-comments {
-    float: right;
+@media only screen and (min-width: 641px) {
+    .cc-post-sharing.Share.sqs-share-buttons {
+        float: left;
+    }
+    .cc-post-likes-comments {
+        float: right;
+    }
+    .blog-item-actions--footer {
+        text-align: start;
+    }
 }
 
 .cc-social-sharing .Share-buttons .Share-buttons-item,
