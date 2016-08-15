@@ -39,7 +39,7 @@ var ccSummaryBlock2 = {
     LoadedPosts: [],
     ShowMoreLink: $("#CCSummaryLoadMoreLink"),
 
-    LoadSummaryItems: function(callBack) {
+    LoadSummaryItems: function() {
 
         this.IsLoading = true;
         if (this.ShowLoading === true)
@@ -52,7 +52,6 @@ var ccSummaryBlock2 = {
         $.when.apply($, rpPromises).then($.proxy(function(results) {
 
             this.ProcessSummaryBlock();
-            if (callBack) callBack();
 
         }, this), function() {
             // error occurred

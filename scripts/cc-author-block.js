@@ -62,9 +62,9 @@ var ccAuthorBlock2 = {
                 ccSummaryBlock2.ImagesPerBatch = 3;
                 ccSummaryBlock2.QueryType = "author";
                 ccSummaryBlock2.QueryVal = authorId;
-                ccSummaryBlock2.LoadSummaryItems(function() {
-                    that.AfterRelatedLoad(this);
-                });
+                ccSummaryBlock2.LoadSummaryItems();
+
+                $("#cc-author-block-wrapper, #cc-author-related", this).fadeIn();
             } else {
                 $("#cc-author-block-wrapper", this).fadeIn();
             }
@@ -114,10 +114,6 @@ var ccAuthorBlock2 = {
         if (author.customContent.rssOn)
             $(".cc-team-member .cc-social-icon.rss", article).attr("href", author.customContent.rssLink).addClass("cc-social-icon-true");
 
-    },
-
-    AfterRelatedLoad: function(article) {
-        $("#cc-author-block-wrapper, #cc-author-related", article).fadeIn();
     }
 
 }
