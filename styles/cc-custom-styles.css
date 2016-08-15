@@ -537,7 +537,7 @@ article .post .article-meta .cc-summary-block.sqs-block-summary-v2 .summary-meta
 }
 
 .cc-social-sharing .Share-buttons .Share-buttons-item,
-.cc-social-sharing .Share-buttons .comments {
+.cc-social-sharing .cc-comments-link {
     border: 1px solid #ddd;
     display: inline-block;
     vertical-align: middle;
@@ -557,7 +557,7 @@ article .post .article-meta .cc-summary-block.sqs-block-summary-v2 .summary-meta
     fill: #666 !important;
 }
 
-.cc-social-sharing .Share-buttons .comments {
+.cc-social-sharing .cc-comments-link {
     padding-left: 13px;
 }
 
