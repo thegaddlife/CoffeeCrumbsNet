@@ -533,9 +533,10 @@ article .post .article-meta .cc-summary-block.sqs-block-summary-v2 .summary-meta
 /* CC SOCIAL SHARING */
 
 .blog-item-actions--footer {
-    margin: 5px 0 0;
+    margin: 5px 0 15px;
     width: 100%;
     text-align: center;
+    float: left;
 }
 
 @media only screen and (min-width: 641px) {
