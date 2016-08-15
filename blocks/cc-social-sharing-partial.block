@@ -1,7 +1,8 @@
 <div class="blog-item-actions blog-item-actions--footer cc-social-sharing">
 
   <div class="blog-item-actions-wrapper">
-    <div class="Share sqs-share-buttons" data-item-identifier="{id}" data-item-path="{fullUrl}">
+    
+    <div class="cc-post-sharing Share sqs-share-buttons" data-item-identifier="{id}" data-item-path="{fullUrl}">
 
       <div class="Share-buttons">
 
@@ -17,24 +18,33 @@
         </svg><span class="Share-buttons-item-label">Twitter</span>
         </a>
 
-        <a href="#" class="Share-buttons-item sqs-simple-like" data-item-id="{id}" data-like-count="{likeCount}">
-          <svg class="Share-buttons-item-icon like-icon" viewBox="0 0 64 64">
-            <g class="svg-icon">
-              <path d="M39.9,37.8c-7.3,4.8-7.7,6.9-7.9,7.8c-0.2-0.9-0.6-3-7.9-7.8c-16-10.6,1.4-25.4,7.9-11.7C38.5,12.4,55.9,27.3,39.9,37.8z"></path>
-            </g>
-          </svg>
-          <span class="like-count Share-buttons-item-label">{likeCount} Likes</span>
-        </a>
-
       </div>
 
     </div>
 
-    <span class="cc-comments-link comments">
-      <a href="{fullUrl}#commenting">
-        <i class="icon-comment"></i>{.section publicCommentCount}{@} Comment{@|pluralize}{.or}Comment{.end}
-      </a>
-    </span>
+    <div class="cc-post-likes-comments">
+
+      <!--<a href="#" class="Share-buttons-item sqs-simple-like" data-item-id="{id}" data-like-count="{likeCount}">
+        <svg class="Share-buttons-item-icon like-icon" viewBox="0 0 64 64">
+          <g class="svg-icon">
+            <path d="M39.9,37.8c-7.3,4.8-7.7,6.9-7.9,7.8c-0.2-0.9-0.6-3-7.9-7.8c-16-10.6,1.4-25.4,7.9-11.7C38.5,12.4,55.9,27.3,39.9,37.8z"></path>
+          </g>
+        </svg>
+        <span class="like-count Share-buttons-item-label">{likeCount} Likes</span>
+      </a>-->
+
+      <span class="cc-likes-comments-link sqs-simple-like" data-item-id="{id}" data-like-count="{likeCount}">
+        <span class="like-icon"></span>
+        <span class="like-count">{likeCount} Likes</span>
+      </span>
+
+      <span class="cc-likes-comments-link comments">
+        <a href="{fullUrl}#commenting">
+          <i class="icon-comment"></i>{.section publicCommentCount}{@} Comment{@|pluralize}{.or}Comment{.end}
+        </a>
+      </span>
+
+    </div>
 
   </div>
 </div>
