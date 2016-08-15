@@ -3,7 +3,7 @@ $(function() {
     $(document).on("ready", function() {
         var ccAuthorBlock = $("#cc-author-block-wrapper");
         if (ccAuthorBlock.length)
-            ccAuthorBlock2.LoadAuthor();
+            ccAuthorBlock2.LoadAuthors();
     });
 
 });
@@ -32,39 +32,49 @@ var ccAuthorBlock2 = {
         PinterestUrl: "https://www.pinterest.com/"
     },
 
-    LoadAuthor: function() {
+    LoadAuthors: function() {
 
-        // get author id
-        var authorId = $("#essay-author-link").data("author-id");;
-
-        if (authorId === "" || this.WriterIds.includes(authorId) === false)
-            return;
-
+        debugger;
         var that = this;
 
-        $.ajax({
-            url: "/the-team?author=" + authorId + "&format=json",
-            type: "GET",
-            async: false
-        }).done(function(data) {
-            if (data.items && data.items.length === 1)
-                that.SetAuthor(data.items[0]);
+        $("article").each(function() {
+
+            debugger;
+            // get author id
+            var authorId = $("#essay-author-link", this).data("author-id");;
+
+            if (authorId === "" || that.WriterIds.includes(authorId) === false)
+                continue;
+
+            $.ajax({
+                url: "/the-team?author=" + authorId + "&format=json",
+                type: "GET",
+                async: false
+            }).done($.proxy(function(data) {
+                if (data.items && data.items.length === 1)
+                    that.SetAuthor(data.items[0], this);
+            }, this));
+
+            // Call CC Summary block
+            var ccAuthorSummaryBlock = $("#CCSummaryBlock", this);
+            if (ccAuthorSummaryBlock.length) {
+                ccSummaryBlock2.ShowLoading = false;
+                ccSummaryBlock2.ImagesPerBatch = 3;
+                ccSummaryBlock2.QueryType = "author";
+                ccSummaryBlock2.QueryVal = authorId;
+                ccSummaryBlock2.LoadSummaryItems(that.AfterLoad(this));
+            }
+
         });
 
-        // Call CC Summary block
-        ccSummaryBlock2.ShowLoading = false;
-        ccSummaryBlock2.ImagesPerBatch = 3;
-        ccSummaryBlock2.QueryType = "author";
-        ccSummaryBlock2.QueryVal = authorId;
-        ccSummaryBlock2.LoadSummaryItems(this.AfterLoad);
     },
 
-    SetAuthor: function(author) {
+    SetAuthor: function(author, article) {
 
         // image
-        $("#cc-author-image-link").attr("href", author.fullUrl);
+        $("#cc-author-image-link", article).attr("href", author.fullUrl);
 
-        var $img = $("#cc-author-image");
+        var $img = $("#cc-author-image", article);
         var imgUrl = author.assetUrl;
         $img
             .data("src", imgUrl)
@@ -72,14 +82,14 @@ var ccAuthorBlock2 = {
             .attr("src", imgUrl + "?format=300w");
 
         // excerpt
-        $("#cc-author-excerpt").html(author.excerpt.replace(/'/g, "'"));
+        $("#cc-author-excerpt", article).html(author.excerpt.replace(/'/g, "'"));
 
         // more from ...
-        $("#cc-author-more-from").text("More from " + author.author.firstName);
+        $("#cc-author-more-from", article).text("More from " + author.author.firstName);
 
         // social links
         // remove jsont errors
-        $(".cc-team-member .cc-social-icon")
+        $(".cc-team-member .cc-social-icon", article)
             .removeClass("cc-social-icon-[JSONT: Can't resolve 'customContent.facebookOn'.]")
             .removeClass("cc-social-icon-[JSONT: Can't resolve 'customContent.instagramOn'.]")
             .removeClass("cc-social-icon-[JSONT: Can't resolve 'customContent.twitterOn'.]")
@@ -88,22 +98,22 @@ var ccAuthorBlock2 = {
             .removeClass("cc-social-icon-[JSONT: Can't resolve 'customContent.rssOn'.]");
 
         if (author.customContent.facebookOn)
-            $(".cc-team-member .cc-social-icon.facebook").attr("href", this.SocialLinks.FacebookUrl + author.customContent.facebookLink).addClass("cc-social-icon-true");
+            $(".cc-team-member .cc-social-icon.facebook", article).attr("href", this.SocialLinks.FacebookUrl + author.customContent.facebookLink).addClass("cc-social-icon-true");
         if (author.customContent.instagramOn)
-            $(".cc-team-member .cc-social-icon.instagram").attr("href", this.SocialLinks.InstagramUrl + author.customContent.instagramLink).addClass("cc-social-icon-true");
+            $(".cc-team-member .cc-social-icon.instagram", article).attr("href", this.SocialLinks.InstagramUrl + author.customContent.instagramLink).addClass("cc-social-icon-true");
         if (author.customContent.twitterOn)
-            $(".cc-team-member .cc-social-icon.twitter").attr("href", this.SocialLinks.TwitterUrl + author.customContent.twitterLink).addClass("cc-social-icon-true");
+            $(".cc-team-member .cc-social-icon.twitter", article).attr("href", this.SocialLinks.TwitterUrl + author.customContent.twitterLink).addClass("cc-social-icon-true");
         if (author.customContent.pinterestOn)
-            $(".cc-team-member .cc-social-icon.pinterest").attr("href", this.SocialLinks.PinterestUrl + author.customContent.pinterestLink).addClass("cc-social-icon-true");
+            $(".cc-team-member .cc-social-icon.pinterest", article).attr("href", this.SocialLinks.PinterestUrl + author.customContent.pinterestLink).addClass("cc-social-icon-true");
         if (author.customContent.itunesOn)
-            $(".cc-team-member .cc-social-icon.itunes").attr("href", author.customContent.itunesLink).addClass("cc-social-icon-true");
+            $(".cc-team-member .cc-social-icon.itunes", article).attr("href", author.customContent.itunesLink).addClass("cc-social-icon-true");
         if (author.customContent.rssOn)
-            $(".cc-team-member .cc-social-icon.rss").attr("href", author.customContent.rssLink).addClass("cc-social-icon-true");
+            $(".cc-team-member .cc-social-icon.rss", article).attr("href", author.customContent.rssLink).addClass("cc-social-icon-true");
 
     },
 
-    AfterLoad: function() {
-        $("#cc-author-block-wrapper, #cc-author-related").fadeIn();
+    AfterLoad: function(article) {
+        $("#cc-author-block-wrapper, #cc-author-related", article).fadeIn();
     }
 
 }
