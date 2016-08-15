@@ -531,6 +531,10 @@ article .post .article-meta .cc-summary-block.sqs-block-summary-v2 .summary-meta
 
 /* dont all caps the pagination links */
 
+.pagination {
+    padding: 20px 0 0;
+}
+
 .pagination ul .prev-title,
 .pagination ul .next-title,
 .pagination ul .prev-title-mobile,
