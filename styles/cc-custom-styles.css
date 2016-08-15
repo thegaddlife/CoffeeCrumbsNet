@@ -242,6 +242,10 @@ article .post .article-meta .cc-summary-block .summary-metadata-item {
     font-weight: normal;
 }
 
+article .post .article-meta .cc-summary-block.sqs-block-summary-v2 .summary-metadata-item--date:after {
+    content: "";
+}
+
 .cc-summary-cat-link {
     display: inline-block;
     margin-right: 4px;
