@@ -571,6 +571,10 @@ article .post .article-meta .cc-summary-block.sqs-block-summary-v2 .summary-meta
     fill: #666 !important;
 }
 
+.cc-social-sharing .cc-post-likes-comments {
+    text-align: right;
+}
+
 .cc-social-sharing .cc-post-likes-comments .cc-likes-comments-link {
     padding-left: 13px;
 }
