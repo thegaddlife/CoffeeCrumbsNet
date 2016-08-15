@@ -534,7 +534,7 @@ article .post .article-meta .cc-summary-block.sqs-block-summary-v2 .summary-meta
 
 .blog-item-actions--footer {
     display: inline-block;
-    margin: 5px 0 30px;
+    margin: 5px 0 0;
 }
 
 .Share.sqs-share-buttons {
