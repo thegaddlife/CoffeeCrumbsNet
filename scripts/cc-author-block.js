@@ -62,7 +62,11 @@ var ccAuthorBlock2 = {
                 ccSummaryBlock2.ImagesPerBatch = 3;
                 ccSummaryBlock2.QueryType = "author";
                 ccSummaryBlock2.QueryVal = authorId;
-                ccSummaryBlock2.LoadSummaryItems(that.AfterLoad(this));
+                ccSummaryBlock2.LoadSummaryItems(function() {
+                    that.AfterRelatedLoad(this);
+                });
+            } else {
+                $("#cc-author-block-wrapper", this).fadeIn();
             }
 
         });
@@ -112,7 +116,7 @@ var ccAuthorBlock2 = {
 
     },
 
-    AfterLoad: function(article) {
+    AfterRelatedLoad: function(article) {
         $("#cc-author-block-wrapper, #cc-author-related", article).fadeIn();
     }
 
