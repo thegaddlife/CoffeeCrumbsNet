@@ -26,7 +26,11 @@
           <span class="like-count Share-buttons-item-label">{likeCount} Likes</span>
         </a>
 
-        <span class="comments"><a class="cc-sharing-comments-jump" href="{fullUrl}#commenting"><i class="icon-comment"></i>{.section publicCommentCount}{@} Comment{@|pluralize}{.or}Comment{.end}</a></span>
+        <span class="comments">
+          <a class="cc-sharing-comments-jump" onclick="return false" href="{fullUrl}#commenting">
+            <i class="icon-comment"></i>{.section publicCommentCount}{@} Comment{@|pluralize}{.or}Comment{.end}
+          </a>
+        </span>
 
       </div>
 
