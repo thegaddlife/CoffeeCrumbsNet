@@ -421,6 +421,13 @@ article .post .article-meta .cc-summary-block.sqs-block-summary-v2 .summary-meta
     display: inline !important;
 }
 
+@media only screen and (min-width: 641px) {
+    .next-title-mobile,
+    .prev-title-mobile {
+        display: none;
+    }
+}
+
 
 /* -------- BEGIN AUTHOR BLOCK STYLES ----------*/
 
