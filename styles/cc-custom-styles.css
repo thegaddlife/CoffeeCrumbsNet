@@ -232,6 +232,14 @@ article .post .article-meta .cc-summary-block a.summary-thumbnail-container {
     display: block;
 }
 
+article .post .article-meta .cc-summary-block a.summary-thumbnail-container .summary-title-link {
+    font-weight: normal;
+}
+
+article .post .article-meta .cc-summary-block .summary-metadata-item {
+    color: #58545b
+}
+
 .cc-summary-cat-link {
     display: inline-block;
     margin-right: 4px;
