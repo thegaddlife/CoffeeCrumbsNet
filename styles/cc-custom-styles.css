@@ -426,6 +426,7 @@ article .post .article-meta .cc-summary-block.sqs-block-summary-v2 .summary-meta
 
 #cc-author-block-wrapper {
     display: none;
+    clear: both;
 }
 
 #cc-author-block-wrapper #cc-author-block-container #cc-author-excerpt a {
@@ -532,8 +533,12 @@ article .post .article-meta .cc-summary-block.sqs-block-summary-v2 .summary-meta
 /* CC SOCIAL SHARING */
 
 .blog-item-actions--footer {
-    display: block;
+    display: inline-block;
     margin: 5px 0 30px;
+}
+
+.Share-buttons .sqs-share-buttons {
+    float: left;
 }
 
 .cc-social-sharing .Share-buttons .Share-buttons-item,
@@ -559,6 +564,7 @@ article .post .article-meta .cc-summary-block.sqs-block-summary-v2 .summary-meta
 
 .cc-social-sharing .cc-comments-link {
     padding-left: 13px;
+    float: right;
 }
 
 .cc-social-sharing svg:not(:root) {
