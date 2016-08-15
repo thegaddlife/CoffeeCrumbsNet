@@ -538,18 +538,6 @@ article .post .article-meta .cc-summary-block.sqs-block-summary-v2 .summary-meta
     float: left;
 }
 
-@media only screen and (min-width: 641px) {
-    .cc-post-sharing.Share.sqs-share-buttons {
-        float: left;
-    }
-    .cc-post-likes-comments {
-        float: right;
-    }
-    .blog-item-actions--footer {
-        text-align: start;
-    }
-}
-
 .cc-social-sharing .Share-buttons .Share-buttons-item,
 .cc-social-sharing .cc-likes-comments-link {
     border: 1px solid #ddd;
@@ -573,6 +561,7 @@ article .post .article-meta .cc-summary-block.sqs-block-summary-v2 .summary-meta
 
 .cc-social-sharing .cc-post-likes-comments {
     text-align: right;
+    margin-top: 10px;
 }
 
 .cc-social-sharing .cc-post-likes-comments .cc-likes-comments-link {
@@ -621,6 +610,16 @@ article .post .article-meta .cc-summary-block.sqs-block-summary-v2 .summary-meta
 
 .cc-social-sharing .Share-buttons-item--comments .Share-buttons-item-icon {
     margin: 10px -17px 0px 10px;
+}
+
+@media only screen and (min-width: 641px) {
+    .cc-post-sharing.Share.sqs-share-buttons {
+        float: left;
+    }
+    .cc-post-likes-comments {
+        float: right;
+        margin-top: 0;
+    }
 }
 
 
