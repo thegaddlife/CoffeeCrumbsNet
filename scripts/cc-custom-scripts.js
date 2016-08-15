@@ -59,8 +59,7 @@
      var commentsLinkNodes = document.querySelectorAll(commentlinkSelector);
      if (commentsLinkNodes) {
          Array.prototype.forEach.call(commentsLinkNodes, function(commentsLinkNode) {
-             console.debug("Found comments link");
-
+             commentsLinkNode.removeEventListener("click", shareButtonClickHandler, false);
          });
      }
 
