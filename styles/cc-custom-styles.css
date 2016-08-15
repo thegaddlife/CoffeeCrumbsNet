@@ -570,6 +570,10 @@ article .post .article-meta .cc-summary-block.sqs-block-summary-v2 .summary-meta
     padding-left: 13px;
 }
 
+.cc-social-sharing .cc-post-likes-comments .like-icon {
+    margin-top: 10px;
+}
+
 .cc-social-sharing svg:not(:root) {
     overflow: hidden;
 }
