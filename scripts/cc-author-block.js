@@ -44,7 +44,7 @@ var ccAuthorBlock2 = {
             var authorId = $("#essay-author-link", this).data("author-id");;
 
             if (authorId === "" || that.WriterIds.includes(authorId) === false)
-                continue;
+                return;
 
             $.ajax({
                 url: "/the-team?author=" + authorId + "&format=json",
