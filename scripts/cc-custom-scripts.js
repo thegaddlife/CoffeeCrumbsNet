@@ -55,12 +55,5 @@
          });
      }
 
-     var commentlinkSelector = ".cc-sharing-comments-jump";
-     var commentsLinkNodes = document.querySelectorAll(commentlinkSelector);
-     if (commentsLinkNodes) {
-         Array.prototype.forEach.call(commentsLinkNodes, function(commentsLinkNode) {
-             commentsLinkNode.removeEventListener("click", "shareButtonClickHandler", false);
-         });
-     }
-
+     $("a.cc-sharing-comments-jump").prop("onclick", null);
  });

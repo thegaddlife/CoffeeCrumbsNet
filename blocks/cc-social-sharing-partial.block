@@ -27,7 +27,7 @@
         </a>
 
         <span class="comments">
-          <a class="cc-sharing-comments-jump" onclick="$(this).off()" href="{fullUrl}#commenting">
+          <a class="cc-sharing-comments-jump" href="{fullUrl}#commenting">
             <i class="icon-comment"></i>{.section publicCommentCount}{@} Comment{@|pluralize}{.or}Comment{.end}
           </a>
         </span>
