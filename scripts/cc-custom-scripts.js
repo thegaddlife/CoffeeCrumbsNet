@@ -55,4 +55,9 @@
          });
      }
 
+     $(function() {
+         // remove client click event handlers in the sharing comments link
+         $(".cc-social-sharing").find(".cc-sharing-comments-jump").unbind();
+     });
+
  });
