@@ -228,6 +228,10 @@ body.underline-sidebar-h3 .vertical-navigation-bar h3 {
     display: none;
 }
 
+.cc-summary-block article .post .article-meta a.summary-thumbnail-container {
+    display: block;
+}
+
 .cc-summary-cat-link {
     display: inline-block;
     margin-right: 4px;
