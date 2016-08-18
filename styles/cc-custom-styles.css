@@ -255,7 +255,8 @@ article .post .article-meta .cc-summary-block.sqs-block-summary-v2 .summary-meta
     margin: 0 .1em !important;
 }
 
-.cc-social-icon {
+.cc-social-icon,
+article .post .article-meta a.cc-social-icon {
     display: none;
 }
 
