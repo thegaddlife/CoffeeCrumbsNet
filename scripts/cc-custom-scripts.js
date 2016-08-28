@@ -39,7 +39,9 @@
          "/?author=542cc74fe4b07e808b11713e#show-archive": "april-hoss",
          "/?author=53efc22ce4b0a6d42412cf78#show-archive": "ntima-preusser",
          "/?author=53efc207e4b0b8045113b6e5#show-archive": "melanie-dale",
-         "/?author=53efc217e4b0b8045113b707#show-archive": "katie-blackburn"
+         "/?author=53efc217e4b0b8045113b707#show-archive": "katie-blackburn",
+         "/?author=57c35d3615d5db588da4a20c#show-archive": "sonya-spillmann",
+         "/?author=57c363a4f5e231b32aacca32#show-archive": "jennifer-batchelor"
      };
      var teamLink = "/the-team/";
 
