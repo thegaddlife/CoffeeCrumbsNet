@@ -11,20 +11,19 @@ $(function() {
 var ccAuthorBlock2 = {
 
     WriterIds: [
-        "50312c9fe4b00d577d15a857",
-        "53efc1b4e4b00e67f7f132fc",
-        "53efc1eae4b0b8045113b6d3",
-        "53efc207e4b0b8045113b6e5",
-        "53efc217e4b0b8045113b707",
-        "53efc22ce4b0a6d42412cf78",
-        "542cc74fe4b07e808b11713e",
-        "542cc758e4b07e808b11715e",
-        "54965b9fe4b015fce7f500b0",
-        "55e26f05e4b09e1859652657",
-        "551c610ce4b0f86de559f9f5",
-        "563ee68ee4b07f78f2d7fd5b",
-        "57c35d3615d5db588da4a20c",
-        "57c363a4f5e231b32aacca32"
+        "50312c9fe4b00d577d15a857", // ashlee
+        "53efc1b4e4b00e67f7f132fc", // suzy
+        "53efc1eae4b0b8045113b6d3", // anna q
+        "53efc207e4b0b8045113b6e5", // melanie
+        "53efc217e4b0b8045113b707", // katie
+        "53efc22ce4b0a6d42412cf78", // ntima
+        "542cc74fe4b07e808b11713e", // april
+        "542cc758e4b07e808b11715e", // callie
+        "55e26f05e4b09e1859652657", // anna j
+        "551c610ce4b0f86de559f9f5", // lesley
+        "563ee68ee4b07f78f2d7fd5b", // sarah 
+        "57c35d3615d5db588da4a20c", // sonya
+        "57c363a4f5e231b32aacca32" // jennifer
     ],
 
     SocialLinks: {
