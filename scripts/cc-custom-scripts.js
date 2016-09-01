@@ -31,7 +31,7 @@
      // 2) swap author links in summary block with custom author pages
      var authorLinkSwap = {
          "/?author=551c610ce4b0f86de559f9f5#show-archive": "lesley-miller",
-         "/?author=55e26f05e4b09e1859652657#show-archive": "anna-jordan",
+         "/?author=5568e194e4b012775fff2947#show-archive": "anna-jordan",
          "/?author=542cc758e4b07e808b11715e#show-archive": "callie-feyen",
          "/?author=53efc1eae4b0b8045113b6d3#show-archive": "anna-quinlan",
          "/?author=50312c9fe4b00d577d15a857#show-archive": "ashlee-gadd",
